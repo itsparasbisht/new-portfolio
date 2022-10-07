@@ -1,0 +1,39 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background: rgb(0, 188, 221); */
+  display: flex;
+}
+
+.box1 {
+  padding-left: 5%;
+  flex: 1;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box1 h1 {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.box1 h3 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.box2 {
+  flex: 1;
+  /* background-color: yellow; */
+}
+
+.box2 img {
+  display: block;
+  margin: 10% auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+}
