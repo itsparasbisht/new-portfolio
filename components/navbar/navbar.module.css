@@ -39,3 +39,5 @@
     font-size: 15px;
     font-weight: 700;
 }
+
+@media all and(max-width: 800px) {}

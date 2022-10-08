@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <div className={styles.container}>
         <div className={styles.box1}>
-          <h1>Paras here</h1>
+          <h1>I&apos;m Paras</h1>
           <h3>Here to develop awesome stuff :)</h3>
         </div>
         <div className={styles.box2}>
