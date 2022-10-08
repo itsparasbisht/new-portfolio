@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import myProfileImage from "../assets/profile.jpg";
+import myProfileImage from "../assets/web-dev.gif";
 import Navbar from "../components/navbar/Navbar";
 
 export default function Home() {
@@ -15,12 +15,9 @@ export default function Home() {
         </div>
         <div className={styles.box2}>
           <Image
-            src={""}
+            src={myProfileImage}
             alt="This is Paras Bisht, the creator of this website."
-            width="500"
-            height="500"
             className={styles.images}
-            placeholder="blur"
           />
         </div>
       </div>

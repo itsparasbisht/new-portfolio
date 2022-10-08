@@ -12,31 +12,31 @@ function Navbar() {
         <li>
           <Image
             alt="view github account"
-            width="30"
-            height="30"
+            width="20"
+            height="20"
             src={githubIcon}
           />{" "}
-          GitHub
+          <a>GitHub</a>
         </li>
         <li>
           {" "}
           <Image
             alt="view linkedin account"
-            width="30"
-            height="30"
+            width="20"
+            height="20"
             src={linkedIcon}
           />
-          LinkedIn
+          <a>LinkedIn</a>
         </li>
         <li>
           {" "}
           <Image
             alt="view some projects"
-            width="30"
-            height="30"
+            width="20"
+            height="20"
             src={bookIcon}
           />
-          Projects
+          <a>Projects</a>
         </li>
       </ul>
     </div>
