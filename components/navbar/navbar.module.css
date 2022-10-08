@@ -40,4 +40,14 @@
     font-weight: 700;
 }
 
-@media all and(max-width: 800px) {}
+@media (max-width: 500px) {
+    .container {
+        width: 100vw;
+        padding-left: 0%;
+        justify-content: center;
+    }
+
+    .container ul {
+        justify-content: center;
+    }
+}
