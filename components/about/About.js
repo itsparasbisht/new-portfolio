@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./about.module.css";
 import Image from "next/image";
-import reactLogo from "../../assets/React.webp";
+import profilePhoto from "../../assets/profile.jpg";
 import jsLogo from "../../assets/Javascript-logo.png";
+import callLogo from "../../assets/icons/telephone.png";
+import mailLogo from "../../assets/icons/email.png";
 
 function About() {
   return (
@@ -57,7 +59,31 @@ function About() {
           </p>
         </div>
       </div>
-      <div className={styles.box2}></div>
+      <div className={styles.box2}>
+        <div className={styles.cardProfile}>
+          <div className={styles.profilePhoto}>
+            <Image
+              src={profilePhoto}
+              alt="This is paras bisht, the creator of this website"
+            />
+          </div>
+          <div className={styles.profileDetails}>
+            <h3>Paras Bisht</h3>
+            <h4>Frontend Developer</h4>
+            <h4>SirpiDataScience</h4>
+          </div>
+          <div className={styles.profileFooter}>
+            <a href="tel:+919528350042">
+              <Image src={callLogo} alt="call paras bisht" /> &nbsp; +91
+              9528350042
+            </a>
+            <a href="mailto:iamparasbisht@gmail.com">
+              <Image src={mailLogo} alt="send a mail to paras bisht" /> &nbsp;
+              iamparasbisht@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
