@@ -44,7 +44,15 @@ function About() {
               <span className={styles.curlyBraces}>]</span>
             </span>
             ,
-            <br /> <span>8</span> &nbsp;{" "}
+            <br />
+            <span>8</span> &nbsp; &nbsp; &nbsp; location:{" "}
+            <span className={styles.objString}>
+              &#34;Almora, Uttarakhand&#34;
+            </span>
+            , <br />
+            <span>9</span> &nbsp; &nbsp; &nbsp; start_date:{" "}
+            <span className={styles.objString}>&#34;2020-10-01&#34;</span>
+            , <br /> <span>10</span> &nbsp;{" "}
             <span className={styles.curlyBraces}>&#125;</span>
           </p>
         </div>
