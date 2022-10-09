@@ -1,11 +1,43 @@
 .container {
     width: 100%;
-    height: auto;
-    background-color: red;
+    height: 500px;
+    display: flex;
 }
 
-.container h1 {
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 900;
+.box1 {
+    flex: .7;
+    background-color: green;
+}
+
+.box2 {
+    flex: .3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box2 img {
+    width: 100px !important;
+}
+
+.logoCtr {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.logoCtr:nth-child(1) {
+    background-color: #bbe7ff;
+    border: 4px solid #00D8FF;
+}
+
+.logoCtr:nth-child(2) {
+    background-color: rgb(252, 255, 158);
+    border: 4px solid #F0DC4E;
 }
