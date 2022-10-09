@@ -61,6 +61,8 @@ function About() {
       </div>
       <div className={styles.box2}>
         <div className={styles.cardProfile}>
+          <div className={styles.tapeSection}></div>
+          <div className={styles.tapeSection2}></div>
           <div className={styles.profilePhoto}>
             <Image
               src={profilePhoto}
