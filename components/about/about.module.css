@@ -14,6 +14,7 @@
 }
 
 .box2 {
+    min-width: 380px;
     flex: .35;
     display: flex;
     flex-direction: column;
@@ -194,4 +195,115 @@
     left: -5%;
     top: -3%;
     transform: rotate(90deg)
+}
+
+@media (max-width: 1000px) {
+    .box1 {
+        flex: .7;
+        padding: 0px;
+    }
+
+    .box2 {
+        flex: .4;
+    }
+
+    .aboutBox {
+        font-size: 1rem;
+    }
+
+    .cardProfile {
+        width: 90%;
+    }
+
+    .container {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 800px) {
+    .box1 {
+        flex: .7;
+        padding: 40px 0px;
+        width: 100%;
+    }
+
+    .box2 {
+        flex: .4;
+    }
+
+    .aboutBox {
+        font-size: 1.3rem;
+    }
+
+    .profileDetails {
+        font-size: 1.6rem;
+    }
+
+    .profileDetails h3 {
+        font-size: 2rem;
+    }
+
+    .profileFooter a {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding-top: 70px;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 90px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .container {
+        font-size: 15px;
+        width: 100%;
+        padding-top: 90px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1 {
+        width: 100%;
+        flex: 1;
+        padding: 40px 0px;
+        /* background-color: blue; */
+    }
+
+    .box2 {
+        width: 100%;
+        flex: .4;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .container {
+
+        width: 100%;
+        padding-top: 90px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1 {
+        width: 100%;
+        flex: 1;
+        padding: 40px 0px;
+        /* background-color: blue; */
+    }
+
+    .box2 {
+        width: 100%;
+        flex: .4;
+        max-width: 350px;
+    }
+
+    .aboutBox {
+        font-size: 1.1rem;
+    }
 }
