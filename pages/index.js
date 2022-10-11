@@ -4,6 +4,8 @@ import styles from "../styles/Home.module.css";
 import myProfileImage from "../assets/web-dev.gif";
 import Navbar from "../components/navbar/Navbar";
 import About from "../components/about/About";
+import ShowCertificates from "../components/showCertificates/ShowCertificates";
+import freeCodeCampCf from "../assets/certificates/freeCodeCamp.png";
 
 export default function Home() {
   return (
@@ -23,6 +25,12 @@ export default function Home() {
         </div>
       </div>
       <About />
+      <ShowCertificates
+        imgLink={freeCodeCampCf}
+        heading="freeCodeCamp"
+        about="abcd"
+        verifyLink={""}
+      />
     </>
   );
 }
