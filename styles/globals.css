@@ -18,6 +18,11 @@ a {
   font-family: 'Montserrat', sans-serif;
 }
 
+.carousel .control-dots .dot {
+  background-color: rgb(0, 0, 0) !important;
+  box-shadow: none !important;
+}
+
 @media (max-width: 800px) {
   html {
     font-size: 11px;

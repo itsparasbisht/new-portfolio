@@ -31,13 +31,7 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <Carousel infiniteLoop interval={3000} swipeable>
-        <ShowCertificates
-          imgLink={javascriptCf}
-          logo={hackerRankLogo}
-          about="Responsive Web Design Certification"
-          verifyLink={""}
-        />
+      <Carousel infiniteLoop autoPlay interval={3000} swipeable>
         <ShowCertificates
           imgLink={freeCodeCampCf}
           logo={freeCodeCampLogo}
@@ -45,9 +39,15 @@ export default function Home() {
           verifyLink={""}
         />
         <ShowCertificates
+          imgLink={javascriptCf}
+          logo={hackerRankLogo}
+          about="Intermediate JavaScript Certification"
+          verifyLink={""}
+        />
+        <ShowCertificates
           imgLink={reactJsCf}
           logo={hackerRankLogo}
-          about="Responsive Web Design Certification"
+          about="React Basics Certification"
           verifyLink={""}
         />
       </Carousel>
