@@ -6,7 +6,11 @@ import Navbar from "../components/navbar/Navbar";
 import About from "../components/about/About";
 import ShowCertificates from "../components/showCertificates/ShowCertificates";
 import freeCodeCampCf from "../assets/certificates/freeCodeCamp.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import javascriptCf from "../assets/certificates/javascript.png";
+import reactJsCf from "../assets/certificates/reactJs.png";
+import hackerRankLogo from "../assets/companyLogos/hackerRankLogo.png";
+import freeCodeCampLogo from "../assets/companyLogos/freeCodeCampLogo.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
@@ -29,20 +33,20 @@ export default function Home() {
       <About />
       <Carousel infiniteLoop interval={3000} swipeable>
         <ShowCertificates
-          imgLink={freeCodeCampCf}
-          heading="freeCodeCamp"
+          imgLink={javascriptCf}
+          logo={hackerRankLogo}
           about="Responsive Web Design Certification"
           verifyLink={""}
         />
         <ShowCertificates
           imgLink={freeCodeCampCf}
-          heading="freeCodeCamp"
+          logo={freeCodeCampLogo}
           about="Responsive Web Design Certification"
           verifyLink={""}
         />
         <ShowCertificates
-          imgLink={freeCodeCampCf}
-          heading="freeCodeCamp"
+          imgLink={reactJsCf}
+          logo={hackerRankLogo}
           about="Responsive Web Design Certification"
           verifyLink={""}
         />

@@ -6,13 +6,12 @@
 }
 
 .imgCtr {
-    width: 500px;
+    width: 600px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.container img {
+.imgCtr img {
     width: 100% !important;
-    display: block;
 }
 
 .about {
@@ -22,29 +21,30 @@
     align-items: flex-start;
 }
 
-.about h2 {
-    font-size: 3rem;
+.about img {
+    width: 300px !important;
 }
 
 .about h3 {
     font-size: 1.5rem;
-    color: rgb(65, 65, 65);
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
 }
 
 .about button {
     border: none;
     cursor: pointer;
-    background-color: #c9c9c9;
-    color: rgb(0, 0, 0);
+    background-color: rgb(27, 27, 27);
+    color: white;
     border-radius: 10px;
     padding: 5px 10px;
     transition: all 0.3s;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
 .about button:hover {
-    background-color: black;
-    color: white;
+    background-color: #c9c9c9;
+    color: rgb(0, 0, 0);
 }

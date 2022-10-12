@@ -2,19 +2,21 @@ import React from "react";
 import styles from "./showCertificates.module.css";
 import Image from "next/image";
 
-function ShowCertificates({ imgLink, heading, about, verifyLink }) {
+function ShowCertificates({ imgLink, logo, about, verifyLink }) {
   return (
     <div className={styles.container}>
       <div className={styles.imgCtr}>
         <Image
           src={imgLink}
           alt="This is Paras Bisht, the creator of this website."
-          className={styles.certificate}
           placeholder="blur"
         />
       </div>
       <div className={styles.about}>
-        <h2>{heading}</h2>
+        <Image
+          alt="This is Paras Bisht, the creator of this website."
+          src={logo}
+        />
         <h3>{about}</h3>
         <button>verify</button>
       </div>

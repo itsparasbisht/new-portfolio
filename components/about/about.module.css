@@ -170,6 +170,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
 }
 
 .profileFooter a img {
