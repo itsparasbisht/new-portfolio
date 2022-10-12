@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./about.module.css";
 import Image from "next/image";
 import profilePhoto from "../../assets/profile.jpg";
-import jsLogo from "../../assets/Javascript-logo.png";
 import callLogo from "../../assets/icons/telephone.png";
 import mailLogo from "../../assets/icons/email.png";
 

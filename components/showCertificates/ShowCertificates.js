@@ -11,6 +11,8 @@ function ShowCertificates({ imgLink, heading, about, verifyLink }) {
         className={styles.certificate}
         placeholder="blur"
       />
+      <h2>{heading}</h2>
+      <h3>{about}</h3>
     </div>
   );
 }

@@ -28,7 +28,7 @@ export default function Home() {
       <ShowCertificates
         imgLink={freeCodeCampCf}
         heading="freeCodeCamp"
-        about="abcd"
+        about="Responsive Web Design Certification"
         verifyLink={""}
       />
     </>
