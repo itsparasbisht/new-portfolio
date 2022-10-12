@@ -6,6 +6,8 @@ import Navbar from "../components/navbar/Navbar";
 import About from "../components/about/About";
 import ShowCertificates from "../components/showCertificates/ShowCertificates";
 import freeCodeCampCf from "../assets/certificates/freeCodeCamp.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
   return (
@@ -25,12 +27,26 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <ShowCertificates
-        imgLink={freeCodeCampCf}
-        heading="freeCodeCamp"
-        about="Responsive Web Design Certification"
-        verifyLink={""}
-      />
+      <Carousel infiniteLoop interval={3000} swipeable>
+        <ShowCertificates
+          imgLink={freeCodeCampCf}
+          heading="freeCodeCamp"
+          about="Responsive Web Design Certification"
+          verifyLink={""}
+        />
+        <ShowCertificates
+          imgLink={freeCodeCampCf}
+          heading="freeCodeCamp"
+          about="Responsive Web Design Certification"
+          verifyLink={""}
+        />
+        <ShowCertificates
+          imgLink={freeCodeCampCf}
+          heading="freeCodeCamp"
+          about="Responsive Web Design Certification"
+          verifyLink={""}
+        />
+      </Carousel>
     </>
   );
 }
