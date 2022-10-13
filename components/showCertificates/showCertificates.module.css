@@ -16,10 +16,9 @@
 }
 
 .about {
-    padding-right: 50px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .about img {
@@ -38,10 +37,10 @@
     cursor: pointer;
     background-color: rgb(27, 27, 27);
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px 10px;
     transition: all 0.3s;
-    margin-top: 5px;
+    margin-top: 7px;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -51,6 +50,24 @@
     color: rgb(0, 0, 0);
 }
 
-.control-arrow {
-    color: red !important;
+
+@media (max-width: 950px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .imgCtr {
+        order: 0;
+        width: 70%;
+        min-width: 400px;
+    }
+
+    .about {
+        margin-top: 40px;
+    }
+
+    .about button {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
 }
