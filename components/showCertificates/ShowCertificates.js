@@ -18,7 +18,11 @@ function ShowCertificates({ imgLink, logo, about, verifyLink }) {
           src={logo}
         />
         <h3>{about}</h3>
-        <button>verify</button>
+        <button>
+          <a href={verifyLink} rel="noreferrer" target="_blank">
+            verify
+          </a>
+        </button>
       </div>
     </div>
   );

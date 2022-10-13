@@ -36,19 +36,21 @@ export default function Home() {
           imgLink={freeCodeCampCf}
           logo={freeCodeCampLogo}
           about="Responsive Web Design Certification"
-          verifyLink={""}
+          verifyLink={
+            "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
+          }
         />
         <ShowCertificates
           imgLink={javascriptCf}
           logo={hackerRankLogo}
           about="Intermediate JavaScript Certification"
-          verifyLink={""}
+          verifyLink={"https://www.hackerrank.com/certificates/9dc418ef7658"}
         />
         <ShowCertificates
           imgLink={reactJsCf}
           logo={hackerRankLogo}
           about="React Basics Certification"
-          verifyLink={""}
+          verifyLink={"https://www.hackerrank.com/certificates/d418255f8700"}
         />
       </Carousel>
     </>
