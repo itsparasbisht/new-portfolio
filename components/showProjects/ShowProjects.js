@@ -3,10 +3,10 @@ import React from "react";
 import styles from "./showProjects.module.css";
 import projectImage from "../../assets/projects/project1.png";
 
-function ShowProjects() {
+function ShowProjects({ flip }) {
   return (
     <div className={styles.container}>
-      <div className={styles.box1}>
+      <div className={styles.box1} style={{ order: flip ? "2" : "0" }}>
         <Image
           src={projectImage}
           alt="This is Paras Bisht, the creator of this website."

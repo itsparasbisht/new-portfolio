@@ -55,6 +55,8 @@ export default function Home() {
         />
       </Carousel>
       <ShowProjects />
+      <ShowProjects flip />
+      <ShowProjects />
     </>
   );
 }
