@@ -6,17 +6,10 @@ function ShowCertificates({ imgLink, logo, about, verifyLink }) {
   return (
     <div className={styles.container}>
       <div className={styles.imgCtr}>
-        <Image
-          src={imgLink}
-          alt="This is Paras Bisht, the creator of this website."
-          placeholder="blur"
-        />
+        <Image src={imgLink} alt={about} placeholder="blur" />
       </div>
       <div className={styles.about}>
-        <Image
-          alt="This is Paras Bisht, the creator of this website."
-          src={logo}
-        />
+        <Image src={logo} alt={about} placeholder="blur" />
         <h3>{about}</h3>
         <button>
           <a href={verifyLink} rel="noreferrer" target="_blank">
