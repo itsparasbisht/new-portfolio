@@ -10,9 +10,9 @@ import javascriptCf from "../assets/certificates/javascript.jpg";
 import reactJsCf from "../assets/certificates/reactJs.jpg";
 import hackerRankLogo from "../assets/companyLogos/hackerRankLogo.png";
 import freeCodeCampLogo from "../assets/companyLogos/freeCodeCampLogo.png";
-import dopeCat from "../assets/dopeCat.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import ShowProjects from "../components/showProjects/ShowProjects";
 
 export default function Home() {
   return (
@@ -54,6 +54,7 @@ export default function Home() {
           verifyLink={"https://www.hackerrank.com/certificates/d418255f8700"}
         />
       </Carousel>
+      <ShowProjects />
     </>
   );
 }
