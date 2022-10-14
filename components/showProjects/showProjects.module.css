@@ -67,9 +67,9 @@
 }
 
 .btnCtr button:hover {
-    background-color: black;
-    border: 2px solid black;
-    color: #EFD81D;
+    background-color: #276ce2;
+    border: 2px solid #276ce2;
+    color: #ffffff;
 }
 
 @media (max-width: 1100px) {
