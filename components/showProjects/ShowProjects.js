@@ -15,9 +15,9 @@ function ShowProjects() {
       <div className={styles.box2}>
         <h3>Google Docs Clone</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. A beatae
-          aliquam odio minus aspernatur praesentium temporibus ipsam, ducimus
-          fugit
+          The fully functional Google Docs Clone, made using ReactJS and
+          WebSockets. Supports live doc editing feature and the usual word
+          editing features.
         </p>
         <div className={styles.btnCtr}>
           <button>View Site</button>
