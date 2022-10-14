@@ -14,6 +14,7 @@ function ShowProjects({ flip }) {
       </div>
       <div className={styles.box2}>
         <h3>Google Docs Clone</h3>
+        <h5>{"</> "}ReactJs, FastAPI, Netlify</h5>
         <p>
           The fully functional Google Docs Clone, made using ReactJS and
           WebSockets. Supports live doc editing feature and the usual word
