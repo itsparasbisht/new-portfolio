@@ -28,7 +28,9 @@ function About() {
             <span className={styles.objBoolean}>true</span>,
             <br /> <span>6</span> &nbsp; &nbsp; &nbsp; description:{" "}
             <span className={styles.objString}>
-              &#34;development is fun :) especially with JavaScript&#34;
+              &#34;development is fun :) especially with <br /> &nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              JavaScript&#34;
             </span>
             ,
             <span>
@@ -38,10 +40,10 @@ function About() {
             &nbsp; &nbsp; &nbsp; skills:{" "}
             <span className={styles.objString}>
               <span className={styles.curlyBraces}>[</span>&#34;Javascript&#34;,
-              &#34;ES-6&#34;, &#34;ReactJs&#34;, &#34;NextJs&#34;,
-              &#34;RestfulAPI&#34;, <br /> &nbsp; &nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-              &nbsp; &#34;MERN&#34;, &#34;Git&#34;, &#34;PostgreSQL&#34;
+              &#34;ES-6&#34;, &#34;ReactJs&#34;, &#34;NextJs&#34;, <br /> &nbsp;
+              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &#34;RestfulAPI&#34;, MERN&#34;, &#34;Git&#34;,
+              &#34;PostgreSQL&#34;
               <span className={styles.curlyBraces}>]</span>
             </span>
             ,
