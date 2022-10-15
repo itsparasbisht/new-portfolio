@@ -145,4 +145,8 @@
     .box1 img {
         width: 100% !important;
     }
+
+    .container {
+        padding-bottom: 40px;
+    }
 }
