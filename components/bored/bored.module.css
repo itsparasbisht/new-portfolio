@@ -7,6 +7,7 @@
 }
 
 .container h3 {
+    max-width: 500px;
     text-align: center;
     padding-top: 3%;
     font-size: 2rem;
@@ -17,24 +18,22 @@
     border: none;
     border-radius: 20px;
     padding: 10px 15px;
-    margin-right: 15px;
     cursor: pointer;
     font-size: 1rem;
     background-color: transparent;
-    font-weight: 600;
+    font-weight: 400;
     color: #276ce2;
-    border: 2px solid #276ce2;
+    border: 1px solid #276ce2;
     transition: all 0.3s;
     margin-top: 10px;
 }
 
 .container button:hover {
-    background-color: #EFD81D;
-    border: 2px solid #EFD81D;
-    color: black;
+    background-color: #276ce2;
+    color: rgb(255, 255, 255);
 }
 
-.container img {
+.emojis {
     width: 400px !important;
     margin-top: 30px !important;
 }
