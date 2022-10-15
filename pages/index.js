@@ -13,6 +13,7 @@ import freeCodeCampLogo from "../assets/companyLogos/freeCodeCampLogo.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import ShowProjects from "../components/showProjects/ShowProjects";
+import Bored from "../components/bored/Bored";
 
 export default function Home() {
   return (
@@ -57,6 +58,7 @@ export default function Home() {
       <ShowProjects />
       <ShowProjects flip />
       <ShowProjects />
+      <Bored />
     </>
   );
 }
