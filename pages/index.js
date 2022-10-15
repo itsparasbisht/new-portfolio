@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import myProfileImage from "../assets/web-dev.gif";
+import webDev from "../assets/web-dev.gif";
 import Navbar from "../components/navbar/Navbar";
 import About from "../components/about/About";
 import ShowCertificates from "../components/showCertificates/ShowCertificates";
@@ -26,8 +26,8 @@ export default function Home() {
         </div>
         <div className={styles.box2}>
           <Image
-            src={myProfileImage}
-            alt="This is Paras Bisht, the creator of this website."
+            src={webDev}
+            alt="Website Development Animated Illustration"
             className={styles.images}
           />
         </div>

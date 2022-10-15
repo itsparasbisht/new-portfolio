@@ -4,6 +4,8 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  max-width: 1600px;
+  margin: 0px auto;
 }
 
 a {
