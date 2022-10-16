@@ -4,16 +4,18 @@
     align-items: center;
     justify-content: space-around;
     padding: 40px;
-    background-color: #E1E1E1;
+    background-color: #4A9BA0;
 }
 
 .container img {
     width: 300px !important;
+    border: 10px solid black !important;
 }
 
 .container p {
     max-width: 700px;
     font-size: 2rem;
+    color: rgb(224, 224, 224);
 }
 
 .container p span {
@@ -23,4 +25,5 @@
     border-radius: 20px;
     font-weight: 600;
     color: rgb(48, 48, 48);
+    cursor: no-drop;
 }
