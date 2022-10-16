@@ -26,7 +26,7 @@ function Quote() {
     <div className={styles.container}>
       <Image
         src={kanyeImg}
-        alt="Website Development Animated Illustration"
+        alt="Kanye West"
         className={styles.images}
         placeholder="blur"
       />

@@ -9,7 +9,7 @@ function ShowProjects({ flip }) {
       <div className={styles.box1} style={{ order: flip ? "2" : "0" }}>
         <Image
           src={projectImage}
-          alt="This is Paras Bisht, the creator of this website."
+          alt="a macbook with the project opened in it"
         />
       </div>
       <div className={styles.box2}>
