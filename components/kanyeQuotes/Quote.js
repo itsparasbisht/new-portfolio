@@ -2,7 +2,6 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./quote.module.css";
 import kanyeImg from "../../assets/kanye.jpg";
-import kanyeBgImg from "../../assets/kanyeBg.jpg";
 
 function Quote() {
   const [quote, setQuote] = useState();
