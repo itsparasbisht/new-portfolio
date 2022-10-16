@@ -1,0 +1,5 @@
+.container {
+    width: 100%;
+    background: url("../../assets/wave.svg");
+    background-size: 100% auto;
+}

@@ -15,6 +15,7 @@ import { Carousel } from "react-responsive-carousel";
 import ShowProjects from "../components/showProjects/ShowProjects";
 import Bored from "../components/bored/Bored";
 import Quote from "../components/kanyeQuotes/Quote";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
       <ShowProjects />
       <Bored />
       <Quote />
+      <Footer />
     </>
   );
 }

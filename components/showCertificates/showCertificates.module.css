@@ -71,3 +71,9 @@
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 400px) {
+    .imgCtr {
+        min-width: 350px;
+    }
+}
