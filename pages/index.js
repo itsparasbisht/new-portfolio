@@ -14,6 +14,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import ShowProjects from "../components/showProjects/ShowProjects";
 import Bored from "../components/bored/Bored";
+import Quote from "../components/kanyeQuotes/Quote";
 
 export default function Home() {
   return (
@@ -59,6 +60,7 @@ export default function Home() {
       <ShowProjects flip />
       <ShowProjects />
       <Bored />
+      <Quote />
     </>
   );
 }
