@@ -31,7 +31,8 @@ function Quote() {
         placeholder="blur"
       />
       <p>
-        {`"${quote}"`} <br /> <span>api.kanye.rest</span>{" "}
+        {`"${quote}"`} <br />{" "}
+        <span onClick={() => getQuote()}>api.kanye.rest</span>{" "}
       </p>
     </div>
   );
