@@ -29,7 +29,7 @@ function Bored() {
           </>
         )}
       </h3>
-      <button onClick={getTask}>Suggest Something to do</button>
+      <button onClick={getTask}>Suggest something to do</button>
       <div className={styles.emojis}>
         <Image
           src={emojisImg}

@@ -5,7 +5,7 @@ import projectImage from "../../assets/projects/project1.png";
 
 function ShowProjects({ flip }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="projects-section">
       <div className={styles.box1} style={{ order: flip ? "2" : "0" }}>
         <Image
           src={projectImage}

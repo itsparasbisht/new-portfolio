@@ -16,7 +16,13 @@ function Navbar() {
             height="20"
             src={githubIcon}
           />{" "}
-          <a>GitHub</a>
+          <a
+            href="https://github.com/itsparasbisht"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
         </li>
         <li>
           {" "}
@@ -26,7 +32,13 @@ function Navbar() {
             height="20"
             src={linkedIcon}
           />
-          <a>LinkedIn</a>
+          <a
+            href="https://www.linkedin.com/in/paras-bisht"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </li>
         <li>
           {" "}
@@ -36,7 +48,7 @@ function Navbar() {
             height="20"
             src={bookIcon}
           />
-          <a>Projects</a>
+          <a href="#projects-section">Projects</a>
         </li>
       </ul>
     </div>
