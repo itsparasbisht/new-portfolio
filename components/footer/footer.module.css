@@ -1,5 +1,24 @@
 .container {
     width: 100%;
-    background: url("../../assets/wave.svg");
-    background-size: 100% auto;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.resources {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendations {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
 }
