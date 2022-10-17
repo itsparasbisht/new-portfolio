@@ -23,7 +23,7 @@ function Footer() {
         </a>
       </div>
       <div className={styles.recommendations}>
-        <p>Recommendations</p>
+        <h5>Recommendations</h5>
         <a
           href="https://www.youtube.com/c/Freecodecamp"
           target="_blank"
@@ -57,7 +57,7 @@ function Footer() {
         </a>
       </div>
       <div className={styles.links}>
-        <p>Links</p>
+        <h5>Links</h5>
         <a
           href="https://github.com/parash-sirpi"
           target="_blank"
@@ -80,8 +80,14 @@ function Footer() {
           linkedIn
         </a>
       </div>
-      <div className={styles.contact}></div>
-      <div className={styles.info}></div>
+      <div className={styles.contact}>
+        <h5>Contact</h5>
+        <a href="tel:+919528350042">+91 9528350042</a>
+        <a href="mailto:iamparasbisht@gmail.com">iamparasbisht@gmail.com</a>
+      </div>
+      <div className={styles.info}>
+        <h5>This website is built using Next.Js</h5>
+      </div>
     </div>
   );
 }
