@@ -53,5 +53,7 @@
 
     .container ul {
         padding: 0px 15px;
+        margin-left: -10px;
     }
+
 }
