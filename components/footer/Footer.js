@@ -6,7 +6,7 @@ import reactLogo from "../../assets/react.png";
 
 function Footer() {
   return (
-    <>
+    <footer>
       <div className={styles.container}>
         <div className={styles.resources}>
           <h5>Resources</h5>
@@ -97,7 +97,7 @@ function Footer() {
         <Image src={jsLogo} alt="javascript logo" />
         <Image src={reactLogo} alt="reactJs logo" />
       </div>
-    </>
+    </footer>
   );
 }
 

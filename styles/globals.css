@@ -6,6 +6,7 @@ body {
   height: 100vh;
   max-width: 1600px;
   margin: 0px auto;
+  overflow-x: hidden;
 }
 
 a {
