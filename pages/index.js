@@ -36,13 +36,7 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <Carousel
-        infiniteLoop
-        autoPlay
-        interval={3000}
-        swipeable
-        showThumbs={false}
-      >
+      <Carousel infiniteLoop autoPlay interval={3000} showThumbs={false}>
         <ShowCertificates
           imgLink={freeCodeCampCf}
           logo={freeCodeCampLogo}
