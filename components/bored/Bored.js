@@ -8,7 +8,7 @@ function Bored() {
 
   const getTask = () => {
     try {
-      fetch("http://www.boredapi.com/api/activity/").then((response) =>
+      fetch("https://www.boredapi.com/api/activity/").then((response) =>
         response.json().then((data) => {
           setTask(data?.activity);
         })

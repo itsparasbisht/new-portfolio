@@ -2,7 +2,6 @@
     width: 100%;
     height: 50px;
     padding-left: 4%;
-    /* background-color: green; */
     display: flex;
     align-items: center;
 }
@@ -49,6 +48,8 @@
     }
 
     .container ul {
-        justify-content: center;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0px 60px;
     }
 }
