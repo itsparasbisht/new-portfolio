@@ -13,10 +13,15 @@
 }
 
 .container p {
+    width: 70%;
     max-width: 700px;
     font-size: 2rem;
     color: rgb(224, 224, 224);
     padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .container p span {
@@ -26,7 +31,8 @@
     border-radius: 20px;
     font-weight: 600;
     color: rgb(48, 48, 48);
-    cursor: pointer
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 @media (max-width: 1100px) {
