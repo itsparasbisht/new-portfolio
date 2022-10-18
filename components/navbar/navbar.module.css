@@ -29,11 +29,6 @@
     background-color: #c4c4c4;
 }
 
-.container ul li img {
-    display: block;
-    padding-right: 20px;
-}
-
 .container ul li a {
     padding-left: 7px;
     font-size: 15px;
@@ -51,5 +46,12 @@
         width: 100%;
         justify-content: space-around;
         padding: 0px 40px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .container ul {
+        padding: 0px 15px;
     }
 }
