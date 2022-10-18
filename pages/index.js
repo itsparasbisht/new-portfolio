@@ -28,6 +28,7 @@ export default function Home() {
         </div>
         <div className={styles.box2}>
           <Image
+            unoptimized={true}
             src={webDev}
             alt="Website Development Animated Illustration"
             className={styles.images}
