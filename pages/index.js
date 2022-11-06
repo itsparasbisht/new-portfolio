@@ -36,7 +36,13 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <Carousel infiniteLoop autoPlay interval={3000} showThumbs={false}>
+      <Carousel
+        infiniteLoop
+        autoPlay
+        swipeable={false}
+        interval={3000}
+        showThumbs={false}
+      >
         <ShowCertificates
           imgLink={freeCodeCampCf}
           logo={freeCodeCampLogo}
@@ -58,6 +64,7 @@ export default function Home() {
           verifyLink={"https://www.hackerrank.com/certificates/d418255f8700"}
         />
       </Carousel>
+      <div style={{ width: "100%", height: "30px" }}></div>
       <ShowProjects />
       <ShowProjects flip />
       <ShowProjects />
