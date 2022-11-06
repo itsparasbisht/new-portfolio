@@ -11,6 +11,8 @@
     justify-content: center;
     padding: 20px;
     order: 2;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .box2 {
@@ -53,7 +55,7 @@
     width: 90%;
     height: auto;
     background-color: #1D1D1D;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     color: white;
     border-radius: 7px;
@@ -64,6 +66,7 @@
     padding: 20px;
     font-family: 'Source Code Pro', monospace;
     line-height: 1.7rem;
+    margin-right: 30px;
 }
 
 .aboutBox p span {
@@ -200,12 +203,13 @@
 
 @media (max-width: 1000px) {
     .box1 {
-        flex: .7;
+        flex: 1;
         padding: 0px;
     }
 
     .box2 {
-        flex: .4;
+        flex: 1;
+        /* background-color: red; */
     }
 
     .cardProfile {
@@ -214,6 +218,14 @@
 
     .aboutBox {
         font-size: 1rem;
+        width: 90%;
+        min-width: 400px;
+    }
+
+    .aboutBox p {
+        overflow-x: scroll;
+        white-space: nowrap;
+        /* background-color: red; */
     }
 
     .cardProfile {
@@ -308,9 +320,9 @@
         max-width: 350px;
     }
 
-    .aboutBox {
+    /* .aboutBox {
         font-size: 1.2rem;
         width: 95%;
         max-width: 600px;
-    }
+    } */
 }
