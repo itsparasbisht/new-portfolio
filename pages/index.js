@@ -16,6 +16,7 @@ import ShowProjects from "../components/showProjects/ShowProjects";
 import Bored from "../components/bored/Bored";
 import Quote from "../components/kanyeQuotes/Quote";
 import Footer from "../components/footer/Footer";
+import projectsList from "../utils/projectsList";
 
 export default function Home() {
   return (
@@ -65,9 +66,16 @@ export default function Home() {
         />
       </Carousel>
       <div style={{ width: "100%", height: "30px" }}></div>
-      <ShowProjects />
-      <ShowProjects flip />
-      <ShowProjects />
+      <ShowProjects
+        title={projectsList.p1.title}
+        technologies={projectsList.p1.technologies}
+        imageUrl={projectsList.p1.imageUrl}
+        about={projectsList.p1.about}
+        liveLink={projectsList.p1.liveLink}
+        githubLink={projectsList.p1.githubLink}
+      />
+      {/* <ShowProjects flip />
+      <ShowProjects /> */}
       <Bored />
       <Quote />
       <Footer />
