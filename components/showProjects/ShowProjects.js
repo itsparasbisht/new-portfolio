@@ -20,7 +20,7 @@ function ShowProjects({
   return (
     <div className={styles.container} id="projects-section">
       <div className={styles.box1} style={{ order: flip ? "2" : "0" }}>
-        <Image src={imageUrl} alt={title} width={"600"} height={"400"} />
+        <Image src={imageUrl} alt={title} width={"650"} height={"350"} />
       </div>
       <div className={styles.box2}>
         <h3>{title}</h3>

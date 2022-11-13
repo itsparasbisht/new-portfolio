@@ -1,22 +1,21 @@
 .container {
     width: 100%;
     display: flex;
-    padding: 2% 5%;
+    padding: 2% 3%;
     background-color: #e1e1e1;
+    justify-content: space-between;
 }
 
 .box1 {
     flex: 1;
-    padding-right: 40px;
 }
 
 .box2 {
     flex: 1;
+    padding-left: 40px;
 }
 
-.box1 img {
-    width: 100% !important;
-}
+.box1 img {}
 
 .box2 {
     display: flex;
@@ -34,6 +33,7 @@
     width: fit-content;
     font-size: 1rem;
     color: #276ce2;
+    text-align: center;
 }
 
 .box2 p {
@@ -88,9 +88,10 @@
     }
 
     .box2 {
-        margin: 0px auto;
+        margin: 20px auto;
         max-width: 700px;
         align-items: center;
+        padding-left: 0px;
     }
 
     .box2 p {
@@ -117,7 +118,7 @@
     }
 
     .box2 {
-        margin: 0px auto;
+        margin: 20px auto;
         max-width: 700px;
         align-items: center;
     }
