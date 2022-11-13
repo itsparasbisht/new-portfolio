@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  min-height: 550px;
   display: flex;
 }
 
@@ -33,14 +34,6 @@
   align-items: center;
 }
 
-.box2 img {
-  display: block;
-  width: 600px !important;
-  /* height: 500px; */
-  /* border-radius: 50%; */
-  object-fit: cover;
-}
-
 @media (max-width: 800px) {
 
   .container {
@@ -56,10 +49,6 @@
   .box1 h3 {
     text-align: center;
   }
-
-  .box2 img {
-    width: 400px !important;
-  }
 }
 
 @media (max-width: 500px) {
@@ -72,9 +61,5 @@
   .box1 h3 {
     padding-left: 0%;
     text-align: left;
-  }
-
-  .box2 img {
-    width: 400px !important;
   }
 }

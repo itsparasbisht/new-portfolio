@@ -17,6 +17,8 @@ import Bored from "../components/bored/Bored";
 import Quote from "../components/kanyeQuotes/Quote";
 import Footer from "../components/footer/Footer";
 import projectsList from "../utils/projectsList";
+import Lottie from "lottie-react";
+import heroGif from "../assets/hero-gif.json";
 
 export default function Home() {
   return (
@@ -28,12 +30,12 @@ export default function Home() {
           <h3>Here to develop awesome stuff :)</h3>
         </div>
         <div className={styles.box2}>
-          <Image
-            unoptimized={true}
-            src={webDev}
-            alt="Website Development Animated Illustration"
-            className={styles.images}
+          <Lottie
+            className={styles.heroGif}
+            animationData={heroGif}
+            loop={true}
           />
+          ;
         </div>
       </div>
       <About />
