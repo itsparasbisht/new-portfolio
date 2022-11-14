@@ -84,8 +84,16 @@ export default function Home() {
         liveLink={projectsList.p1.liveLink}
         githubLink={projectsList.p1.githubLink}
       />
-      {/* <ShowProjects flip />
-      <ShowProjects /> */}
+      <ShowProjects
+        title={projectsList.p2.title}
+        technologies={projectsList.p2.technologies}
+        imageUrl={projectsList.p2.imageUrl}
+        about={projectsList.p2.about}
+        liveLink={projectsList.p2.liveLink}
+        githubLink={projectsList.p2.githubLink}
+        flip
+      />
+
       <Bored />
       <Quote />
       <Footer />

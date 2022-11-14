@@ -18,8 +18,15 @@ function ShowProjects({
   };
 
   return (
-    <div className={styles.container} id="projects-section">
-      <div className={styles.box1} style={{ order: flip ? "2" : "0" }}>
+    <div
+      className={styles.container}
+      id="projects-section"
+      style={{
+        backgroundColor: flip ? "black" : "white",
+        color: flip ? "white" : "black",
+      }}
+    >
+      <div className={styles.box1}>
         <Image src={imageUrl} alt={title} width={"650"} height={"350"} />
       </div>
       <div className={styles.box2}>

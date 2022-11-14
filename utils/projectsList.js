@@ -8,6 +8,15 @@ const projectsList = {
     liveLink: "https://track-price-on-amazon.netlify.app/",
     githubLink: "https://github.com/itsparasbisht/price-tracker-backend",
   },
+  p2: {
+    title: "API Call App",
+    technologies: "Vanilla JavaScript, Axios, Bootstrap",
+    imageUrl: "https://i.ibb.co/hdDtmG9/project2.png",
+    about:
+      "Built using plain JavaScript and Bootstrap, this web app allows you to make API calls.",
+    liveLink: "https://api-call-app.netlify.app/",
+    githubLink: "https://github.com/itsparasbisht/api-call-app",
+  },
 };
 
 export default projectsList;
