@@ -6,7 +6,18 @@ import Image from "next/image";
 function OldPortfolio() {
   return (
     <div className={styles.container}>
-      <h3>{`While you're here, checkout my old portfolio website --`}</h3>
+      <h3>
+        While you&apos;re here, checkout my old
+        <a
+          href="https://portfolio-parasbisht.web.app/"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#276CE2" }}
+        >
+          {" "}
+          portfolio website /--
+        </a>
+      </h3>
       <div>
         <Image src={oldPortfolio} alt="" />
       </div>
