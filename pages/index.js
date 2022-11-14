@@ -18,6 +18,7 @@ import Footer from "../components/footer/Footer";
 import projectsList from "../utils/projectsList";
 import Lottie from "lottie-react";
 import heroGif from "../assets/hero-gif.json";
+import OldPortfolio from "../components/oldPortfolio/OldPortfolio";
 
 export default function Home() {
   return (
@@ -93,6 +94,8 @@ export default function Home() {
         githubLink={projectsList.p2.githubLink}
         flip
       />
+
+      <OldPortfolio />
 
       <Bored />
       <Quote />

@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.container h3 {
+    flex: 1;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 30px 0px;
+}
+
+.container div {
+    width: 500px;
+    height: 330px;
+    border: 20px solid black;
+    cursor: pointer;
+}
+
+.container img {
+    width: 500px !important;
+    height: 290px !important;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.container img:hover {
+    transform: scale(1.03);
+    filter: invert();
+}
