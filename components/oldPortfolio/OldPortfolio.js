@@ -18,7 +18,7 @@ function OldPortfolio() {
           portfolio website /--
         </a>
       </h3>
-      <div>
+      <div onClick={() => window.open("https://portfolio-parasbisht.web.app/")}>
         <Image src={oldPortfolio} alt="" />
       </div>
     </div>

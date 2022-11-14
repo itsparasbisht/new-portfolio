@@ -32,6 +32,14 @@
     filter: invert();
 }
 
+.container a {
+    transition: all 0.3s;
+}
+
+.container a:hover {
+    color: #EFD81D !important;
+}
+
 @media (max-width: 1000px) {
     .container {
         flex-direction: column;
@@ -39,21 +47,17 @@
 }
 
 @media (max-width: 800px) {
-    .container {
-        flex-direction: column;
-    }
-
     .container div {
         width: 380px;
         height: 270px;
-        border: 20px solid black;
-        cursor: pointer;
     }
 
     .container img {
         width: 380px !important;
         height: 230px !important;
-        object-fit: cover;
-        transition: all 0.5s;
+    }
+
+    .container h3 {
+        text-align: center;
     }
 }
