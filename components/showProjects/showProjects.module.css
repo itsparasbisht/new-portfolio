@@ -3,7 +3,6 @@
     display: flex;
     padding: 2% 3%;
     justify-content: space-between;
-    /* border-bottom: 4px solid rgb(221, 221, 221); */
 }
 
 .box1 {
@@ -104,7 +103,7 @@
 @media (max-width: 800px) {
     .container {
         flex-direction: column;
-        padding: 2% 5%;
+        padding: 5%;
     }
 
     .box1 {

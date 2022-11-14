@@ -34,6 +34,33 @@
   align-items: center;
 }
 
+.projects {
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  margin-top: 30px;
+}
+
+.projects div:first-child {
+  flex: 0.9;
+  height: 5px;
+  border-top: 7px dashed black;
+}
+
+.projects div:last-child {
+  flex: 0.1;
+  height: 5px;
+  background-color: #000000;
+}
+
+.projects h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  padding: 0px 10px;
+  color: #EFD81D;
+  text-shadow: -3px 2px 0px #000000;
+}
+
 @media (max-width: 800px) {
 
   .container {
@@ -49,6 +76,10 @@
   .box1 h3 {
     text-align: center;
   }
+
+  .projects h3 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -61,5 +92,9 @@
   .box1 h3 {
     padding-left: 0%;
     text-align: left;
+  }
+
+  .projects {
+    padding: 0px 40px;
   }
 }

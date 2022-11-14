@@ -23,6 +23,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+
       <div className={styles.container}>
         <div className={styles.box1}>
           <h1>I&apos;m Paras</h1>
@@ -37,7 +38,9 @@ export default function Home() {
           ;
         </div>
       </div>
+
       <About />
+
       <Carousel
         infiniteLoop
         autoPlay
@@ -66,7 +69,13 @@ export default function Home() {
           verifyLink={"https://www.hackerrank.com/certificates/d418255f8700"}
         />
       </Carousel>
-      <div style={{ width: "100%", height: "30px" }}></div>
+
+      <div className={styles.projects}>
+        <div></div>
+        <h3>PROJECTS</h3>
+        <div></div>
+      </div>
+
       <ShowProjects
         title={projectsList.p1.title}
         technologies={projectsList.p1.technologies}
