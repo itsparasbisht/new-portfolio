@@ -1,7 +1,6 @@
 .container {
     width: 100%;
     display: flex;
-    /* background-color: red; */
     padding-top: 20px;
 }
 
@@ -122,6 +121,7 @@
     flex-direction: column;
     padding: 20px;
     border: 5px solid rgb(203, 203, 203);
+    background-color: white;
 }
 
 .profilePhoto {
@@ -322,9 +322,7 @@
         max-width: 350px;
     }
 
-    /* .aboutBox {
-        font-size: 1.2rem;
-        width: 95%;
-        max-width: 600px;
-    } */
+    .cardProfile {
+        margin-top: -40px;
+    }
 }

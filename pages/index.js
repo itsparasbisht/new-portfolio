@@ -36,7 +36,6 @@ export default function Home() {
             animationData={heroGif}
             loop={true}
           />
-          ;
         </div>
       </div>
 
