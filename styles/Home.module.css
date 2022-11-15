@@ -61,6 +61,12 @@
   text-shadow: -3px 2px 0px #000000;
 }
 
+.projectEnd {
+  width: 90%;
+  margin: 3% 5% 0% 5%;
+  border: 7px dashed black;
+}
+
 @media (max-width: 800px) {
 
   .container {
@@ -79,6 +85,12 @@
 
   .projects h3 {
     font-size: 2.5rem;
+  }
+
+  .projectEnd {
+    width: 90%;
+    margin: 7% 5% -3% 5%;
+    border: 5px dashed black;
   }
 }
 

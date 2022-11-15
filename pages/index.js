@@ -94,6 +94,8 @@ export default function Home() {
         flip
       />
 
+      <div className={styles.projectEnd}></div>
+
       <OldPortfolio />
 
       <Bored />
