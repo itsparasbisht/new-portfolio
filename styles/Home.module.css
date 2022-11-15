@@ -64,7 +64,7 @@
 .projectEnd {
   width: 90%;
   margin: 3% 5% 0% 5%;
-  border: 7px dashed black;
+  border-top: 15px dashed black;
 }
 
 @media (max-width: 800px) {
@@ -90,7 +90,7 @@
   .projectEnd {
     width: 90%;
     margin: 7% 5% -3% 5%;
-    border: 5px dashed black;
+    border-top: 10px dashed black;
   }
 }
 
