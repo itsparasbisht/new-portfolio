@@ -7,9 +7,6 @@ body {
   max-width: 1600px;
   margin: 0px auto;
   overflow-x: hidden;
-  background-image: url("../assets/blurry-gradient.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
 }
 
 a {
@@ -33,10 +30,6 @@ a {
 @media (max-width: 800px) {
   html {
     font-size: 11px;
-  }
-
-  body {
-    background-size: 100% 800px;
   }
 }
 
