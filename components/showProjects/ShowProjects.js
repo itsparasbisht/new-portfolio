@@ -22,7 +22,7 @@ function ShowProjects({
       className={styles.container}
       id="projects-section"
       style={{
-        backgroundColor: flip ? "black" : "",
+        backgroundColor: flip ? "#050400" : "",
         color: flip ? "white" : "black",
       }}
     >

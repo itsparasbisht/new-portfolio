@@ -93,6 +93,14 @@ export default function Home() {
         githubLink={projectsList.p2.githubLink}
         flip
       />
+      <ShowProjects
+        title={projectsList.p3.title}
+        technologies={projectsList.p3.technologies}
+        imageUrl={projectsList.p3.imageUrl}
+        about={projectsList.p3.about}
+        liveLink={projectsList.p3.liveLink}
+        githubLink={projectsList.p3.githubLink}
+      />
 
       <div className={styles.projectEnd}></div>
 
