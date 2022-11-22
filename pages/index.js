@@ -23,92 +23,105 @@ import OldPortfolio from "../components/oldPortfolio/OldPortfolio";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Head>
+        <title>Paras - Web Portfolio</title>
+      </Head>
 
-      <div className={styles.container}>
-        <div className={styles.box1}>
-          <h1>I&apos;m Paras</h1>
-          <h3>Here to develop awesome stuff :)</h3>
+      <nav>
+        <Navbar />
+      </nav>
+
+      <main>
+        <div className={styles.container}>
+          <div className={styles.box1}>
+            <h1>I&apos;m Paras</h1>
+            <h3>Here to develop awesome stuff :)</h3>
+          </div>
+          <div className={styles.box2}>
+            <Lottie
+              className={styles.heroGif}
+              animationData={heroGif}
+              loop={true}
+            />
+          </div>
         </div>
-        <div className={styles.box2}>
-          <Lottie
-            className={styles.heroGif}
-            animationData={heroGif}
-            loop={true}
+
+        <About />
+
+        <Carousel
+          infiniteLoop
+          autoPlay
+          swipeable={false}
+          interval={3000}
+          showThumbs={false}
+        >
+          <ShowCertificates
+            imgLink={freeCodeCampCf}
+            logo={freeCodeCampLogo}
+            about="Responsive Web Design Certification"
+            verifyLink={
+              "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
+            }
           />
+          <ShowCertificates
+            imgLink={javascriptCf}
+            logo={hackerRankLogo}
+            about="Intermediate JavaScript Certification"
+            verifyLink={"https://www.hackerrank.com/certificates/9dc418ef7658"}
+          />
+          <ShowCertificates
+            imgLink={reactJsCf}
+            logo={hackerRankLogo}
+            about="React Basics Certification"
+            verifyLink={"https://www.hackerrank.com/certificates/d418255f8700"}
+          />
+        </Carousel>
+      </main>
+
+      <body>
+        <div className={styles.projects}>
+          <div></div>
+          <h3>PROJECTS</h3>
+          <div></div>
         </div>
-      </div>
 
-      <About />
-
-      <Carousel
-        infiniteLoop
-        autoPlay
-        swipeable={false}
-        interval={3000}
-        showThumbs={false}
-      >
-        <ShowCertificates
-          imgLink={freeCodeCampCf}
-          logo={freeCodeCampLogo}
-          about="Responsive Web Design Certification"
-          verifyLink={
-            "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
-          }
+        <ShowProjects
+          title={projectsList.p1.title}
+          technologies={projectsList.p1.technologies}
+          imageUrl={projectsList.p1.imageUrl}
+          about={projectsList.p1.about}
+          liveLink={projectsList.p1.liveLink}
+          githubLink={projectsList.p1.githubLink}
         />
-        <ShowCertificates
-          imgLink={javascriptCf}
-          logo={hackerRankLogo}
-          about="Intermediate JavaScript Certification"
-          verifyLink={"https://www.hackerrank.com/certificates/9dc418ef7658"}
+        <ShowProjects
+          title={projectsList.p2.title}
+          technologies={projectsList.p2.technologies}
+          imageUrl={projectsList.p2.imageUrl}
+          about={projectsList.p2.about}
+          liveLink={projectsList.p2.liveLink}
+          githubLink={projectsList.p2.githubLink}
+          flip
         />
-        <ShowCertificates
-          imgLink={reactJsCf}
-          logo={hackerRankLogo}
-          about="React Basics Certification"
-          verifyLink={"https://www.hackerrank.com/certificates/d418255f8700"}
+        <ShowProjects
+          title={projectsList.p3.title}
+          technologies={projectsList.p3.technologies}
+          imageUrl={projectsList.p3.imageUrl}
+          about={projectsList.p3.about}
+          liveLink={projectsList.p3.liveLink}
+          githubLink={projectsList.p3.githubLink}
         />
-      </Carousel>
 
-      <div className={styles.projects}>
-        <div></div>
-        <h3>PROJECTS</h3>
-        <div></div>
-      </div>
+        <div className={styles.projectEnd}></div>
 
-      <ShowProjects
-        title={projectsList.p1.title}
-        technologies={projectsList.p1.technologies}
-        imageUrl={projectsList.p1.imageUrl}
-        about={projectsList.p1.about}
-        liveLink={projectsList.p1.liveLink}
-        githubLink={projectsList.p1.githubLink}
-      />
-      <ShowProjects
-        title={projectsList.p2.title}
-        technologies={projectsList.p2.technologies}
-        imageUrl={projectsList.p2.imageUrl}
-        about={projectsList.p2.about}
-        liveLink={projectsList.p2.liveLink}
-        githubLink={projectsList.p2.githubLink}
-        flip
-      />
-      <ShowProjects
-        title={projectsList.p3.title}
-        technologies={projectsList.p3.technologies}
-        imageUrl={projectsList.p3.imageUrl}
-        about={projectsList.p3.about}
-        liveLink={projectsList.p3.liveLink}
-        githubLink={projectsList.p3.githubLink}
-      />
+        <OldPortfolio />
 
-      <div className={styles.projectEnd}></div>
+        <Bored />
+        <Quote />
+      </body>
 
-      <OldPortfolio />
-
-      <Bored />
-      <Quote />
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

@@ -1,17 +1,20 @@
-import Head from "next/head";
+import { useEffect, useState } from "react";
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <title>Paras - Web Portfolio</title>
-      </Head>
-      <body>
-        <Component {...pageProps} />
-      </body>
-    </>
-  );
-}
+export default function MyApp({ Component, pageProps }) {
+  const [showChild, setShowChild] = useState(false);
 
-export default MyApp;
+  useEffect(() => {
+    setShowChild(true);
+  }, []);
+
+  if (!showChild) {
+    return null;
+  }
+
+  if (typeof window === "undefined") {
+    return <></>;
+  } else {
+    return <Component {...pageProps} />;
+  }
+}
