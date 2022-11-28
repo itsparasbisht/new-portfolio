@@ -19,11 +19,15 @@
   line-height: 6.5rem;
 }
 
-.box1 h3 {
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 3rem;
-  color: rgb(0, 0, 0);
+.box1 h3,
+.box1 h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #00163b;
+}
+
+.box1 h4 {
+  margin-top: 10px;
 }
 
 .box2 {
@@ -79,8 +83,14 @@
     padding-left: 0%;
   }
 
-  .box1 h3 {
-    text-align: center;
+  .box1 h3,
+  .box1 h4 {
+    font-size: 1.7rem;
+    padding: 10px 20px;
+  }
+
+  .box1 h4 {
+    padding-top: 0px;
   }
 
   .projects h3 {
@@ -101,7 +111,8 @@
     padding-left: 2%;
   }
 
-  .box1 h3 {
+  .box1 h3,
+  .box1 h4 {
     padding-left: 0%;
     text-align: left;
   }
