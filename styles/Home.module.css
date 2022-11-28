@@ -30,6 +30,15 @@
   margin-top: 10px;
 }
 
+.box1 h1::selection {
+  background-color: #276CE2;
+}
+
+.box1 h3::selection,
+.box1 h4::selection {
+  background-color: #EFD81D;
+}
+
 .box2 {
   flex: 1;
   /* background-color: yellow; */
