@@ -21,6 +21,7 @@ import heroGif from "../assets/hero-gif.json";
 import OldPortfolio from "../components/oldPortfolio/OldPortfolio";
 
 export default function Home() {
+  console.log(window.innerWidth);
   return (
     <>
       <Head>
