@@ -9,9 +9,12 @@ export default function MyApp({ Component, pageProps }) {
         <title>Paras - Web Portfolio</title>
         <meta
           name="keywords"
-          content="paras bisht, paras bisht portfolio, web developer portfolio"
+          content="paras bisht, paras bisht portfolio, web developer portfolio, frontend developer, web portfolio"
         />
-        <meta name="subject" content="Paras Bisht web portfolio" />
+        <meta
+          name="subject"
+          content="Paras Bisht - JavaScript Developer - Web Portfolio"
+        />
         <meta
           name="description"
           content="I am Paras, I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. I also have experience working with the MERN stack. I am a dedicated fellow who is interested in building solutions by coordinating with teams."
@@ -19,7 +22,10 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="author" content="Paras Bisht, iamparasbisht@gmail.com" />
         <meta name="robots" content="index, follow" />
 
-        <meta itemprop="name" content="Paras Bisht web portfolio" />
+        <meta
+          itemprop="name"
+          content="Paras Bisht - JavaScript Developer - Web Portfolio"
+        />
         <meta
           itemprop="description"
           content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. I also have experience working with the MERN stack. I am a dedicated fellow who is interested in building solutions by coordinating with teams."
@@ -31,7 +37,10 @@ export default function MyApp({ Component, pageProps }) {
 
         <meta property="og:url" content="https://paras-bisht.netlify.app" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Paras Bisht web portfolio" />
+        <meta
+          property="og:title"
+          content="Paras Bisht - JavaScript Developer - Web Portfolio"
+        />
         <meta
           property="og:description"
           content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. I also have experience working with the MERN stack. I am a dedicated fellow who is interested in building solutions by coordinating with teams."
@@ -42,7 +51,10 @@ export default function MyApp({ Component, pageProps }) {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Paras Bisht web portfolio" />
+        <meta
+          name="twitter:title"
+          content="Paras Bisht - JavaScript Developer - Web Portfolio"
+        />
         <meta
           name="twitter:description"
           content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. I also have experience working with the MERN stack. I am a dedicated fellow who is interested in building solutions by coordinating with teams."
