@@ -5,7 +5,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <title>Paras - Web Portfolio</title>
         <meta
           name="keywords"
@@ -23,15 +23,15 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="robots" content="index, follow" />
 
         <meta
-          itemprop="name"
+          itemProp="name"
           content="Paras Bisht - JavaScript Developer - Web Portfolio"
         />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. I also have experience working with the MERN stack. I am a dedicated fellow who is interested in building solutions by coordinating with teams."
         />
         <meta
-          itemprop="image"
+          itemProp="image"
           content="https://i.ibb.co/3CCmCLv/paras-bisht.jpg"
         />
 

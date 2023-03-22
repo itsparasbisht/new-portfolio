@@ -80,7 +80,7 @@ export default function Home() {
         </Carousel>
       </main>
 
-      <body>
+      <div>
         <div className={styles.projects}>
           <div></div>
           <h3>PROJECTS</h3>
@@ -119,7 +119,7 @@ export default function Home() {
 
         <Bored />
         <Quote />
-      </body>
+      </div>
 
       <footer>
         <Footer />
