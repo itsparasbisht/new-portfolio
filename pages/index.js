@@ -31,13 +31,11 @@ export default function Home() {
             <h1>I&apos;m Paras</h1>
             <h3>
               I specialize in JavaScript development and have professional
-              working experience as a frontend dev with ReactJS. <br />I also
-              have experience working with the MERN stack.
+              working experience as a frontend dev with ReactJS. I also have
+              experience working with the MERN stack. <br /> I am a dedicated
+              fellow who is interested in building solutions by coordinating
+              with teams.
             </h3>
-            <h4>
-              I am a dedicated fellow who is interested in building solutions by
-              coordinating with teams.
-            </h4>
           </div>
           <div className={styles.box2}>
             <Lottie
