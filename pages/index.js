@@ -3,10 +3,13 @@ import Navbar from "../components/navbar/Navbar";
 import About from "../components/about/About";
 import ShowCertificates from "../components/showCertificates/ShowCertificates";
 import freeCodeCampCf from "../assets/certificates/freeCodeCamp.png";
+import digitalMarketingCf from "../assets/certificates/digitalMarketing.png";
 import javascriptCf from "../assets/certificates/javascript.jpg";
 import reactJsCf from "../assets/certificates/reactJs.jpg";
+import cssCf from "../assets/certificates/css.png";
 import hackerRankLogo from "../assets/companyLogos/hackerRankLogo.png";
 import freeCodeCampLogo from "../assets/companyLogos/freeCodeCampLogo.png";
+import googleLogo from "../assets/companyLogos/googleLogo.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import ShowProjects from "../components/showProjects/ShowProjects";
@@ -49,10 +52,11 @@ export default function Home() {
         <About />
 
         <Carousel
-          infiniteLoop
-          autoPlay
+          infiniteLoop={true}
+          autoPlay={true}
           swipeable={false}
-          interval={3000}
+          interval={5000}
+          showIndicators={true}
           showThumbs={false}
         >
           <ShowCertificates
@@ -74,6 +78,18 @@ export default function Home() {
             logo={hackerRankLogo}
             about="React Basics Certification"
             verifyLink={"https://www.hackerrank.com/certificates/d418255f8700"}
+          />
+          <ShowCertificates
+            imgLink={cssCf}
+            logo={hackerRankLogo}
+            about="CSS Certification"
+            verifyLink={"https://www.hackerrank.com/certificates/6a291fdbcecf"}
+          />
+          <ShowCertificates
+            imgLink={digitalMarketingCf}
+            logo={googleLogo}
+            about="Fundamentals of Digital Marketing"
+            verifyLink={"https://learndigital.withgoogle.com/link/1qsdpcedm9s"}
           />
         </Carousel>
       </main>
