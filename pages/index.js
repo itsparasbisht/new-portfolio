@@ -7,6 +7,7 @@ import digitalMarketingCf from "../assets/certificates/digitalMarketing.png";
 import javascriptCf from "../assets/certificates/javascript.jpg";
 import reactJsCf from "../assets/certificates/reactJs.jpg";
 import cssCf from "../assets/certificates/css.png";
+import sqlCf from "../assets/certificates/sql-basics.png";
 import hackerRankLogo from "../assets/companyLogos/hackerRankLogo.png";
 import freeCodeCampLogo from "../assets/companyLogos/freeCodeCampLogo.png";
 import googleLogo from "../assets/companyLogos/googleLogo.png";
@@ -84,6 +85,12 @@ export default function Home() {
             logo={hackerRankLogo}
             about="CSS Certification"
             verifyLink={"https://www.hackerrank.com/certificates/6a291fdbcecf"}
+          />
+          <ShowCertificates
+            imgLink={sqlCf}
+            logo={hackerRankLogo}
+            about="SQL Basics"
+            verifyLink={"https://www.hackerrank.com/certificates/00dafe57cbb7"}
           />
           <ShowCertificates
             imgLink={digitalMarketingCf}
