@@ -71,8 +71,10 @@ function About() {
           </div>
           <div className={styles.profileDetails}>
             <h3>Paras Bisht</h3>
-            <h4>Frontend Developer</h4>
-            <h4>SirpiDataScience</h4>
+            <h4>
+              MERN Stack | JavaScript <br /> Frontend Developer at
+              SirpiDataScience
+            </h4>
           </div>
           <div className={styles.profileFooter}>
             <a href="tel:+919528350042">
