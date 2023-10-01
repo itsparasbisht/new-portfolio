@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./about.module.css";
 import { BiLogoGmail, BiSolidPhoneCall, BiLogoLinkedin } from "react-icons/bi";
-
 import { BsGithub } from "react-icons/bs";
 
 function About() {
