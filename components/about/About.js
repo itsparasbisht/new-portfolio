@@ -67,16 +67,28 @@ function About() {
             </h4>
           </div>
           <div className={styles.profileFooter}>
-            <a href="mailto:iamparasbisht@gmail.com">
+            <a
+              href="mailto:iamparasbisht@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BiLogoGmail />
             </a>
-            <a href="tel:+919528350042">
+            <a href="tel:+919528350042" target="_blank" rel="noreferrer">
               <BiSolidPhoneCall />
             </a>
-            <a href="https://www.linkedin.com/in/paras-bisht">
+            <a
+              href="https://www.linkedin.com/in/paras-bisht"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BiLogoLinkedin />
             </a>
-            <a href="https://github.com/itsparasbisht">
+            <a
+              href="https://github.com/itsparasbisht"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsGithub />
             </a>
           </div>

@@ -133,7 +133,7 @@
 .profileDetails h3 {
     color: #c5c5c5;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .profileDetails h4 {
@@ -159,26 +159,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.tapeSection {
-    width: 80px;
-    height: 30px;
-    background-color: #18376c7d;
-    position: absolute;
-    right: -3%;
-    top: -7%;
-    transform: rotate(90deg)
-}
-
-.tapeSection2 {
-    width: 80px;
-    height: 30px;
-    background-color: #18376c7d;
-    position: absolute;
-    left: -3%;
-    top: -7%;
-    transform: rotate(90deg)
 }
 
 @media (max-width: 1000px) {
