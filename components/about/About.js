@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./about.module.css";
-import Image from "next/image";
-import profilePhoto from "../../assets/profile.jpg";
-import callLogo from "../../assets/icons/telephone.png";
-import mailLogo from "../../assets/icons/email.png";
+import { BiLogoGmail, BiSolidPhoneCall, BiLogoLinkedin } from "react-icons/bi";
+
+import { BsGithub } from "react-icons/bs";
 
 function About() {
   return (
@@ -61,29 +60,24 @@ function About() {
       </div>
       <div className={styles.box2}>
         <div className={styles.cardProfile}>
-          <div className={styles.tapeSection}></div>
-          <div className={styles.tapeSection2}></div>
-          <div className={styles.profilePhoto}>
-            <Image
-              src={profilePhoto}
-              alt="This is paras bisht, the creator of this website"
-            />
-          </div>
           <div className={styles.profileDetails}>
             <h3>Paras Bisht</h3>
             <h4>
-              MERN Stack | JavaScript <br /> Frontend Developer at
-              SirpiDataScience
+              JavaScript Developer <br /> Frontend <br /> Team Lead
             </h4>
           </div>
           <div className={styles.profileFooter}>
-            <a href="tel:+919528350042">
-              <Image src={callLogo} alt="call paras bisht" /> &nbsp; +91
-              9528350042
-            </a>
             <a href="mailto:iamparasbisht@gmail.com">
-              <Image src={mailLogo} alt="send a mail to paras bisht" /> &nbsp;
-              iamparasbisht@gmail.com
+              <BiLogoGmail />
+            </a>
+            <a href="tel:+919528350042">
+              <BiSolidPhoneCall />
+            </a>
+            <a href="https://www.linkedin.com/in/paras-bisht">
+              <BiLogoLinkedin />
+            </a>
+            <a href="https://github.com/itsparasbisht">
+              <BsGithub />
             </a>
           </div>
         </div>
