@@ -37,7 +37,8 @@ export default function Home() {
               I specialize in JavaScript development and have professional
               working experience as a frontend dev with ReactJS. My experience
               also extends to full-stack web app development. <br /> I&apos;m
-              interested in building solutions by coordinating with teams.
+              interested in building solutions and teams. <br />
+              Feel free to connect :&#41;
             </h3>
           </div>
           <div className={styles.box2}>

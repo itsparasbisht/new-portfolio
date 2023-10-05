@@ -37,10 +37,11 @@ function About() {
             <span className={styles.objString}>
               <span className={styles.curlyBraces}>[</span>&#34;Javascript&#34;,
               &#34;ES-6&#34;, &#34;ReactJs&#34;, &#34;NextJs&#34;,
-              &#34;RestfulAPI&#34;,
+              &#34;RestfulAPIs&#34;,
               <br /> &nbsp; &nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-              &nbsp; &#34;MERN&#34;, &#34;Git&#34;, &#34;PostgreSQL&#34;
+              &nbsp; &#34;MERN&#34;, &#34;Git&#34;, &#34;PostgreSQL&#34;,
+              &#34;Dataviz&#34;
               <span className={styles.curlyBraces}>]</span>
             </span>
             ,
