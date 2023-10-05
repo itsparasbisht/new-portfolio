@@ -35,10 +35,9 @@ export default function Home() {
             <h1>I&apos;m Paras</h1>
             <h3>
               I specialize in JavaScript development and have professional
-              working experience as a frontend dev with ReactJS. I also have
-              experience working with the MERN stack. <br /> I am a dedicated
-              fellow who is interested in building solutions by coordinating
-              with teams.
+              working experience as a frontend dev with ReactJS. My experience
+              also extends to full-stack web app development. <br /> I&apos;m
+              interested in building solutions by coordinating with teams.
             </h3>
           </div>
           <div className={styles.box2}>

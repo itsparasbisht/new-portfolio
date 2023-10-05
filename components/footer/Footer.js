@@ -90,7 +90,7 @@ function Footer() {
           <a href="mailto:iamparasbisht@gmail.com">iamparasbisht@gmail.com</a>
         </div>
         <div className={styles.info}>
-          <h5>This website is built using Next.Js</h5>
+          <h5>Made with ❤️ and JavaScript</h5>
         </div>
       </div>
       <div className={styles.footerLast}>
