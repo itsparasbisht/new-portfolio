@@ -108,31 +108,18 @@ export default function Home() {
           <div></div>
         </div>
 
-        <ShowProjects
-          title={projectsList.p1.title}
-          technologies={projectsList.p1.technologies}
-          imageUrl={projectsList.p1.imageUrl}
-          about={projectsList.p1.about}
-          liveLink={projectsList.p1.liveLink}
-          githubLink={projectsList.p1.githubLink}
-        />
-        <ShowProjects
-          title={projectsList.p2.title}
-          technologies={projectsList.p2.technologies}
-          imageUrl={projectsList.p2.imageUrl}
-          about={projectsList.p2.about}
-          liveLink={projectsList.p2.liveLink}
-          githubLink={projectsList.p2.githubLink}
-          flip
-        />
-        <ShowProjects
-          title={projectsList.p3.title}
-          technologies={projectsList.p3.technologies}
-          imageUrl={projectsList.p3.imageUrl}
-          about={projectsList.p3.about}
-          liveLink={projectsList.p3.liveLink}
-          githubLink={projectsList.p3.githubLink}
-        />
+        {projectsList.map((project) => (
+          <ShowProjects
+            key={project.id}
+            title={project.title}
+            technologies={project.technologies}
+            imageUrl={project.imageUrl}
+            about={project.about}
+            liveLink={project.liveLink}
+            githubLink={project.githubLink}
+            flip={project.id % 2 === 0}
+          />
+        ))}
 
         <div className={styles.projectEnd}></div>
 

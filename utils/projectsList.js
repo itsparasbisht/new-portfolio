@@ -1,5 +1,16 @@
-const projectsList = {
-  p1: {
+const projectsList = [
+  {
+    id: 1,
+    title: "Divine Explorer",
+    technologies: "Leaflet, geoJSON, CSS",
+    imageUrl: "https://i.ibb.co/fp8YR07/divine-explorer.png",
+    about:
+      "Take a look at the destinations that you may wish to visit in Uttarakhand. This web application was developed using JavaScript and Leaflet (map rendering library).",
+    liveLink: "https://divine-explorer.netlify.app/",
+    githubLink: "https://github.com/itsparasbisht/leaflet-init",
+  },
+  {
+    id: 2,
     title: "E-Commerce App",
     technologies: "Sanity, Stripe, NextJS",
     imageUrl: "https://i.ibb.co/HDtb4yN/e-commerce-app.jpg",
@@ -8,7 +19,8 @@ const projectsList = {
     liveLink: "https://leaf-art-store.netlify.app/",
     githubLink: "https://github.com/itsparasbisht/e-commerce-app",
   },
-  p2: {
+  {
+    id: 3,
     title: "Amazon Price tracker",
     technologies: "ReactJS, ExpressJS, MongoDB, Puppeteer, Nodemailer",
     imageUrl: "https://i.ibb.co/ThbXF2C/amazon-price-track-app.png",
@@ -17,7 +29,8 @@ const projectsList = {
     liveLink: "https://track-price-on-amazon.netlify.app/",
     githubLink: "https://github.com/itsparasbisht/price-tracker-backend",
   },
-  p3: {
+  {
+    id: 4,
     title: "API Call App",
     technologies: "Vanilla JavaScript, Axios, Bootstrap",
     imageUrl: "https://i.ibb.co/jvv8dgG/api-call-app.png",
@@ -26,6 +39,6 @@ const projectsList = {
     liveLink: "https://api-call-app.netlify.app/",
     githubLink: "https://github.com/itsparasbisht/api-call-app",
   },
-};
+];
 
 export default projectsList;
