@@ -27,6 +27,30 @@ a {
   box-shadow: none !important;
 }
 
+.carousel-container {
+  position: relative;
+}
+
+.prev-btn,
+.next-btn {
+  all: unset;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.prev-btn {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  z-index: 200;
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+}
+
 @media (max-width: 800px) {
   html {
     font-size: 11px;
@@ -36,5 +60,18 @@ a {
 @media (max-width: 800px) {
   html {
     font-size: 11px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    font-size: 14px;
+  }
+
+  .prev-btn {
+    top: 30%;
+  }
+
+  .next-btn {
+    top: 30%;
   }
 }

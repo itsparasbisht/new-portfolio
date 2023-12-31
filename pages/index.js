@@ -21,8 +21,20 @@ import projectsList from "../utils/projectsList";
 import Lottie from "lottie-react";
 import heroGif from "../assets/hero-gif.json";
 import OldPortfolio from "../components/oldPortfolio/OldPortfolio";
+import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 
 export default function Home() {
+  const customPrevArrow = (onClickHandler, hasPrev) => (
+    <button className="prev-btn" onClick={onClickHandler} disabled={!hasPrev}>
+      <GrCaretPrevious />
+    </button>
+  );
+
+  const customNextArrow = (onClickHandler, hasNext) => (
+    <button className="next-btn" onClick={onClickHandler} disabled={!hasNext}>
+      <GrCaretNext />
+    </button>
+  );
   return (
     <>
       <nav>
@@ -52,53 +64,67 @@ export default function Home() {
 
         <About />
 
-        <Carousel
-          infiniteLoop={true}
-          autoPlay={true}
-          swipeable={false}
-          interval={5000}
-          showIndicators={true}
-          showThumbs={false}
-        >
-          <ShowCertificates
-            imgLink={freeCodeCampCf}
-            logo={freeCodeCampLogo}
-            about="Responsive Web Design Certification"
-            verifyLink={
-              "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
-            }
-          />
-          <ShowCertificates
-            imgLink={javascriptCf}
-            logo={hackerRankLogo}
-            about="Intermediate JavaScript Certification"
-            verifyLink={"https://www.hackerrank.com/certificates/9dc418ef7658"}
-          />
-          <ShowCertificates
-            imgLink={reactJsCf}
-            logo={hackerRankLogo}
-            about="React Basics Certification"
-            verifyLink={"https://www.hackerrank.com/certificates/d418255f8700"}
-          />
-          <ShowCertificates
-            imgLink={cssCf}
-            logo={hackerRankLogo}
-            about="CSS Certification"
-            verifyLink={"https://www.hackerrank.com/certificates/6a291fdbcecf"}
-          />
-          <ShowCertificates
-            imgLink={sqlCf}
-            logo={hackerRankLogo}
-            about="SQL Basics"
-            verifyLink={"https://www.hackerrank.com/certificates/00dafe57cbb7"}
-          />
-          <ShowCertificates
-            imgLink={digitalMarketingCf}
-            logo={googleLogo}
-            about="Fundamentals of Digital Marketing"
-            verifyLink={"https://learndigital.withgoogle.com/link/1qsdpcedm9s"}
-          />
-        </Carousel>
+        <div className="carousel-container">
+          <Carousel
+            infiniteLoop={true}
+            autoPlay={true}
+            swipeable={false}
+            interval={5000}
+            showThumbs={false}
+            showStatus={false}
+            renderArrowPrev={customPrevArrow}
+            renderArrowNext={customNextArrow}
+          >
+            <ShowCertificates
+              imgLink={freeCodeCampCf}
+              logo={freeCodeCampLogo}
+              about="Responsive Web Design Certification"
+              verifyLink={
+                "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
+              }
+            />
+            <ShowCertificates
+              imgLink={javascriptCf}
+              logo={hackerRankLogo}
+              about="Intermediate JavaScript Certification"
+              verifyLink={
+                "https://www.hackerrank.com/certificates/9dc418ef7658"
+              }
+            />
+            <ShowCertificates
+              imgLink={reactJsCf}
+              logo={hackerRankLogo}
+              about="React Basics Certification"
+              verifyLink={
+                "https://www.hackerrank.com/certificates/d418255f8700"
+              }
+            />
+            <ShowCertificates
+              imgLink={cssCf}
+              logo={hackerRankLogo}
+              about="CSS Certification"
+              verifyLink={
+                "https://www.hackerrank.com/certificates/6a291fdbcecf"
+              }
+            />
+            <ShowCertificates
+              imgLink={sqlCf}
+              logo={hackerRankLogo}
+              about="SQL Basics"
+              verifyLink={
+                "https://www.hackerrank.com/certificates/00dafe57cbb7"
+              }
+            />
+            <ShowCertificates
+              imgLink={digitalMarketingCf}
+              logo={googleLogo}
+              about="Fundamentals of Digital Marketing"
+              verifyLink={
+                "https://learndigital.withgoogle.com/link/1qsdpcedm9s"
+              }
+            />
+          </Carousel>
+        </div>
       </main>
 
       <div>

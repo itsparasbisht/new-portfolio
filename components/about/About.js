@@ -24,9 +24,9 @@ function About() {
             <span className={styles.objString}>&#34;male&#34;</span>, <br />{" "}
             <span>5</span> &nbsp; &nbsp; &nbsp; is_developer:{" "}
             <span className={styles.objBoolean}>true</span>,
-            <br /> <span>6</span> &nbsp; &nbsp; &nbsp; description:{" "}
+            <br /> <span>6</span> &nbsp; &nbsp; &nbsp; caption:{" "}
             <span className={styles.objString}>
-              &#34;development is fun :) especially with JavaScript&#34;
+              &#34;development is fun with JavaScript&#34;
             </span>
             ,
             <span>
