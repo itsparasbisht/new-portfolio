@@ -1,21 +1,11 @@
 import React from "react";
 import styles from "./navbar.module.css";
-import githubIcon from "../../assets/icons/github.png";
-import linkedIcon from "../../assets/icons/linkedin.png";
-import bookIcon from "../../assets/icons/open-book.png";
-import Image from "next/image";
 
 function Navbar() {
   return (
     <div className={styles.container}>
       <ul>
-        <li>
-          <Image
-            alt="view github account"
-            width="20"
-            height="20"
-            src={githubIcon}
-          />{" "}
+        <li className={styles.github_link}>
           <a
             href="https://github.com/itsparasbisht"
             target="_blank"
@@ -24,14 +14,7 @@ function Navbar() {
             GitHub
           </a>
         </li>
-        <li>
-          {" "}
-          <Image
-            alt="view linkedin account"
-            width="20"
-            height="20"
-            src={linkedIcon}
-          />
+        <li className={styles.linkedin_link}>
           <a
             href="https://www.linkedin.com/in/paras-bisht"
             target="_blank"
@@ -40,14 +23,7 @@ function Navbar() {
             LinkedIn
           </a>
         </li>
-        <li>
-          {" "}
-          <Image
-            alt="view some projects"
-            width="20"
-            height="20"
-            src={bookIcon}
-          />
+        <li className={styles.projects_link}>
           <a href="#projects-section">Projects</a>
         </li>
       </ul>

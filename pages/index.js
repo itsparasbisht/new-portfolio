@@ -18,10 +18,10 @@ import Bored from "../components/bored/Bored";
 import Quote from "../components/kanyeQuotes/Quote";
 import Footer from "../components/footer/Footer";
 import projectsList from "../utils/projectsList";
-import Lottie from "lottie-react";
-import heroGif from "../assets/hero-gif.json";
 import OldPortfolio from "../components/oldPortfolio/OldPortfolio";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
+import heroImage from "../assets/hero-image.png";
+import Image from "next/image";
 
 export default function Home() {
   const customPrevArrow = (onClickHandler, hasPrev) => (
@@ -54,11 +54,7 @@ export default function Home() {
             </h3>
           </div>
           <div className={styles.box2}>
-            <Lottie
-              className={styles.heroGif}
-              animationData={heroGif}
-              loop={true}
-            />
+            <Image src={heroImage} alt="" width={600} height={600} />
           </div>
         </div>
 

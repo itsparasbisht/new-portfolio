@@ -13,26 +13,38 @@
 
 .container ul li {
     cursor: pointer;
-    background-color: #dedede;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(0, 0, 0);
     margin-left: 15px;
     border-radius: 20px;
-    padding: 3px 7px;
+    padding: 6px 10px;
     transition: all 0.3s;
-    border: 1px solid #c4c4c4;
-}
-
-.container ul li:hover {
-    background-color: #c4c4c4;
+    border: 2px solid transparent;
 }
 
 .container ul li a {
-    padding-left: 7px;
     font-size: 15px;
     font-weight: 700;
+}
+
+.github_link {
+    background-color: black;
+    color: white;
+}
+
+.linkedin_link {
+    background-color: #0063C1;
+    color: white;
+}
+
+.projects_link {
+    background-color: #F7E018;
+    color: black;
+}
+
+.container ul li:hover {
+    border: 2px solid black;
 }
 
 @media (max-width: 500px) {
@@ -44,7 +56,6 @@
 
     .container ul {
         width: 100%;
-        justify-content: space-around;
         padding: 0px 40px;
     }
 }
@@ -52,8 +63,7 @@
 @media (max-width: 450px) {
 
     .container ul {
-        padding: 0px 15px;
-        margin-left: -10px;
+        padding-left: 0%;
     }
 
 }
