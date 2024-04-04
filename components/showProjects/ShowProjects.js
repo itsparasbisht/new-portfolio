@@ -19,26 +19,27 @@ function ShowProjects({
 
   return (
     <div
-      className={styles.container}
       id="projects-section"
       style={{
         backgroundColor: flip ? "#050400" : "",
         color: flip ? "white" : "black",
       }}
     >
-      <div className={styles.box1}>
-        <Image src={imageUrl} alt={title} width={"650"} height={"350"} />
-      </div>
-      <div className={styles.box2}>
-        <h3>{title}</h3>
-        <h5>
-          {"</> "}
-          {technologies}
-        </h5>
-        <p>{about}</p>
-        <div className={styles.btnCtr}>
-          <button onClick={() => openLink(liveLink)}>View Site</button>
-          <button onClick={() => openLink(githubLink)}>GitHub</button>
+      <div className={styles.wrapper}>
+        <div className={styles.box1}>
+          <Image src={imageUrl} alt={title} width={"650"} height={"350"} />
+        </div>
+        <div className={styles.box2}>
+          <h3>{title}</h3>
+          <h5>
+            {"</> "}
+            {technologies}
+          </h5>
+          <p>{about}</p>
+          <div className={styles.btnCtr}>
+            <button onClick={() => openLink(liveLink)}>View Site</button>
+            <button onClick={() => openLink(githubLink)}>GitHub</button>
+          </div>
         </div>
       </div>
     </div>

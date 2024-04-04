@@ -1,9 +1,14 @@
 .container {
-    width: 100%;
     background-color: black;
+}
+
+.wrapper {
+    width: 100%;
     color: white;
     display: flex;
     padding: 20px 40px;
+    max-width: 1600px;
+    margin: 0px auto;
 }
 
 .container h5 {

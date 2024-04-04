@@ -6,8 +6,8 @@ import reactLogo from "../../assets/react.png";
 
 function Footer() {
   return (
-    <footer>
-      <div className={styles.container}>
+    <footer className={styles.container}>
+      <div className={styles.wrapper}>
         <div className={styles.resources}>
           <h5>Resources</h5>
           <a href="https://www.flaticon.com" target="_blank" rel="noreferrer">

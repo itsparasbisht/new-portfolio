@@ -24,16 +24,18 @@ function Quote() {
 
   return (
     <div className={styles.container}>
-      <Image
-        src={kanyeImg}
-        alt="Kanye West"
-        className={styles.images}
-        placeholder="blur"
-      />
-      <p>
-        {`"${quote}"`} <br />{" "}
-        <span onClick={() => getQuote()}>api.kanye.rest</span>{" "}
-      </p>
+      <div className={styles.wrapper}>
+        <Image
+          src={kanyeImg}
+          alt="Kanye West"
+          className={styles.images}
+          placeholder="blur"
+        />
+        <p>
+          {`"${quote}"`} <br />{" "}
+          <span onClick={() => getQuote()}>api.kanye.rest</span>{" "}
+        </p>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,11 @@
-.container {
+.wrapper {
+    max-width: 1600px;
+    margin: 0px auto;
     width: 100%;
     display: flex;
     padding: 2% 3%;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
