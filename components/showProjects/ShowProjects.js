@@ -18,13 +18,7 @@ function ShowProjects({
   };
 
   return (
-    <div
-      id="projects-section"
-      style={{
-        backgroundColor: flip ? "#050400" : "",
-        color: flip ? "white" : "black",
-      }}
-    >
+    <div id="projects-section" className={flip ? styles.gradientEffect : null}>
       <div className={styles.wrapper}>
         <div className={styles.box1}>
           <Image src={imageUrl} alt={title} width={"650"} height={"350"} />
