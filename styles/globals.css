@@ -12,7 +12,6 @@ html,
 body {
   width: 100vw;
   height: auto;
-  /* max-width: 1800px; */
   margin: 0px auto;
   overflow-x: hidden;
 }
