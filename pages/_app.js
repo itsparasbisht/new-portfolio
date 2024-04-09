@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="title" content="Paras Bisht - Web Portfolio" />
         <meta
           name="description"
-          content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development.I'm interested in building solutions and teams.Feel free to connect."
+          content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development. I'm interested in building solutions and teams. Feel free to connect."
         />
         <meta
           name="keywords"
@@ -30,7 +30,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta property="og:title" content="Paras Bisht - Web Portfolio" />
         <meta
           property="og:description"
-          content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development.I'm interested in building solutions and teams.Feel free to connect."
+          content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development. I'm interested in building solutions and teams. Feel free to connect."
         />
         <meta
           property="og:image"
@@ -41,7 +41,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="twitter:title" content="Paras Bisht - Web Portfolio" />
         <meta
           name="twitter:description"
-          content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development.I'm interested in building solutions and teams.Feel free to connect."
+          content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development. I'm interested in building solutions and teams. Feel free to connect."
         />
         <meta
           name="twitter:image"
