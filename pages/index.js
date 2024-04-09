@@ -106,7 +106,7 @@ export default function Home() {
             <ShowCertificates
               imgLink={sqlCf}
               logo={hackerRankLogo}
-              about="SQL Basics"
+              about="SQL Basics Certification"
               verifyLink={
                 "https://www.hackerrank.com/certificates/00dafe57cbb7"
               }
@@ -114,7 +114,7 @@ export default function Home() {
             <ShowCertificates
               imgLink={digitalMarketingCf}
               logo={googleLogo}
-              about="Fundamentals of Digital Marketing"
+              about="Fundamentals of Digital Marketing Certification"
               verifyLink={
                 "https://learndigital.withgoogle.com/link/1qsdpcedm9s"
               }

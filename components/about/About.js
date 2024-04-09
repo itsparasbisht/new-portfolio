@@ -36,8 +36,8 @@ function About() {
             &nbsp; &nbsp; &nbsp; skills:{" "}
             <span className={styles.objString}>
               <span className={styles.curlyBraces}>[</span>&#34;Javascript&#34;,
-              &#34;ReactJS&#34;, &#34;NodeJS&#34;, &#34;ExpressJS&#34;,
-              &#34;MongoDB&#34;,
+              &#34;ReactJS&#34;, &#34;NextJS&#34;, &#34;NodeJS&#34;,
+              &#34;ExpressJS&#34;, &#34;MongoDB&#34;,
               <br /> &nbsp; &nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
               &nbsp; &#34;TailwindCSS&#34;, &#34;MERN&#34;, &#34;Git&#34;,
