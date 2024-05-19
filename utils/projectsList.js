@@ -11,6 +11,16 @@ const projectsList = [
   },
   {
     id: 2,
+    title: "Next Gallery App",
+    technologies: "NextJS 14, TypeScript, DrizzleORM, Tailwind-CSS",
+    imageUrl: "https://i.ibb.co/DKFvPNw/next-gallery-app.png",
+    about:
+      "Server-side rendered gallery app. Sign in and start uploading your images. Contains parallel and intercepting routes using Next.js 14. Built using the fully type-safe Drizzle ORM.",
+    liveLink: "https://next-gallery-app.vercel.app/",
+    githubLink: "https://github.com/itsparasbisht/nextjs14-gallery-app",
+  },
+  {
+    id: 3,
     title: "File Share App",
     technologies:
       "ReactJS, NodeJS, ExpressJS, MongoDB, TailwindCSS, Cloud Storage",
@@ -21,7 +31,7 @@ const projectsList = [
     githubLink: "https://github.com/itsparasbisht/file-share-app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Divine Explorer",
     technologies: "Leaflet, geoJSON, CSS",
     imageUrl: "https://i.ibb.co/fp8YR07/divine-explorer.png",
@@ -32,7 +42,7 @@ const projectsList = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "E-Commerce App",
     technologies: "Sanity, Payment Gateway, NextJS",
     imageUrl: "https://i.ibb.co/HDtb4yN/e-commerce-app.jpg",
@@ -42,7 +52,7 @@ const projectsList = [
     githubLink: "https://github.com/itsparasbisht/e-commerce-app",
   },
   {
-    id: 5,
+    id: 6,
     title: "Amazon Price tracker",
     technologies: "ReactJS, ExpressJS, NodeJS, MongoDB, Puppeteer, Nodemailer",
     imageUrl: "https://i.ibb.co/ThbXF2C/amazon-price-track-app.png",
@@ -52,7 +62,7 @@ const projectsList = [
     githubLink: "https://github.com/itsparasbisht/price-tracker-backend",
   },
   {
-    id: 6,
+    id: 7,
     title: "API Call App",
     technologies: "Vanilla JavaScript, Axios, Bootstrap",
     imageUrl: "https://i.ibb.co/jvv8dgG/api-call-app.png",
