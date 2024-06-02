@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { posthog } from "posthog-js";
 import React from "react";
 import styles from "./showProjects.module.css";
 
@@ -31,8 +31,26 @@ function ShowProjects({
           </h5>
           <p>{about}</p>
           <div className={styles.btnCtr}>
-            <button onClick={() => openLink(liveLink)}>View Site</button>
-            <button onClick={() => openLink(githubLink)}>GitHub</button>
+            <button
+              onClick={() => {
+                posthog.capture("guest_opened_project", {
+                  project_name: title,
+                });
+                openLink(liveLink);
+              }}
+            >
+              View Site
+            </button>
+            <button
+              onClick={() => {
+                posthog.capture("guest_opened_github", {
+                  project_name: title,
+                });
+                openLink(githubLink);
+              }}
+            >
+              GitHub
+            </button>
           </div>
         </div>
       </div>
