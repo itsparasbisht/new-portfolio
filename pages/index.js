@@ -129,7 +129,6 @@ export default function Home() {
           <h3>PROJECTS</h3>
           <div></div>
         </div>
-
         {projectsList.map((project) => (
           <ShowProjects
             key={project.id}
@@ -142,12 +141,12 @@ export default function Home() {
             flip={project.id % 2 === 0}
           />
         ))}
-
         <div className={styles.projectEnd}></div>
 
         <OldPortfolio />
 
         <Bored />
+
         <Quote />
       </div>
 
