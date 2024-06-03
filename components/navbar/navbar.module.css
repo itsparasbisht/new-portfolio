@@ -25,7 +25,7 @@
     border: 2px solid transparent;
 }
 
-.container ul li a {
+.container ul a li {
     font-size: 15px;
     font-weight: 700;
 }
