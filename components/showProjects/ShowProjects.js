@@ -43,7 +43,7 @@ function ShowProjects({
             </button>
             <button
               onClick={() => {
-                posthog.capture("guest_opened_github", {
+                posthog.capture("guest_opened_github_repo", {
                   project_name: title,
                 });
                 openLink(githubLink);

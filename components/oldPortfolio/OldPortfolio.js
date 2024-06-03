@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./oldPortfolio.module.css";
 import oldPortfolio from "../../assets/old-portfolio.png";
 import Image from "next/image";
+import { posthog } from "posthog-js";
 
 function OldPortfolio() {
   return (
@@ -18,7 +19,12 @@ function OldPortfolio() {
           portfolio website /--
         </a>
       </h3>
-      <div onClick={() => window.open("https://portfolio-parasbisht.web.app/")}>
+      <div
+        onClick={() => {
+          posthog.capture("guest_visited_old_portfolio");
+          window.open("https://portfolio-parasbisht.web.app/");
+        }}
+      >
         <Image src={oldPortfolio} alt="" />
       </div>
     </div>

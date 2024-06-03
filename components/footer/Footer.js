@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./footer.module.css";
 import jsLogo from "../../assets/javascript.png";
 import reactLogo from "../../assets/react.png";
+import { posthog } from "posthog-js";
 
 function Footer() {
   return (
@@ -66,6 +67,9 @@ function Footer() {
             href="https://github.com/parash-sirpi"
             target="_blank"
             rel="noreferrer"
+            onClick={() => {
+              posthog.capture("guest_opened_github_work");
+            }}
           >
             GitHub | work
           </a>
@@ -73,6 +77,9 @@ function Footer() {
             href="https://github.com/itsparasbisht"
             target="_blank"
             rel="noreferrer"
+            onClick={() => {
+              posthog.capture("guest_opened_github");
+            }}
           >
             GitHub | personal
           </a>
@@ -80,6 +87,9 @@ function Footer() {
             href="https://www.linkedin.com/in/paras-bisht"
             target="_blank"
             rel="noreferrer"
+            onClick={() => {
+              posthog.capture("guest_opened_linkedin");
+            }}
           >
             linkedIn
           </a>

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./about.module.css";
 import { BiLogoGmail, BiSolidPhoneCall, BiLogoLinkedin } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
+import { posthog } from "posthog-js";
 
 function About() {
   return (
@@ -81,6 +82,9 @@ function About() {
               href="https://www.linkedin.com/in/paras-bisht"
               target="_blank"
               rel="noreferrer"
+              onClick={() => {
+                posthog.capture("guest_opened_linkedin");
+              }}
             >
               <BiLogoLinkedin />
             </a>
@@ -88,6 +92,9 @@ function About() {
               href="https://github.com/itsparasbisht"
               target="_blank"
               rel="noreferrer"
+              onClick={() => {
+                posthog.capture("guest_opened_github");
+              }}
             >
               <BsGithub />
             </a>

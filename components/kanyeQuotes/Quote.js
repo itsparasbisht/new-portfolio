@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "./quote.module.css";
 import kanyeImg from "../../assets/kanye.jpg";
+import { posthog } from "posthog-js";
 
 function Quote() {
   const [quote, setQuote] = useState();
@@ -12,6 +13,8 @@ function Quote() {
 
   function getQuote() {
     try {
+      posthog.capture("guest_clicked_quote");
+
       fetch("https://api.kanye.rest/").then((response) => {
         response.json().then((data) => {
           setQuote(data.quote);
