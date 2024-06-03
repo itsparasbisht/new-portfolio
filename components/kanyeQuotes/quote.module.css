@@ -29,15 +29,40 @@
     text-align: center;
 }
 
-.container p span {
-    background-color: #EFD81D;
-    font-size: 1.1rem;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-weight: 600;
-    color: rgb(48, 48, 48);
+.custom_btn {
+    margin-top: 10px;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
     cursor: pointer;
-    margin-top: 15px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 16px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.custom_btn:hover {
+    background-color: #fff;
+}
+
+.custom_btn:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .custom_btn {
+        min-width: 120px;
+        padding: 0 25px;
+    }
 }
 
 @media (max-width: 1100px) {

@@ -36,7 +36,9 @@ function Quote() {
         />
         <p>
           {`"${quote}"`} <br />{" "}
-          <span onClick={() => getQuote()}>api.kanye.rest</span>{" "}
+          <button className={styles.custom_btn} onClick={() => getQuote()}>
+            api.kanye.rest
+          </button>{" "}
         </p>
       </div>
     </div>
