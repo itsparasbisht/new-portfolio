@@ -46,6 +46,10 @@
     padding: 20px;
 }
 
+.wrapper a {
+    margin-top: 5px;
+}
+
 .links {
     flex: 1;
     display: flex;

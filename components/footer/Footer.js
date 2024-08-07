@@ -57,6 +57,13 @@ function Footer() {
           >
             Web Dev Simplified
           </a>
+          <a
+            href="https://www.youtube.com/@t3dotgg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Theo Browne
+          </a>
           <a href="https://dev.to/" target="_blank" rel="noreferrer">
             Dev
           </a>
@@ -100,7 +107,7 @@ function Footer() {
           <a href="mailto:iamparasbisht@gmail.com">iamparasbisht@gmail.com</a>
         </div>
         <div className={styles.info}>
-          <h5>Made with ❤️ and JavaScript</h5>
+          <h5>Made by me and JavaScript</h5>
         </div>
       </div>
       <div className={styles.footerLast}>

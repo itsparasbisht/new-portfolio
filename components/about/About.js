@@ -42,14 +42,15 @@ function About() {
               <br /> &nbsp; &nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
               &nbsp; &#34;TailwindCSS&#34;, &#34;MERN&#34;, &#34;Git&#34;,
-              &#34;PostgreSQL&#34;, &#34;Data Visualization&#34;
+              &#34;PostgreSQL&#34;, &#34;Data Visualization&#34;,
+              &#34;Docker&#34;, &#34;AWS&#34;
               <span className={styles.curlyBraces}>]</span>
             </span>
             ,
             <br />
             <span>8</span> &nbsp; &nbsp; &nbsp; location:{" "}
             <span className={styles.objString}>
-              &#34;Almora, Uttarakhand&#34;
+              &#34;Uttarakhand, India&#34;
             </span>
             , <br />
             <span>9</span> &nbsp; &nbsp; &nbsp; start_date:{" "}
@@ -64,7 +65,7 @@ function About() {
           <div className={styles.profileDetails}>
             <h3>Paras Bisht</h3>
             <h4>
-              JavaScript Developer <br /> Frontend <br /> Team Lead
+              Software Engineer <br /> on Planet <br /> Earth
             </h4>
           </div>
           <div className={styles.profileFooter}>
