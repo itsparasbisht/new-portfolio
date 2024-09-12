@@ -46,10 +46,10 @@ export default function Home() {
           <div className={styles.box1}>
             <h1>I&apos;m Paras</h1>
             <h3>
-              I specialize in JavaScript development and have professional
-              working experience as a frontend dev with ReactJS. My experience
-              also extends to full-stack web app development. <br /> I&apos;m
-              interested in building solutions and teams. <br />
+              As a seasoned software developer, I specialize in creating dynamic
+              web & mobile applications. <br /> I've collaborated with clients
+              from diverse backgrounds. <br />
+              I&apos;m interested in building solutions and teams. <br />
               Feel free to connect :&#41;
             </h3>
           </div>

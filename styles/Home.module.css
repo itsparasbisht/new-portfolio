@@ -28,6 +28,10 @@
   color: #00163b;
 }
 
+.box1 h3 {
+  max-width: 630px;
+}
+
 .box1 h4 {
   margin-top: 10px;
 }

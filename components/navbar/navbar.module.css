@@ -53,12 +53,11 @@
     .container {
         width: 100vw;
         padding-left: 0%;
-        justify-content: center;
     }
 
     .container ul {
         width: 100%;
-        padding: 0px 40px;
+        padding: 0px 0px;
     }
 }
 
