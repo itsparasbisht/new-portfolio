@@ -47,8 +47,8 @@ export default function Home() {
             <h1>I&apos;m Paras</h1>
             <h3>
               As a seasoned software developer, I specialize in creating dynamic
-              web & mobile applications. <br /> I've collaborated with clients
-              from diverse backgrounds. <br />
+              web & mobile applications. <br /> I&apos;ve collaborated with
+              clients from diverse backgrounds. <br />
               I&apos;m interested in building solutions and teams. <br />
               Feel free to connect :&#41;
             </h3>

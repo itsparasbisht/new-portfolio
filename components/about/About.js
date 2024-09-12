@@ -27,7 +27,7 @@ function About() {
             <span className={styles.objBoolean}>true</span>,
             <br /> <span>6</span> &nbsp; &nbsp; &nbsp; caption:{" "}
             <span className={styles.objString}>
-              &#34;I'm not a bug, I'm a feature in development&#34;
+              &#34;I&apos;m not a bug, I&apos;m a feature in development&#34;
             </span>
             ,
             <span>
