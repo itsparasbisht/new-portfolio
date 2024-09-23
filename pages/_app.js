@@ -24,11 +24,11 @@ export default function MyApp({ Component, pageProps }) {
           <meta name="title" content="Paras Bisht - Web Portfolio" />
           <meta
             name="description"
-            content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development. I'm interested in building solutions and teams. Feel free to connect."
+            content="Software developer, specialized in creating dynamic web & mobile applications."
           />
           <meta
             name="keywords"
-            content="paras bisht, paras bisht portfolio, web developer portfolio, frontend developer, web portfolio, javascript developer, web developer"
+            content="paras bisht, software engineer, web developer, frontend developer, web portfolio, javascript developer, reactjs"
           />
           <meta name="robots" content="index, follow" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -37,7 +37,7 @@ export default function MyApp({ Component, pageProps }) {
           <meta name="author" content="Paras Bisht" />
           <meta
             itemProp="image"
-            content="https://i.ibb.co/3CCmCLv/paras-bisht.jpg"
+            content="https://i.ibb.co/X7ybGjp/profile.jpg"
           />
 
           <meta property="og:url" content="https://paras-bisht.netlify.app" />
@@ -45,22 +45,22 @@ export default function MyApp({ Component, pageProps }) {
           <meta property="og:title" content="Paras Bisht - Web Portfolio" />
           <meta
             property="og:description"
-            content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development. I'm interested in building solutions and teams. Feel free to connect."
+            content="Software developer, specialized in creating dynamic web & mobile applications."
           />
           <meta
             property="og:image"
-            content="https://i.ibb.co/3CCmCLv/paras-bisht.jpg"
+            content="https://i.ibb.co/X7ybGjp/profile.jpg"
           />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Paras Bisht - Web Portfolio" />
           <meta
             name="twitter:description"
-            content="I specialize in JavaScript development and have professional working experience as a frontend dev with ReactJS. My experience also extends to full-stack web app development. I'm interested in building solutions and teams. Feel free to connect."
+            content="Software developer, specialized in creating dynamic web & mobile applications."
           />
           <meta
             name="twitter:image"
-            content="https://i.ibb.co/3CCmCLv/paras-bisht.jpg"
+            content="https://i.ibb.co/X7ybGjp/profile.jpg"
           />
         </Head>
 
