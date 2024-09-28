@@ -36,7 +36,7 @@ function Navbar() {
             posthog.capture("guest_opened_blogs");
           }}
         >
-          <li className={styles.projects_link}>Blogs by me</li>
+          <li className={styles.blogs_link}>Blogs by me</li>
         </a>
       </ul>
     </div>
