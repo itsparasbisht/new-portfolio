@@ -29,12 +29,14 @@ function Navbar() {
         </a>
 
         <a
-          href="#projects-section"
+          href="https://blogs-by-paras.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
           onClick={() => {
-            posthog.capture("guest_clicked_projects");
+            posthog.capture("guest_opened_blogs");
           }}
         >
-          <li className={styles.projects_link}>Projects</li>
+          <li className={styles.projects_link}>Blogs by me</li>
         </a>
       </ul>
     </div>

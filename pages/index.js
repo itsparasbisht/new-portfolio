@@ -22,6 +22,7 @@ import OldPortfolio from "../components/oldPortfolio/OldPortfolio";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 import heroImage from "../assets/hero-image.png";
 import Image from "next/image";
+import Blogs from "../components/blogs/Blogs";
 
 export default function Home() {
   const customPrevArrow = (onClickHandler, hasPrev) => (
@@ -59,6 +60,8 @@ export default function Home() {
         </div>
 
         <About />
+
+        <Blogs />
 
         <div className="carousel-container">
           <Carousel
