@@ -30,7 +30,6 @@ export default function MyApp({ Component, pageProps }) {
             name="keywords"
             content="paras bisht, software engineer, web developer, frontend developer, web portfolio, javascript developer, reactjs"
           />
-          <meta name="robots" content="index, follow" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="English" />
           <meta name="revisit-after" content="1 days" />
