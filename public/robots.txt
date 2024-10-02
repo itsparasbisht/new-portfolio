@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://paras-bisht.netlify.app
+
+# Sitemaps
+Sitemap: https://paras-bisht.netlify.app/sitemap.xml
