@@ -61,6 +61,44 @@ export default function MyApp({ Component, pageProps }) {
             name="twitter:image"
             content="https://i.ibb.co/X7ybGjp/profile.jpg"
           />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "http://schema.org",
+                "@type": "Person",
+                name: "Paras Bisht",
+                jobTitle: "Software Developer",
+                description:
+                  "Software developer, specialized in creating dynamic web & mobile applications.",
+                url: "https://paras-bisht.netlify.app/",
+                sameAs: [
+                  "https://www.linkedin.com/in/paras-bisht",
+                  "https://github.com/itsparasbisht",
+                  "https://blogs-by-paras.netlify.app/",
+                  "https://www.instagram.com/itsparas.in/",
+                ],
+                alumniOf: {
+                  "@type": "CollegeOrUniversity",
+                  name: "Army Public School",
+                },
+                knowsAbout: [
+                  "Web Development",
+                  "React",
+                  "Next.js",
+                  "JavaScript",
+                  "Node.js",
+                  "Mobile Applications",
+                  "Software Development",
+                ],
+                address: {
+                  "@type": "PostalAddress",
+                  addressCountry: "IN",
+                },
+              }),
+            }}
+          ></script>
         </Head>
 
         <Component {...pageProps} />
