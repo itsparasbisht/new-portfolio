@@ -73,16 +73,23 @@ function About() {
               href="mailto:iamparasbisht@gmail.com"
               target="_blank"
               rel="noreferrer"
+              aria-label="Email Paras"
             >
               <BiLogoGmail />
             </a>
-            <a href="tel:+919528350042" target="_blank" rel="noreferrer">
+            <a
+              href="tel:+919528350042"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Call Paras"
+            >
               <BiSolidPhoneCall />
             </a>
             <a
               href="https://www.linkedin.com/in/paras-bisht"
               target="_blank"
               rel="noreferrer"
+              aria-label="Connect with Paras on LinkedIn"
               onClick={() => {
                 posthog.capture("guest_opened_linkedin");
               }}
@@ -93,6 +100,7 @@ function About() {
               href="https://github.com/itsparasbisht"
               target="_blank"
               rel="noreferrer"
+              aria-label="Connect with Paras on GitHub"
               onClick={() => {
                 posthog.capture("guest_opened_github");
               }}

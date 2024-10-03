@@ -4,42 +4,48 @@ import styles from "./navbar.module.css";
 
 function Navbar() {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <ul>
-        <a
-          href="https://github.com/itsparasbisht"
-          target="_blank"
-          rel="noreferrer"
-          onClick={() => {
-            posthog.capture("guest_opened_github");
-          }}
-        >
-          <li className={styles.github_link}>GitHub</li>
-        </a>
+        <li className={styles.github_link}>
+          <a
+            href="https://github.com/itsparasbisht"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => {
+              posthog.capture("guest_opened_github");
+            }}
+          >
+            GitHub
+          </a>
+        </li>
 
-        <a
-          href="https://www.linkedin.com/in/paras-bisht"
-          target="_blank"
-          rel="noreferrer"
-          onClick={() => {
-            posthog.capture("guest_opened_linkedin");
-          }}
-        >
-          <li className={styles.linkedin_link}>LinkedIn</li>
-        </a>
+        <li className={styles.linkedin_link}>
+          <a
+            href="https://www.linkedin.com/in/paras-bisht"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => {
+              posthog.capture("guest_opened_linkedin");
+            }}
+          >
+            LinkedIn
+          </a>
+        </li>
 
-        <a
-          href="https://blogs-by-paras.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-          onClick={() => {
-            posthog.capture("guest_opened_blogs");
-          }}
-        >
-          <li className={styles.blogs_link}>Blogs by me</li>
-        </a>
+        <li className={styles.blogs_link}>
+          <a
+            href="https://blogs-by-paras.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => {
+              posthog.capture("guest_opened_blogs");
+            }}
+          >
+            Blogs by me
+          </a>
+        </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 

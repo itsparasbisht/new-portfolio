@@ -25,10 +25,10 @@ function ShowProjects({
         </div>
         <div className={styles.box2}>
           <h3>{title}</h3>
-          <h5>
+          <h4>
             {"</> "}
             {technologies}
-          </h5>
+          </h4>
           <p>{about}</p>
           <div className={styles.btnCtr}>
             <button

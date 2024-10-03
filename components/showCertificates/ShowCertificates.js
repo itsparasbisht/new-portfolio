@@ -12,20 +12,19 @@ function ShowCertificates({ imgLink, logo, about, verifyLink }) {
       <div className={styles.about}>
         <Image src={logo} alt={about} placeholder="blur" />
         <h3>{about}</h3>
-        <button>
-          <a
-            href={verifyLink}
-            rel="noreferrer"
-            target="_blank"
-            onClick={() => {
-              posthog.capture("guest_verified_certificate", {
-                certificate: about,
-              });
-            }}
-          >
-            verify
-          </a>
-        </button>
+
+        <a
+          href={verifyLink}
+          rel="noreferrer"
+          target="_blank"
+          onClick={() => {
+            posthog.capture("guest_verified_certificate", {
+              certificate: about,
+            });
+          }}
+        >
+          verify
+        </a>
       </div>
     </div>
   );

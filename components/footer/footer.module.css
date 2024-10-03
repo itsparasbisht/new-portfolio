@@ -11,7 +11,7 @@
     margin: 0px auto;
 }
 
-.container h5 {
+.container h4 {
     font-size: 1.1rem;
     margin-bottom: 5px;
     color: rgb(85, 85, 85);
@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 1000px) {
-    .container h5 {
+    .container h4 {
         font-size: 1rem;
     }
 
@@ -110,7 +110,7 @@
         padding: 20px 40px;
     }
 
-    .container h5 {
+    .container h4 {
         font-size: 1.8rem;
     }
 

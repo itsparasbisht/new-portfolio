@@ -26,33 +26,41 @@ import Blogs from "../components/blogs/Blogs";
 
 export default function Home() {
   const customPrevArrow = (onClickHandler, hasPrev) => (
-    <button className="prev-btn" onClick={onClickHandler} disabled={!hasPrev}>
+    <button
+      className="prev-btn"
+      aria-label="Previous"
+      onClick={onClickHandler}
+      disabled={!hasPrev}
+    >
       <GrCaretPrevious />
     </button>
   );
 
   const customNextArrow = (onClickHandler, hasNext) => (
-    <button className="next-btn" onClick={onClickHandler} disabled={!hasNext}>
+    <button
+      className="next-btn"
+      aria-label="Next"
+      onClick={onClickHandler}
+      disabled={!hasNext}
+    >
       <GrCaretNext />
     </button>
   );
   return (
     <>
-      <nav>
-        <Navbar />
-      </nav>
+      <Navbar />
 
       <main>
         <div className={styles.container}>
           <div className={styles.box1}>
             <h1>I&apos;m Paras</h1>
-            <h3>
+            <h2>
               As a seasoned software developer, I specialize in creating dynamic
               web & mobile applications. <br /> I&apos;ve collaborated with
               clients from diverse backgrounds. <br />
               I&apos;m interested in building solutions and teams. <br />
               Feel free to connect :&#41;
-            </h3>
+            </h2>
           </div>
           <div className={styles.box2}>
             <Image src={heroImage} alt="" width={600} height={600} />
@@ -124,34 +132,34 @@ export default function Home() {
             />
           </Carousel>
         </div>
-      </main>
 
-      <div>
-        <div className={styles.projects}>
-          <div></div>
-          <h3>PROJECTS</h3>
-          <div></div>
+        <div>
+          <div className={styles.projects}>
+            <div></div>
+            <h3>PROJECTS</h3>
+            <div></div>
+          </div>
+          {projectsList.map((project) => (
+            <ShowProjects
+              key={project.id}
+              title={project.title}
+              technologies={project.technologies}
+              imageUrl={project.imageUrl}
+              about={project.about}
+              liveLink={project.liveLink}
+              githubLink={project.githubLink}
+              flip={project.id % 2 === 0}
+            />
+          ))}
+          <div className={styles.projectEnd}></div>
+
+          <OldPortfolio />
+
+          <Bored />
+
+          <Quote />
         </div>
-        {projectsList.map((project) => (
-          <ShowProjects
-            key={project.id}
-            title={project.title}
-            technologies={project.technologies}
-            imageUrl={project.imageUrl}
-            about={project.about}
-            liveLink={project.liveLink}
-            githubLink={project.githubLink}
-            flip={project.id % 2 === 0}
-          />
-        ))}
-        <div className={styles.projectEnd}></div>
-
-        <OldPortfolio />
-
-        <Bored />
-
-        <Quote />
-      </div>
+      </main>
 
       <footer>
         <Footer />

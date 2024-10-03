@@ -10,7 +10,7 @@ function Footer() {
     <footer className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.resources}>
-          <h5>Resources</h5>
+          <h4>Resources</h4>
           <a href="https://www.flaticon.com" target="_blank" rel="noreferrer">
             freePik
           </a>
@@ -28,7 +28,7 @@ function Footer() {
           </a>
         </div>
         <div className={styles.recommendations}>
-          <h5>Recommendations</h5>
+          <h4>Recommendations</h4>
           <a
             href="https://www.youtube.com/c/Freecodecamp"
             target="_blank"
@@ -69,7 +69,7 @@ function Footer() {
           </a>
         </div>
         <div className={styles.links}>
-          <h5>Links</h5>
+          <h4>Links</h4>
           <a
             href="https://github.com/parash-sirpi"
             target="_blank"
@@ -102,7 +102,7 @@ function Footer() {
           </a>
         </div>
         <div className={styles.contact}>
-          <h5>Contact</h5>
+          <h4>Contact</h4>
           <a href="tel:+919528350042">+91 9528350042</a>
           <a href="mailto:iamparasbisht@gmail.com">iamparasbisht@gmail.com</a>
         </div>
