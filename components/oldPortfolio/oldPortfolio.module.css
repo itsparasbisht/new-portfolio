@@ -8,7 +8,7 @@
     margin: 0px auto;
 }
 
-.container h3 {
+.container a {
     flex: 1;
     font-size: 3rem;
     font-weight: 900;
@@ -60,7 +60,7 @@
         height: 230px !important;
     }
 
-    .container h3 {
+    .container a {
         text-align: center;
     }
 }
