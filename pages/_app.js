@@ -20,8 +20,8 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <PostHogProvider client={posthog}>
         <Head>
-          <html lang="en" />
           <title>Paras - Web Portfolio</title>
+          <meta lang="en" />
           <meta name="title" content="Paras Bisht - Web Portfolio" />
           <meta
             name="description"

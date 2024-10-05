@@ -32,7 +32,7 @@ export default function Home() {
       onClick={onClickHandler}
       disabled={!hasPrev}
     >
-      <GrCaretPrevious />
+      <GrCaretPrevious size={24} />
     </button>
   );
 
@@ -43,9 +43,10 @@ export default function Home() {
       onClick={onClickHandler}
       disabled={!hasNext}
     >
-      <GrCaretNext />
+      <GrCaretNext size={24} />
     </button>
   );
+
   return (
     <>
       <Navbar />
@@ -63,7 +64,13 @@ export default function Home() {
             </h2>
           </div>
           <div className={styles.box2}>
-            <Image src={heroImage} alt="" width={600} height={600} />
+            <Image
+              src={heroImage}
+              alt=""
+              width={500}
+              height={500}
+              style={{ border: "2px solid black" }}
+            />
           </div>
         </div>
 
@@ -74,9 +81,9 @@ export default function Home() {
         <div className="carousel-container">
           <Carousel
             infiniteLoop={true}
+            renderIndicator={false}
             autoPlay={true}
-            swipeable={false}
-            interval={5000}
+            swipeable={true}
             showThumbs={false}
             showStatus={false}
             renderArrowPrev={customPrevArrow}

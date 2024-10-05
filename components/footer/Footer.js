@@ -26,6 +26,13 @@ function Footer() {
           <a href="https://kanye.rest" target="_blank" rel="noreferrer">
             kanye.rest API
           </a>
+          <a
+            href="https://www.transhumans.xyz/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Hero Image
+          </a>
         </div>
         <div className={styles.recommendations}>
           <h4>Recommendations</h4>
