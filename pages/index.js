@@ -66,10 +66,10 @@ export default function Home() {
           <div className={styles.box2}>
             <Image
               src={heroImage}
-              alt=""
+              alt="illustration of a transhuman with a evolve text"
               width={500}
               height={500}
-              style={{ border: "2px solid black" }}
+              placeholder="blur"
             />
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function Home() {
             infiniteLoop={true}
             renderIndicator={false}
             autoPlay={true}
-            swipeable={true}
+            swipeable={false}
             showThumbs={false}
             showStatus={false}
             renderArrowPrev={customPrevArrow}
