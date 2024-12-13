@@ -18,7 +18,7 @@ function ShowProjects({
   };
 
   return (
-    <div id="projects-section" className={flip ? styles.sectionFlip : null}>
+    <div id="projects-section">
       <div className={styles.wrapper}>
         <div className={styles.box1}>
           <Image src={imageUrl} alt={title} width={"650"} height={"350"} />
