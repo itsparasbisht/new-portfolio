@@ -39,6 +39,7 @@ function ShowProjects({
                   project_name: title,
                 });
               }}
+              rel="noreferrer"
             >
               View Site
             </a>
@@ -51,6 +52,7 @@ function ShowProjects({
                   project_name: title,
                 });
               }}
+              rel="noreferrer"
             >
               GitHub
             </a>
