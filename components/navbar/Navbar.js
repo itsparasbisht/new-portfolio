@@ -5,46 +5,43 @@ import styles from "./navbar.module.css";
 function Navbar() {
   return (
     <nav className={styles.container}>
-      <ul>
-        <li className={styles.github_link}>
-          <a
-            href="https://github.com/itsparasbisht"
-            target="_blank"
-            rel="noreferrer"
-            onClick={() => {
-              posthog.capture("guest_opened_github");
-            }}
-          >
-            GitHub
-          </a>
-        </li>
+      <div>
+        <a
+          href="https://github.com/itsparasbisht"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.github_link}
+          onClick={() => {
+            posthog.capture("guest_opened_github");
+          }}
+        >
+          GitHub
+        </a>
 
-        <li className={styles.linkedin_link}>
-          <a
-            href="https://www.linkedin.com/in/paras-bisht"
-            target="_blank"
-            rel="noreferrer"
-            onClick={() => {
-              posthog.capture("guest_opened_linkedin");
-            }}
-          >
-            LinkedIn
-          </a>
-        </li>
+        <a
+          href="https://www.linkedin.com/in/paras-bisht"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.linkedin_link}
+          onClick={() => {
+            posthog.capture("guest_opened_linkedin");
+          }}
+        >
+          LinkedIn
+        </a>
 
-        <li className={styles.blogs_link}>
-          <a
-            href="https://blogs-by-paras.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-            onClick={() => {
-              posthog.capture("guest_opened_blogs");
-            }}
-          >
-            Blogs by me
-          </a>
-        </li>
-      </ul>
+        <a
+          href="https://blogs-by-paras.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.blogs_link}
+          onClick={() => {
+            posthog.capture("guest_opened_blogs");
+          }}
+        >
+          Blogs by me
+        </a>
+      </div>
     </nav>
   );
 }
