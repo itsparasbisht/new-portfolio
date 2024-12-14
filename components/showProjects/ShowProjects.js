@@ -31,26 +31,29 @@ function ShowProjects({
           </h4>
           <p>{about}</p>
           <div className={styles.btnCtr}>
-            <button
+            <a
+              href={liveLink}
+              target="_blank"
               onClick={() => {
                 posthog.capture("guest_opened_project", {
                   project_name: title,
                 });
-                openLink(liveLink);
               }}
             >
               View Site
-            </button>
-            <button
+            </a>
+
+            <a
+              href={githubLink}
+              target="_blank"
               onClick={() => {
                 posthog.capture("guest_opened_github_repo", {
                   project_name: title,
                 });
-                openLink(githubLink);
               }}
             >
               GitHub
-            </button>
+            </a>
           </div>
         </div>
       </div>

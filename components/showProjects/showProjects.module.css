@@ -54,10 +54,10 @@
 }
 
 .btnCtr {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
-.btnCtr button {
+.btnCtr a {
     border: none;
     border-radius: 20px;
     padding: 10px 15px;
@@ -67,18 +67,16 @@
     background-color: #EFD81D;
     font-weight: 600;
     color: rgb(0, 0, 0);
-    border: 2px solid #EFD81D;
     transition: all 0.3s;
 }
 
-.btnCtr button:nth-child(2) {
-    background-color: white;
-    border-color: #e1e1e1;
+.btnCtr a:nth-child(2) {
+    background-color: black;
+    color: white;
 }
 
-.btnCtr button:hover {
-    background-color: #276ce2;
-    border: 2px solid #276ce2;
+.btnCtr a:hover {
+    background-color: black;
     color: #ffffff;
 }
 
@@ -153,7 +151,7 @@
         margin-top: 10px;
     }
 
-    .btnCtr button {
+    .btnCtr a {
         font-size: 1.3rem;
     }
 }
@@ -165,5 +163,9 @@
 
     .wrapper {
         padding-bottom: 40px;
+    }
+
+    .btnCtr a {
+        font-size: 1.4rem;
     }
 }

@@ -1,8 +1,5 @@
-import Image from "next/image";
 import React from "react";
 import styles from "./footer.module.css";
-import jsLogo from "../../assets/javascript.png";
-import reactLogo from "../../assets/react.png";
 import { posthog } from "posthog-js";
 
 function Footer() {
@@ -105,7 +102,17 @@ function Footer() {
               posthog.capture("guest_opened_linkedin");
             }}
           >
-            linkedIn
+            LinkedIn
+          </a>
+          <a
+            href="https://blogs-by-paras.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => {
+              posthog.capture("guest_opened_blogs");
+            }}
+          >
+            Blogs
           </a>
         </div>
         <div className={styles.contact}>
@@ -116,10 +123,6 @@ function Footer() {
         <div className={styles.info}>
           <h5>Made by me and JavaScript</h5>
         </div>
-      </div>
-      <div className={styles.footerLast}>
-        <Image src={jsLogo} alt="javascript logo" />
-        <Image src={reactLogo} alt="reactJs logo" />
       </div>
     </footer>
   );

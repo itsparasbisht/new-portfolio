@@ -1,6 +1,16 @@
 const projectsList = [
   {
     id: 1,
+    title: "Earth Population Visualization",
+    technologies: "ReactJS, TypeScript, ECharts, Tailwind-CSS",
+    imageUrl: "https://i.ibb.co/9r5dyjy/earth-population.png",
+    about:
+      "This project visualizes population and world fertility data from 1960 to 2023, highlighting major trends and key observations from the datasets.",
+    liveLink: "https://earth-population.netlify.app/",
+    githubLink: "https://github.com/itsparasbisht/earth-population",
+  },
+  {
+    id: 2,
     title: "React Markdown App",
     technologies: "ReactJS, TypeScript, Markdown, Tailwind-CSS",
     imageUrl: "https://i.ibb.co/jzT3knV/react-markdown-app.png",
@@ -10,7 +20,7 @@ const projectsList = [
     githubLink: "https://github.com/itsparasbisht/react-notes-app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Next Gallery App",
     technologies: "NextJS 14, TypeScript, DrizzleORM, Tailwind-CSS",
     imageUrl: "https://i.ibb.co/DKFvPNw/next-gallery-app.png",
@@ -20,7 +30,7 @@ const projectsList = [
     githubLink: "https://github.com/itsparasbisht/nextjs14-gallery-app",
   },
   {
-    id: 3,
+    id: 4,
     title: "File Share App",
     technologies:
       "ReactJS, NodeJS, ExpressJS, MongoDB, TailwindCSS, Cloud Storage",
@@ -31,7 +41,7 @@ const projectsList = [
     githubLink: "https://github.com/itsparasbisht/file-share-app",
   },
   {
-    id: 4,
+    id: 5,
     title: "Divine Explorer",
     technologies: "Leaflet, geoJSON, CSS",
     imageUrl: "https://i.ibb.co/fp8YR07/divine-explorer.png",
@@ -42,7 +52,7 @@ const projectsList = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "E-Commerce App",
     technologies: "Sanity, Payment Gateway, NextJS",
     imageUrl: "https://i.ibb.co/HDtb4yN/e-commerce-app.jpg",
@@ -52,7 +62,7 @@ const projectsList = [
     githubLink: "https://github.com/itsparasbisht/e-commerce-app",
   },
   {
-    id: 6,
+    id: 7,
     title: "Amazon Price tracker",
     technologies: "ReactJS, ExpressJS, NodeJS, MongoDB, Puppeteer, Nodemailer",
     imageUrl: "https://i.ibb.co/ThbXF2C/amazon-price-track-app.png",
@@ -62,7 +72,7 @@ const projectsList = [
     githubLink: "https://github.com/itsparasbisht/price-tracker-backend",
   },
   {
-    id: 7,
+    id: 8,
     title: "API Call App",
     technologies: "Vanilla JavaScript, Axios, Bootstrap",
     imageUrl: "https://i.ibb.co/jvv8dgG/api-call-app.png",

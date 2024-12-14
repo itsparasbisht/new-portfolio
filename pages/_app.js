@@ -22,6 +22,7 @@ export default function MyApp({ Component, pageProps }) {
         <Head>
           <title>Paras - Web Portfolio</title>
           <meta lang="en" />
+          <link rel="icon" type="image/png" href="/favicon.png" />
           <meta name="title" content="Paras Bisht - Web Portfolio" />
           <meta
             name="description"
