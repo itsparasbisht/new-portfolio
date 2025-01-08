@@ -23,6 +23,7 @@ import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 import heroImage from "../assets/hero-image.png";
 import Image from "next/image";
 import Blogs from "../components/blogs/Blogs";
+import WorkExperience from "../components/workExperience/WorkExperience";
 
 export default function Home() {
   const customPrevArrow = (onClickHandler, hasPrev) => (
@@ -75,6 +76,8 @@ export default function Home() {
         </div>
 
         <About />
+
+        <WorkExperience />
 
         <Blogs />
 
