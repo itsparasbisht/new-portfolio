@@ -7,7 +7,14 @@ export default function WorkExperience() {
   return (
     <div className={styles.wrapper}>
       <h3>
-        <Image src={icon} alt="" width={40} height={40} />
+        <Image
+          src={icon}
+          alt=""
+          width={40}
+          height={40}
+          placeholder="blur"
+          priority
+        />
         Work Experience
       </h3>
       <h4>SirpiDataScience</h4>

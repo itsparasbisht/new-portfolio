@@ -9,7 +9,12 @@ function Blogs() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image src={heroImage} alt="blogs by paras" />
+          <Image
+            src={heroImage}
+            alt="blogs by paras"
+            placeholder="blur"
+            priority
+          />
         </div>
         <div className={styles.textContainer}>
           <p>

@@ -46,6 +46,7 @@ function Bored() {
             src={emojisImg}
             alt="If you are bored I can suggest you some things to do"
             className={styles.images}
+            placeholder="blur"
           />
         </div>
       </div>

@@ -22,7 +22,7 @@ function OldPortfolio() {
           window.open("https://portfolio-parasbisht.web.app/");
         }}
       >
-        <Image src={oldPortfolio} alt="" />
+        <Image src={oldPortfolio} alt="" placeholder="blur" />
       </div>
     </div>
   );
