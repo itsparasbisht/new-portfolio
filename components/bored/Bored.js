@@ -47,6 +47,7 @@ function Bored() {
             alt="If you are bored I can suggest you some things to do"
             className={styles.images}
             placeholder="blur"
+            priority
           />
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function WorkExperience() {
       <h3>
         <Image
           src={icon}
-          alt=""
+          alt="briefcase icon"
           width={40}
           height={40}
           placeholder="blur"

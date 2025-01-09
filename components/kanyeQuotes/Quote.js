@@ -33,6 +33,7 @@ function Quote() {
           alt="Kanye West"
           className={styles.images}
           placeholder="blur"
+          priority
         />
         <p>
           {`"${quote}"`} <br />{" "}

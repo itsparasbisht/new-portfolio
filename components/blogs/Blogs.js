@@ -11,7 +11,7 @@ function Blogs() {
         <div className={styles.imageContainer}>
           <Image
             src={heroImage}
-            alt="blogs by paras"
+            alt="blogs by paras illustration"
             placeholder="blur"
             priority
           />
