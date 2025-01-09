@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./blogs.module.css";
-import heroImage from "../../assets/blogs-by-paras.png";
+import heroImage from "../../assets/image.png";
 import { posthog } from "posthog-js";
 
 function Blogs() {

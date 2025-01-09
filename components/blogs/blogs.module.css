@@ -4,7 +4,7 @@
 
 .container {
     max-width: 1600px;
-    margin: 100px auto;
+    margin: 80px auto;
     padding: 80px 40px;
     display: flex;
     justify-content: center;
@@ -13,14 +13,14 @@
 }
 
 .container p {
-    color: rgb(238, 238, 238);
+    color: #D88B4E;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .imageContainer {
     max-width: 600px;
-    border-right: 8px solid #D88B4E;
+    /* border-right: 8px solid #D88B4E; */
 }
 
 .container button {
@@ -31,7 +31,7 @@
     font-size: 1.3rem;
     background-color: #D88B4E;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
 }

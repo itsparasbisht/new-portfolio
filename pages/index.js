@@ -146,7 +146,7 @@ export default function Home() {
         <div>
           <div className={styles.projects}>
             <div></div>
-            <h3>PROJECTS</h3>
+            <h3>PERSONAL PROJECTS</h3>
             <div></div>
           </div>
           {projectsList.map((project) => (
