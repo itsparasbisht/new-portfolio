@@ -67,7 +67,7 @@ export default function Home() {
           <div className={styles.box2}>
             <Image
               src={heroImage}
-              alt="illustration of a transhuman with a evolve text"
+              alt="Black and white illustration of a person in a helmet with the word 'EVOLVE' on it. The person is in profile view, with chin straps visible."
               width={500}
               height={500}
               placeholder="blur"

@@ -30,7 +30,7 @@ function Quote() {
       <div className={styles.wrapper}>
         <Image
           src={kanyeImg}
-          alt="Kanye West"
+          alt="A portrait of Kanye West with a trimmed beard and short hair, wearing a black shirt against a teal background, looking directly at the camera with a neutral expression."
           className={styles.images}
           placeholder="blur"
           priority

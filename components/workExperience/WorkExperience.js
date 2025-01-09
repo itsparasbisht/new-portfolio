@@ -12,7 +12,6 @@ export default function WorkExperience() {
           alt="briefcase icon"
           width={40}
           height={40}
-          placeholder="blur"
           priority
         />
         Work Experience

@@ -11,7 +11,7 @@ function Blogs() {
         <div className={styles.imageContainer}>
           <Image
             src={heroImage}
-            alt="blogs by paras illustration"
+            alt="A blog page header featuring a stylized illustration of a person with long hair and a white hoodie on the left, accompanied by a list of blog titles and their publication dates on the right. The blogs include topics like 'Earth Population Visualization, useRef() - Beyond DOM Access,' 'You should know Web Accessibility,' and 'What is Unicode and UTF-8?'. The design uses a dark theme with orange accents for headings."
             placeholder="blur"
             priority
           />

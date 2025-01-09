@@ -26,7 +26,6 @@ function ShowProjects({
             alt={title}
             width={"650"}
             height={"350"}
-            placeholder="blur"
             priority
           />
         </div>

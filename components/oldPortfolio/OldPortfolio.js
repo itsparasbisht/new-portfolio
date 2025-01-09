@@ -24,7 +24,7 @@ function OldPortfolio() {
       >
         <Image
           src={oldPortfolio}
-          alt="old portfolio site hero section"
+          alt="Website design with a light blue background featuring a stylized fountain pen nib icon in the center. The text reads 'this is paras' in bold, with 'self made self taught' above and 'web designer & developer' below. Navigation links for 'about,' 'projects,' and 'contact' are located in the top-right corner."
           placeholder="blur"
           priority
         />
