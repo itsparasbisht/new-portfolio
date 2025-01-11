@@ -125,6 +125,7 @@ function Footer() {
           <a
             href="https://github.com/itsparasbisht/new-portfolio"
             target="_blank"
+            rel="noreferrer"
           >
             Code repository link
           </a>
