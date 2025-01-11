@@ -122,6 +122,12 @@ function Footer() {
         </div>
         <div className={styles.info}>
           <h5>Made by me and JavaScript</h5>
+          <a
+            href="https://github.com/itsparasbisht/new-portfolio"
+            target="_blank"
+          >
+            Code repository link
+          </a>
         </div>
       </div>
     </footer>

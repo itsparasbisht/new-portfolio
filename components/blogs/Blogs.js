@@ -18,7 +18,16 @@ function Blogs() {
         </div>
         <div className={styles.textContainer}>
           <p>
-            Here I share insights on topics I find interesting and hope they’ll
+            <span
+              style={{
+                fontWeight: 900,
+                fontSize: "3rem",
+                color: "white",
+              }}
+            >
+              Blogs by Paras,
+            </span>{" "}
+            here I share insights on topics I find interesting and hope they’ll
             be useful to you too.
           </p>
           <a
@@ -29,7 +38,7 @@ function Blogs() {
               posthog.capture("guest_opened_blogs");
             }}
           >
-            <button>Blogs by Paras</button>
+            <button>Visit blogs</button>
           </a>
         </div>
       </div>

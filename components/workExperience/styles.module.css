@@ -31,6 +31,11 @@
 }
 
 @media (max-width: 800px) {
+    .wrapper {
+        padding: 5%;
+    }
+
+
     .wrapper h4 {
         font-size: 1.5rem;
     }
