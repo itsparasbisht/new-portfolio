@@ -70,7 +70,10 @@
 
 .info {
     flex: 1;
-    text-align: right;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 20px;
 }
 
