@@ -85,11 +85,11 @@ export default function Home() {
         <div className="carousel-container">
           <Carousel
             infiniteLoop={true}
-            renderIndicator={false}
+            // renderIndicator={false}
             autoPlay={true}
             swipeable={false}
             showThumbs={false}
-            showStatus={false}
+            // showStatus={false}
             renderArrowPrev={customPrevArrow}
             renderArrowNext={customNextArrow}
           >
