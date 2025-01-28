@@ -30,7 +30,7 @@ export default function MyApp({ Component, pageProps }) {
           />
           <meta
             name="keywords"
-            content="paras bisht, software engineer, web developer, frontend developer, web portfolio, javascript developer, reactjs"
+            content="paras bisht, paras bisht portfolio, software developer portfolio, web developer, frontend developer portfolio, web portfolio, javascript developer, blogs by paras"
           />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="English" />
