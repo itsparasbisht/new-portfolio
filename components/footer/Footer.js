@@ -127,7 +127,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            Code repository link
+            Portfolio site code
           </a>
         </div>
       </div>
