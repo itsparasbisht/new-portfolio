@@ -1,0 +1,16 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-basker);
+}
+
+body {
+    font-family: var(--font-lato);
+}
