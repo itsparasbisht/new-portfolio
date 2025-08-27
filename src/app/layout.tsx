@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Baskervville, Lato } from "next/font/google";
+import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
-const baskervville = Baskervville({
+const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-basker",
+  weight: "400",
+  variable: "--font-serif",
 });
 
-const lato = Lato({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "700"],
   display: "swap",
-  variable: "--font-lato",
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -27,8 +28,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${baskervville.variable} ${lato.variable} antialiased`}>
-        {children}
+      <body
+        className={`${dmSerif.variable} ${inter.variable} antialiased bg-stone-50 max-w-2xl mx-auto p-10`}
+      >
+        <header className="flex items-center justify-between gap-4 mb-10">
+          <Image
+            src={"/profile.png"}
+            alt="logo"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
+          <nav className="">
+            <ul
+              className="flex gap-6 font-medium text-stone-500"
+              style={{ fontFamily: "var(--font-sans)" }}
+            >
+              <li className="text-stone-800 border-b border-stone-300 hover:text-stone-950 transition-colors cursor-pointer">
+                /index
+              </li>
+              <li className="hover:text-stone-800 transition-colors cursor-pointer">
+                posts
+              </li>
+              <li className="hover:text-stone-800 transition-colors cursor-pointer">
+                experience
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -1,5 +1,4 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
 
 /* Base styles */
 h1,
@@ -8,9 +7,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-basker);
+    font-family: var(--font-serif);
 }
 
 body {
-    font-family: var(--font-lato);
+    font-family: var(--font-sans);
 }
