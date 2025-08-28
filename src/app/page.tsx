@@ -1,3 +1,8 @@
+import { IoMail, IoDocument } from "react-icons/io5";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { PiTextBBold } from "react-icons/pi";
+import { GrInstagram } from "react-icons/gr";
+
 export default function Home() {
   return (
     <section className="text-stone-600">
@@ -17,7 +22,7 @@ export default function Home() {
           </span>
         </span>{" "}
         with over 4 years of experience in building
-        <span className="relative inline-block group">
+        <span className="relative inline-block group px-1 mx-0.5">
           <span className="absolute inset-0 -skew-y-3 bg-teal-100/50 rounded opacity-70 group-hover:bg-teal-100 transition-all duration-300"></span>
           <span className="relative text-teal-900 font-medium">
             data‑driven solutions
@@ -60,6 +65,45 @@ export default function Home() {
         </span>{" "}
         with cross‑functional teams to drive execution and deliver solutions.
       </p>
+
+      <div className="mt-4 space-x-4 text-sm">
+        <a
+          href="mailto:iamparasbisht@gmail.com"
+          target="_blank"
+          className="hover:underline"
+        >
+          <IoMail className="inline mb-1 mr-1 text-stone-400" />
+          Mail
+        </a>
+        <a
+          href="https://github.com/itsparasbisht"
+          target="_blank"
+          className="hover:underline"
+        >
+          <FaGithub className="inline mb-1 mr-1 ml-4 text-stone-400" />
+          GitHub
+        </a>
+        <a
+          href="https://blogs-by-paras.netlify.app"
+          target="_blank"
+          className="hover:underline"
+        >
+          <IoDocument className="inline mb-1 mr-1 ml-4 text-stone-400" />
+          Blogs
+        </a>
+        <a
+          href="https://www.linkedin.com/in/paras-bisht"
+          target="_blank"
+          className="hover:underline"
+        >
+          <FaLinkedinIn className="inline mb-1 mr-1 ml-4 text-stone-400" />
+          LinkedIn
+        </a>
+        <a href="" target="_blank" className="hover:underline">
+          <GrInstagram className="inline mb-1 mr-1 ml-4 text-stone-400" />
+          Instagram
+        </a>
+      </div>
     </section>
   );
 }
