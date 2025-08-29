@@ -1,7 +1,7 @@
 import { IoMail, IoDocument } from "react-icons/io5";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { PiTextBBold } from "react-icons/pi";
 import { GrInstagram } from "react-icons/gr";
+import { ArrowUpRight, Globe, MapPin } from "lucide-react";
 
 export default function Home() {
   return (
@@ -66,43 +66,108 @@ export default function Home() {
         with cross‑functional teams to drive execution and deliver solutions.
       </p>
 
-      <div className="mt-4 space-x-4 text-sm">
+      <div className="mt-8 flex flex-wrap gap-3">
         <a
           href="mailto:iamparasbisht@gmail.com"
           target="_blank"
-          className="hover:underline"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-rose-100 hover:text-rose-700"
         >
-          <IoMail className="inline mb-1 mr-1 text-stone-400" />
+          <IoMail className="mr-2 text-base" />
           Mail
         </a>
         <a
           href="https://github.com/itsparasbisht"
           target="_blank"
-          className="hover:underline"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-teal-100 hover:text-teal-700"
         >
-          <FaGithub className="inline mb-1 mr-1 ml-4 text-stone-400" />
+          <FaGithub className="mr-2 text-base" />
           GitHub
         </a>
         <a
           href="https://blogs-by-paras.netlify.app"
           target="_blank"
-          className="hover:underline"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-blue-100 hover:text-blue-700"
         >
-          <IoDocument className="inline mb-1 mr-1 ml-4 text-stone-400" />
+          <IoDocument className="mr-2 text-base" />
           Blogs
         </a>
         <a
           href="https://www.linkedin.com/in/paras-bisht"
           target="_blank"
-          className="hover:underline"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-violet-100 hover:text-violet-700"
         >
-          <FaLinkedinIn className="inline mb-1 mr-1 ml-4 text-stone-400" />
+          <FaLinkedinIn className="mr-2 text-base" />
           LinkedIn
         </a>
-        <a href="" target="_blank" className="hover:underline">
-          <GrInstagram className="inline mb-1 mr-1 ml-4 text-stone-400" />
+        <a
+          href="https://www.instagram.com/itsparas.in"
+          target="_blank"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-emerald-100 hover:text-emerald-700"
+        >
+          <GrInstagram className="mr-2 text-base" />
           Instagram
         </a>
+      </div>
+
+      <h3 className="mt-8 mb-6 text-2xl font-serif text-stone-800">
+        Personal Projects
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="group relative">
+          <a
+            href="https://earth-population.netlify.app/"
+            target="_blank"
+            className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-rose-300 group-hover:shadow-lg group-hover:shadow-rose-100"
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.rose.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+            <div className="relative h-full">
+              <h3 className="text-lg font-medium text-stone-800 mb-2 flex items-center">
+                Earth Chronicle
+                <ArrowUpRight className="ml-1.5 h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </h3>
+              <p className="text-sm leading-relaxed text-stone-600">
+                An in-depth examination of global population trends, fertility
+                patterns, and demographic shifts shaping our world's future.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/itsparasbisht/earth-population"
+            target="_blank"
+            className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-rose-600"
+            aria-label="View Code on GitHub"
+          >
+            <FaGithub className="h-5 w-5" />
+          </a>
+        </div>
+
+        <div className="group relative">
+          <a
+            href="https://divine-explorer.netlify.app/"
+            target="_blank"
+            className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-violet-300 group-hover:shadow-lg group-hover:shadow-violet-100"
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.violet.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+            <div className="relative h-full">
+              <h3 className="text-lg font-medium text-stone-800 mb-2 flex items-center">
+                Divine Explorer
+                <ArrowUpRight className="ml-1.5 h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </h3>
+              <p className="text-sm leading-relaxed text-stone-600">
+                Take a look at the destinations that you may wish to visit in
+                Uttarakhand.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/itsparasbisht/leaflet-init"
+            target="_blank"
+            className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-violet-600"
+            aria-label="View Code on GitHub"
+          >
+            <FaGithub className="h-5 w-5" />
+          </a>
+        </div>
       </div>
     </section>
   );
