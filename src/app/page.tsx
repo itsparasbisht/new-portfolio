@@ -70,7 +70,7 @@ export default function Home() {
         <a
           href="mailto:iamparasbisht@gmail.com"
           target="_blank"
-          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-rose-100 hover:text-rose-700"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-red-100 hover:text-red-700"
         >
           <IoMail className="mr-2 text-base" />
           Mail
@@ -78,7 +78,7 @@ export default function Home() {
         <a
           href="https://github.com/itsparasbisht"
           target="_blank"
-          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-teal-100 hover:text-teal-700"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-gray-200 hover:text-gray-800"
         >
           <FaGithub className="mr-2 text-base" />
           GitHub
@@ -94,7 +94,7 @@ export default function Home() {
         <a
           href="https://www.linkedin.com/in/paras-bisht"
           target="_blank"
-          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-violet-100 hover:text-violet-700"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-sky-100 hover:text-sky-700"
         >
           <FaLinkedinIn className="mr-2 text-base" />
           LinkedIn
@@ -102,7 +102,7 @@ export default function Home() {
         <a
           href="https://www.instagram.com/itsparas.in"
           target="_blank"
-          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-emerald-100 hover:text-emerald-700"
+          className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-pink-100 hover:text-pink-700"
         >
           <GrInstagram className="mr-2 text-base" />
           Instagram
@@ -127,7 +127,7 @@ export default function Home() {
               </h3>
               <p className="text-sm leading-relaxed text-stone-600">
                 An in-depth examination of global population trends, fertility
-                patterns, and demographic shifts shaping our world's future.
+                patterns, and demographic shifts.
               </p>
             </div>
           </a>
@@ -163,6 +163,34 @@ export default function Home() {
             href="https://github.com/itsparasbisht/leaflet-init"
             target="_blank"
             className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-violet-600"
+            aria-label="View Code on GitHub"
+          >
+            <FaGithub className="h-5 w-5" />
+          </a>
+        </div>
+
+        <div className="group relative md:col-span-2">
+          <a
+            href="https://md-note.netlify.app/"
+            target="_blank"
+            className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-teal-300 group-hover:shadow-lg group-hover:shadow-teal-100"
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.teal.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+            <div className="relative h-full">
+              <h3 className="text-lg font-medium text-stone-800 mb-2 flex items-center">
+                React Markdown App
+                <ArrowUpRight className="ml-1.5 h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </h3>
+              <p className="text-sm leading-relaxed text-stone-600">
+                Minimal looking note-taking application with markdown support.
+                Includes theme toggle, edit notes, tags.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/itsparasbisht/react-notes-app"
+            target="_blank"
+            className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-teal-600"
             aria-label="View Code on GitHub"
           >
             <FaGithub className="h-5 w-5" />
