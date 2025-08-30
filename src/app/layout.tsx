@@ -19,9 +19,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Paras Bisht",
+  title: "Paras Bisht | Software Developer",
   description:
     "Portfolio of Paras Bisht, a software developer with 4 years of experience in building data-driven solutions.",
+  referrer: "origin",
 };
 
 export default function RootLayout({
