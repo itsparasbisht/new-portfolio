@@ -203,7 +203,7 @@ export default function Home() {
         Certificates
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -213,20 +213,22 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <p className="font-semibold text-stone-800">Responsive Web</p>
+                <p className="font-semibold text-stone-800 text-sm">
+                  Responsive Design
+                </p>
                 <p className="text-sm text-stone-600">freeCodeCamp</p>
               </div>
             </div>
             <a
               href="https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
               target="_blank"
-              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+              className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
         </div>
-        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -236,20 +238,22 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <p className="font-semibold text-stone-800">JavaScript</p>
+                <p className="font-semibold text-stone-800 text-sm">
+                  JavaScript
+                </p>
                 <p className="text-sm text-stone-600">HackerRank</p>
               </div>
             </div>
             <a
               href="https://www.hackerrank.com/certificates/9dc418ef7658"
               target="_blank"
-              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+              className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
         </div>
-        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -259,20 +263,20 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <p className="font-semibold text-stone-800">ReactJS</p>
+                <p className="font-semibold text-stone-800 text-sm">ReactJS</p>
                 <p className="text-sm text-stone-600">HackerRank</p>
               </div>
             </div>
             <a
               href="https://www.hackerrank.com/certificates/d418255f8700"
               target="_blank"
-              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+              className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
         </div>
-        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -282,20 +286,20 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <p className="font-semibold text-stone-800">CSS</p>
+                <p className="font-semibold text-stone-800 text-sm">CSS</p>
                 <p className="text-sm text-stone-600">HackerRank</p>
               </div>
             </div>
             <a
               href="https://www.hackerrank.com/certificates/6a291fdbcecf"
               target="_blank"
-              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+              className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
         </div>
-        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -305,14 +309,14 @@ export default function Home() {
                 height={40}
               />
               <div>
-                <p className="font-semibold text-stone-800">SQL</p>
+                <p className="font-semibold text-stone-800 text-sm">SQL</p>
                 <p className="text-sm text-stone-600">HackerRank</p>
               </div>
             </div>
             <a
               href="https://www.hackerrank.com/certificates/00dafe57cbb7"
               target="_blank"
-              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+              className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
@@ -327,7 +331,7 @@ export default function Home() {
           </div>
           <div className="ml-2 flex-1">
             <p className="text-sm">
-              I&apos;m always open to collaborating and connecting.{", "}
+              I&apos;m always open to collaborating and connecting.{" "}
               <a
                 href="mailto:iamparasbisht@gmail.com"
                 className="font-medium text-rose-600 hover:underline"

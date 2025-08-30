@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
@@ -57,6 +58,27 @@ export default function RootLayout({
           </nav>
         </header>
         <main>{children}</main>
+        <footer className="mt-12 border-t border-stone-200 py-6 text-sm text-stone-500">
+          <div className="flex items-center justify-between">
+            <p>Handcrafted by Paras Bisht</p>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://github.com/itsparasbisht"
+                target="_blank"
+                className="hover:text-stone-700"
+              >
+                <FaGithub className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/paras-bisht"
+                target="_blank"
+                className="hover:text-stone-700"
+              >
+                <FaLinkedinIn className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
