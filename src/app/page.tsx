@@ -1,7 +1,8 @@
 import { IoMail, IoDocument } from "react-icons/io5";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
-import { ArrowUpRight, Globe, MapPin } from "lucide-react";
+import { ArrowUpRight, Info } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -173,9 +174,9 @@ export default function Home() {
           <a
             href="https://md-note.netlify.app/"
             target="_blank"
-            className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-teal-300 group-hover:shadow-lg group-hover:shadow-teal-100"
+            className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-blue-300 group-hover:shadow-lg group-hover:shadow-blue-100"
           >
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.teal.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.blue.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
             <div className="relative h-full">
               <h3 className="text-lg font-medium text-stone-800 mb-2 flex items-center">
                 React Markdown App
@@ -190,11 +191,151 @@ export default function Home() {
           <a
             href="https://github.com/itsparasbisht/react-notes-app"
             target="_blank"
-            className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-teal-600"
+            className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-blue-600"
             aria-label="View Code on GitHub"
           >
             <FaGithub className="h-5 w-5" />
           </a>
+        </div>
+      </div>
+
+      <h3 className="mt-8 mb-6 text-2xl font-serif text-stone-800">
+        Certificates
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/fcc.svg"
+                alt="freeCodeCamp logo"
+                width={40}
+                height={40}
+              />
+              <div>
+                <p className="font-semibold text-stone-800">Responsive Web</p>
+                <p className="text-sm text-stone-600">freeCodeCamp</p>
+              </div>
+            </div>
+            <a
+              href="https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
+              target="_blank"
+              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+            >
+              Verify <ArrowUpRight className="ml-1 h-4 w-4" />
+            </a>
+          </div>
+        </div>
+        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/HackerRank.png"
+                alt="HackerRank logo"
+                width={40}
+                height={40}
+              />
+              <div>
+                <p className="font-semibold text-stone-800">JavaScript</p>
+                <p className="text-sm text-stone-600">HackerRank</p>
+              </div>
+            </div>
+            <a
+              href="https://www.hackerrank.com/certificates/9dc418ef7658"
+              target="_blank"
+              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+            >
+              Verify <ArrowUpRight className="ml-1 h-4 w-4" />
+            </a>
+          </div>
+        </div>
+        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/HackerRank.png"
+                alt="HackerRank logo"
+                width={40}
+                height={40}
+              />
+              <div>
+                <p className="font-semibold text-stone-800">ReactJS</p>
+                <p className="text-sm text-stone-600">HackerRank</p>
+              </div>
+            </div>
+            <a
+              href="https://www.hackerrank.com/certificates/d418255f8700"
+              target="_blank"
+              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+            >
+              Verify <ArrowUpRight className="ml-1 h-4 w-4" />
+            </a>
+          </div>
+        </div>
+        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/HackerRank.png"
+                alt="HackerRank logo"
+                width={40}
+                height={40}
+              />
+              <div>
+                <p className="font-semibold text-stone-800">CSS</p>
+                <p className="text-sm text-stone-600">HackerRank</p>
+              </div>
+            </div>
+            <a
+              href="https://www.hackerrank.com/certificates/6a291fdbcecf"
+              target="_blank"
+              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+            >
+              Verify <ArrowUpRight className="ml-1 h-4 w-4" />
+            </a>
+          </div>
+        </div>
+        <div className="rounded-xl border border-stone-200 bg-stone-50 p-3 transition-all duration-300 hover:border-stone-300 hover:bg-stone-100">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/HackerRank.png"
+                alt="HackerRank logo"
+                width={40}
+                height={40}
+              />
+              <div>
+                <p className="font-semibold text-stone-800">SQL</p>
+                <p className="text-sm text-stone-600">HackerRank</p>
+              </div>
+            </div>
+            <a
+              href="https://www.hackerrank.com/certificates/00dafe57cbb7"
+              target="_blank"
+              className="inline-flex items-center text-sm font-medium text-stone-500 hover:text-stone-700"
+            >
+              Verify <ArrowUpRight className="ml-1 h-4 w-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 rounded-lg bg-rose-50 p-3 text-stone-800">
+        <div className="flex items-center">
+          <div className="flex-shrink-0">
+            <Info className="h-5 w-5 text-rose-500" />
+          </div>
+          <div className="ml-2 flex-1">
+            <p className="text-sm">
+              I&apos;m always open to collaborating and connecting.{", "}
+              <a
+                href="mailto:iamparasbisht@gmail.com"
+                className="font-medium text-rose-600 hover:underline"
+              >
+                Feel free to reach out!
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
