@@ -71,6 +71,7 @@ export default function Home() {
         <a
           href="mailto:iamparasbisht@gmail.com"
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-red-100 hover:text-red-700"
         >
           <IoMail className="mr-2 text-base" />
@@ -79,6 +80,7 @@ export default function Home() {
         <a
           href="https://github.com/itsparasbisht"
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-gray-200 hover:text-gray-800"
         >
           <FaGithub className="mr-2 text-base" />
@@ -87,6 +89,7 @@ export default function Home() {
         <a
           href="https://blogs-by-paras.netlify.app"
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-blue-100 hover:text-blue-700"
         >
           <IoDocument className="mr-2 text-base" />
@@ -95,6 +98,7 @@ export default function Home() {
         <a
           href="https://www.linkedin.com/in/paras-bisht"
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-sky-100 hover:text-sky-700"
         >
           <FaLinkedinIn className="mr-2 text-base" />
@@ -103,6 +107,7 @@ export default function Home() {
         <a
           href="https://www.instagram.com/itsparas.in"
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center rounded-lg bg-stone-100 px-3 py-2 text-sm font-medium text-stone-600 transition-colors duration-300 hover:bg-pink-100 hover:text-pink-700"
         >
           <GrInstagram className="mr-2 text-base" />
@@ -110,14 +115,15 @@ export default function Home() {
         </a>
       </div>
 
-      <h3 className="mt-8 mb-6 text-2xl font-serif text-stone-800">
+      <h2 className="mt-8 mb-6 text-2xl font-serif text-stone-800">
         Personal Projects
-      </h3>
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="group relative">
           <a
             href="https://earth-population.netlify.app/"
             target="_blank"
+            rel="noopener noreferrer"
             className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-rose-300 group-hover:shadow-lg group-hover:shadow-rose-100"
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.rose.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
@@ -135,6 +141,7 @@ export default function Home() {
           <a
             href="https://github.com/itsparasbisht/earth-population"
             target="_blank"
+            rel="noopener noreferrer"
             className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-rose-600"
             aria-label="View Code on GitHub"
           >
@@ -146,6 +153,7 @@ export default function Home() {
           <a
             href="https://divine-explorer.netlify.app/"
             target="_blank"
+            rel="noopener noreferrer"
             className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-violet-300 group-hover:shadow-lg group-hover:shadow-violet-100"
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.violet.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
@@ -163,6 +171,7 @@ export default function Home() {
           <a
             href="https://github.com/itsparasbisht/leaflet-init"
             target="_blank"
+            rel="noopener noreferrer"
             className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-violet-600"
             aria-label="View Code on GitHub"
           >
@@ -174,6 +183,7 @@ export default function Home() {
           <a
             href="https://md-note.netlify.app/"
             target="_blank"
+            rel="noopener noreferrer"
             className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-blue-300 group-hover:shadow-lg group-hover:shadow-blue-100"
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.blue.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
@@ -191,6 +201,7 @@ export default function Home() {
           <a
             href="https://github.com/itsparasbisht/react-notes-app"
             target="_blank"
+            rel="noopener noreferrer"
             className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-blue-600"
             aria-label="View Code on GitHub"
           >
@@ -199,9 +210,9 @@ export default function Home() {
         </div>
       </div>
 
-      <h3 className="mt-8 mb-6 text-2xl font-serif text-stone-800">
+      <h2 className="mt-8 mb-6 text-2xl font-serif text-stone-800">
         Certificates
-      </h3>
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
@@ -222,6 +233,7 @@ export default function Home() {
             <a
               href="https://www.freecodecamp.org/certification/parasbisht/responsive-web-design"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -247,6 +259,7 @@ export default function Home() {
             <a
               href="https://www.hackerrank.com/certificates/9dc418ef7658"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -270,6 +283,7 @@ export default function Home() {
             <a
               href="https://www.hackerrank.com/certificates/d418255f8700"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -293,6 +307,7 @@ export default function Home() {
             <a
               href="https://www.hackerrank.com/certificates/6a291fdbcecf"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -316,6 +331,7 @@ export default function Home() {
             <a
               href="https://www.hackerrank.com/certificates/00dafe57cbb7"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
             >
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
