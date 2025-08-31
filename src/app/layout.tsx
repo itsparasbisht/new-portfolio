@@ -18,10 +18,44 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Paras Bisht",
+  title: "Paras Bisht - Web Portfolio",
   description:
     "Portfolio of Paras Bisht, a software developer with 4 years of experience in building data-driven solutions.",
   referrer: "origin",
+  keywords: [
+    "paras bisht",
+    "paras bisht portfolio",
+    "software developer portfolio",
+    "web developer",
+    "frontend developer portfolio",
+    "javascript developer",
+    "blogs by paras",
+  ],
+  authors: [{ name: "Paras Bisht", url: "https://paras-bisht.netlify.app" }],
+  openGraph: {
+    title: "Paras Bisht - Web Portfolio",
+    description:
+      "Portfolio of Paras Bisht, a software developer with 4 years of experience in building data-driven solutions.",
+    url: "https://paras-bisht.netlify.app",
+    siteName: "Paras Bisht's Portfolio",
+    images: [
+      {
+        url: "https://i.ibb.co/SwkZ2bPv/profile.jpg",
+        width: 800,
+        height: 600,
+        alt: "Paras Bisht's Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Paras Bisht - Web Portfolio",
+    description:
+      "Portfolio of Paras Bisht, a software developer with 4 years of experience in building data-driven solutions.",
+    images: ["https://i.ibb.co/SwkZ2bPv/profile.jpg"],
+  },
 };
 
 export default function RootLayout({
