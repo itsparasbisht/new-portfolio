@@ -44,7 +44,7 @@ const experience = [
       {
         title: "Bachelors in Computer Applications",
         duration: "",
-        description: [],
+        description: ["Graduated with 86% (First Division with Honours)."],
       },
     ],
     location: "Almora (Uttarakhand)",
@@ -55,9 +55,12 @@ const experience = [
     organization: "Army Public School",
     roles: [
       {
-        title: "Secondary Education, 10 + 2 (PCM + CS)",
+        title: "Secondary Education",
         duration: "",
-        description: [],
+        description: [
+          "Secured 80% in Class 12th (PCM + CS).",
+          "Achieved 9.3 CGPA in Class 10th.",
+        ],
       },
     ],
     location: "Almora (Uttarakhand)",
@@ -82,7 +85,7 @@ const experience = [
 export default function Experience() {
   return (
     <section>
-      <h1 className="text-5xl font-serif text-stone-800 tracking-tight">
+      <h1 className="text-4xl font-serif text-stone-800 tracking-tight md:text-5xl">
         My Experience
       </h1>
       <p className="mt-8 leading-relaxed text-[15px] text-stone-600 max-w-prose">
@@ -91,7 +94,7 @@ export default function Experience() {
       </p>
       <div className="mt-16 relative border-l-2 border-rose-100">
         {experience.map((item, index) => (
-          <div key={index} className="mb-12 ml-12">
+          <div key={index} className="mb-12 ml-8 md:ml-12">
             <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-rose-500 ring-8 ring-white">
               {item.type === "Work" ? (
                 <Briefcase size={16} className="text-white" />
@@ -99,7 +102,7 @@ export default function Experience() {
                 <GraduationCap size={16} className="text-white" />
               )}
             </span>
-            <div className="ml-4">
+            <div>
               <div className="flex items-center gap-4 mb-4">
                 <Image
                   src={item.logo}
@@ -109,7 +112,7 @@ export default function Experience() {
                   className="object-contain rounded-lg border border-stone-200 p-1"
                 />
                 <div>
-                  <h3 className="text-2xl font-semibold text-stone-900">
+                  <h3 className="text-xl font-semibold text-stone-900 md:text-2xl">
                     {item.organization}
                   </h3>
                   <p className="text-sm text-stone-500">{item.location}</p>
@@ -118,12 +121,12 @@ export default function Experience() {
               <div className="space-y-8">
                 {item.roles.map((role, roleIndex) => (
                   <div key={roleIndex}>
-                    <div className="flex items-center gap-3 mb-2">
+                    <div className="mb-2 flex flex-col items-start sm:flex-row sm:items-center sm:gap-3">
                       <h4 className="font-semibold text-stone-800 text-lg">
                         {role.title}
                       </h4>
                       {role.duration && (
-                        <span className="bg-rose-100 text-rose-800 text-xs font-semibold px-3 py-1 rounded-full">
+                        <span className="mt-1 rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-800 sm:mt-0">
                           {role.duration}
                         </span>
                       )}
