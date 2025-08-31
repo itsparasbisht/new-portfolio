@@ -15,13 +15,15 @@ export default function Header() {
 
   return (
     <header className="flex items-center justify-between gap-4 mb-10">
-      <Image
-        src={"/profile.png"}
-        alt="Paras Bisht's profile picture"
-        width={40}
-        height={40}
-        className="rounded-full"
-      />
+      <Link href="/">
+        <Image
+          src={"/profile.png"}
+          alt="Paras Bisht's profile picture"
+          width={40}
+          height={40}
+          className="rounded-full"
+        />
+      </Link>
       <nav className="">
         <ul
           className="flex gap-6 font-medium text-stone-500"

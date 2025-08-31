@@ -94,7 +94,7 @@ export default function Experience() {
       </p>
       <div className="mt-16 relative border-l-2 border-rose-100">
         {experience.map((item, index) => (
-          <div key={index} className="mb-12 ml-8 md:ml-12">
+          <article key={index} className="mb-12 ml-8 md:ml-12">
             <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-rose-500 ring-8 ring-white">
               {item.type === "Work" ? (
                 <Briefcase size={16} className="text-white" />
@@ -122,7 +122,7 @@ export default function Experience() {
                 {item.roles.map((role, roleIndex) => (
                   <div key={roleIndex}>
                     <div className="mb-2 flex flex-col items-start sm:flex-row sm:items-center sm:gap-3">
-                      <h4 className="font-semibold text-stone-800 text-lg">
+                      <h4 className="font-bold text-stone-800 text-lg">
                         {role.title}
                       </h4>
                       {role.duration && (
@@ -142,7 +142,7 @@ export default function Experience() {
                 ))}
               </div>
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>

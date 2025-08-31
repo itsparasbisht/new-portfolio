@@ -46,27 +46,31 @@ export default function Posts() {
       </p>
       <div className="columns-1 md:columns-2 gap-8 mt-10">
         {posts.map((post, index) => (
-          <a
+          <article
             key={index}
-            href={post.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block group relative rounded-2xl overflow-hidden transition-all duration-300 mb-8 border border-gray-300"
+            className="mb-8"
             style={{ breakInside: "avoid-column" }}
           >
-            <Image
-              src={post.src}
-              alt={post.title}
-              width={540}
-              height={960}
-              className="w-full h-auto"
-            />
-            <div className="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <p className="text-white text-center text-lg font-medium p-4">
-                {post.title}
-              </p>
-            </div>
-          </a>
+            <a
+              href={post.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group relative rounded-2xl overflow-hidden transition-all duration-300 border border-gray-300"
+            >
+              <Image
+                src={post.src}
+                alt={post.title}
+                width={540}
+                height={960}
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white text-center text-lg font-medium p-4">
+                  {post.title}
+                </p>
+              </div>
+            </a>
+          </article>
         ))}
       </div>
 

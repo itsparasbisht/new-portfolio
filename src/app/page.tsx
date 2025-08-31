@@ -119,7 +119,7 @@ export default function Home() {
         Personal Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="group relative">
+        <article className="group relative">
           <a
             href="https://earth-population.netlify.app/"
             target="_blank"
@@ -147,9 +147,9 @@ export default function Home() {
           >
             <FaGithub className="h-5 w-5" />
           </a>
-        </div>
+        </article>
 
-        <div className="group relative">
+        <article className="group relative">
           <a
             href="https://divine-explorer.netlify.app/"
             target="_blank"
@@ -177,9 +177,9 @@ export default function Home() {
           >
             <FaGithub className="h-5 w-5" />
           </a>
-        </div>
+        </article>
 
-        <div className="group relative md:col-span-2">
+        <article className="group relative md:col-span-2">
           <a
             href="https://md-note.netlify.app/"
             target="_blank"
@@ -207,14 +207,14 @@ export default function Home() {
           >
             <FaGithub className="h-5 w-5" />
           </a>
-        </div>
+        </article>
       </div>
 
       <h2 className="mt-8 mb-6 text-2xl font-serif text-stone-800">
         Certificates
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
+        <article className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -239,8 +239,8 @@ export default function Home() {
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
-        </div>
-        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
+        </article>
+        <article className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -265,8 +265,8 @@ export default function Home() {
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
-        </div>
-        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
+        </article>
+        <article className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -289,8 +289,8 @@ export default function Home() {
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
-        </div>
-        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
+        </article>
+        <article className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -313,8 +313,8 @@ export default function Home() {
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
-        </div>
-        <div className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
+        </article>
+        <article className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -337,7 +337,7 @@ export default function Home() {
               Verify <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </div>
-        </div>
+        </article>
       </div>
 
       <div className="mt-8 rounded-lg bg-rose-50 p-3 text-stone-800">
