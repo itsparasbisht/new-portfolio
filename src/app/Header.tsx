@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { href: '/', label: '/index' },
-  { href: '/posts', label: 'posts' },
-  { href: '/experience', label: 'experience' },
+  { href: "/", label: "/index" },
+  { href: "/experience", label: "experience" },
+  { href: "/posts", label: "posts" },
 ];
 
 export default function Header() {
@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between gap-4 mb-10">
       <Image
-        src={'/profile.png'}
+        src={"/profile.png"}
         alt="Paras Bisht's profile picture"
         width={40}
         height={40}
@@ -25,7 +25,7 @@ export default function Header() {
       <nav className="">
         <ul
           className="flex gap-6 font-medium text-stone-500"
-          style={{ fontFamily: 'var(--font-sans)' }}
+          style={{ fontFamily: "var(--font-sans)" }}
         >
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
@@ -35,8 +35,8 @@ export default function Header() {
                   href={link.href}
                   className={
                     isActive
-                      ? 'text-stone-800 border-b border-stone-300'
-                      : 'hover:text-stone-800 transition-colors'
+                      ? "text-stone-800 border-b border-stone-300"
+                      : "hover:text-stone-800 transition-colors"
                   }
                 >
                   {link.label}
