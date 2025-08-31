@@ -51,7 +51,7 @@ export default function Posts() {
             href={post.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block group relative rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-rose-100 mb-8 border border-rose-300"
+            className="block group relative rounded-2xl overflow-hidden transition-all duration-300 mb-8 border border-gray-300"
             style={{ breakInside: "avoid-column" }}
           >
             <Image

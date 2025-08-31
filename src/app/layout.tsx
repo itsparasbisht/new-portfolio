@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
-import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Header from "./Header";
 
 const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
@@ -35,46 +34,7 @@ export default function RootLayout({
       <body
         className={`${dmSerif.variable} ${inter.variable} antialiased bg-stone-50 max-w-2xl mx-auto p-10`}
       >
-        <header className="flex items-center justify-between gap-4 mb-10">
-          <Image
-            src={"/profile.png"}
-            alt="Paras Bisht's profile picture"
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
-          <nav className="">
-            <ul
-              className="flex gap-6 font-medium text-stone-500"
-              style={{ fontFamily: "var(--font-sans)" }}
-            >
-              <li>
-                <Link
-                  href="/"
-                  className="text-stone-800 border-b border-stone-300 hover:text-stone-950 transition-colors"
-                >
-                  /index
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/posts"
-                  className="hover:text-stone-800 transition-colors"
-                >
-                  posts
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/experience"
-                  className="hover:text-stone-800 transition-colors"
-                >
-                  experience
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
         <main>{children}</main>
         <footer className="mt-12 border-t border-stone-200 py-6 text-sm text-stone-500">
           <div className="flex items-center justify-between">
