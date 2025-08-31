@@ -2,12 +2,36 @@ import Image from "next/image";
 import { Info } from "lucide-react";
 
 const posts = [
-  { src: "/posts/linkedin-post-1.png" },
-  { src: "/posts/linkedin-post-2.png" },
-  { src: "/posts/linkedin-post-3.png" },
-  { src: "/posts/linkedin-post-4.png" },
-  { src: "/posts/linkedin-post-5.png" },
-  { src: "/posts/linkedin-post-6.png" },
+  {
+    src: "/posts/linkedin-post-1.png",
+    link: "https://www.linkedin.com/posts/paras-bisht_javascript-webdevelopment-reactjs-activity-7352246302740529152-L9xl?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtnJAEBHMf74hZ38eH405ZE5J-3j5BI0NM",
+    title: "Do you understand this behavior in JavaScript?",
+  },
+  {
+    src: "/posts/linkedin-post-2.png",
+    link: "https://www.linkedin.com/posts/paras-bisht_webdevelopment-reactjs-javascript-activity-7328082842691731457-GFA_?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtnJAEBHMf74hZ38eH405ZE5J-3j5BI0NM",
+    title: "TypeScript Utility Types",
+  },
+  {
+    src: "/posts/linkedin-post-3.png",
+    link: "https://www.linkedin.com/posts/paras-bisht_reactjs-javascript-webdevelopment-activity-7294363342222069760-t55c?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtnJAEBHMf74hZ38eH405ZE5J-3j5BI0NM",
+    title: "useLayoutEffect() Hook in ReactJS",
+  },
+  {
+    src: "/posts/linkedin-post-4.png",
+    link: "https://www.linkedin.com/posts/paras-bisht_javascript-reactjs-git-activity-7316122229866389505-SDkV?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtnJAEBHMf74hZ38eH405ZE5J-3j5BI0NM",
+    title: "Timeline feature",
+  },
+  {
+    src: "/posts/linkedin-post-5.png",
+    link: "https://www.linkedin.com/posts/paras-bisht_unicode-webdev-programming-activity-7241047583320596480-_P27?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtnJAEBHMf74hZ38eH405ZE5J-3j5BI0NM",
+    title: "What is Unicode and UTF-8?",
+  },
+  {
+    src: "/posts/linkedin-post-6.png",
+    link: "https://www.linkedin.com/posts/paras-bisht_reactjs-javascript-webdevelopment-activity-7256682704333615109-GXIJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtnJAEBHMf74hZ38eH405ZE5J-3j5BI0NM",
+    title: "useRef() - Beyond DOM Access",
+  },
 ];
 
 export default function Posts() {
@@ -24,19 +48,24 @@ export default function Posts() {
         {posts.map((post, index) => (
           <a
             key={index}
-            href="#" // TODO: Replace with your LinkedIn post URL
+            href={post.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block group relative rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-rose-100 mb-8"
+            className="block group relative rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-rose-100 mb-8 border border-rose-300"
             style={{ breakInside: "avoid-column" }}
           >
             <Image
               src={post.src}
-              alt={`Screenshot of LinkedIn post ${index + 1}`}
+              alt={post.title}
               width={540}
-              height={960} // Assumes a 9:16 aspect ratio for placeholder
+              height={960}
               className="w-full h-auto"
             />
+            <div className="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="text-white text-center text-lg font-medium p-4">
+                {post.title}
+              </p>
+            </div>
           </a>
         ))}
       </div>
