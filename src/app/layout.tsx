@@ -3,6 +3,7 @@ import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Header from "./Header";
+import Script from "next/script";
 
 const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
@@ -72,7 +73,12 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="mt-12 border-t border-stone-200 py-6 text-sm text-stone-500">
           <div className="flex items-center justify-between">
-            <p>Handcrafted by Paras Bisht</p>
+            <div className="flex items-center gap-2">
+              <div className="h-3 w-3 rounded-full bg-stone-300"></div>
+              <div className="h-3 w-3 rounded-full bg-stone-500"></div>
+              <div className="h-3 w-3 rounded-full bg-stone-800"></div>
+              <div className="h-3 w-3 rounded-full bg-rose-500"></div>
+            </div>
             <div className="flex items-center gap-4">
               <a
                 href="https://github.com/itsparasbisht"
@@ -94,6 +100,18 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-FXFQPMVKT0"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-FXFQPMVKT0');
+        `}
+      </Script>
     </html>
   );
 }
