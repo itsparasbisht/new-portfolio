@@ -90,6 +90,9 @@ export default function Experience() {
             alt="Paras Bisht"
             width={500}
             height={375}
+            loading="eager"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAk6AAAJOgHwZJJKAAAAMklEQVR4nAEnANj/AHRzcgoAAGhVOv/pvACqrK2ZeFX/3Jv/9OAA+fn3iGxJoYJZ9vb2eHQWNZbQQjcAAAAASUVORK5CYII="
           />
         </div>
       </div>

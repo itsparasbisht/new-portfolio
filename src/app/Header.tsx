@@ -22,6 +22,7 @@ export default function Header() {
           width={40}
           height={40}
           className="rounded-full"
+          loading="eager"
         />
       </Link>
       <nav className="">
