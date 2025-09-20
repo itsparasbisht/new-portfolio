@@ -63,6 +63,7 @@ export default function Posts() {
                 width={540}
                 height={960}
                 className="w-full h-auto"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-center text-lg font-medium p-4">

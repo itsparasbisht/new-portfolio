@@ -222,6 +222,7 @@ export default function Home() {
                 alt="freeCodeCamp logo"
                 width={40}
                 height={40}
+                loading="eager"
               />
               <div>
                 <p className="font-semibold text-stone-800 text-sm">
@@ -248,6 +249,7 @@ export default function Home() {
                 alt="HackerRank logo"
                 width={40}
                 height={40}
+                loading="eager"
               />
               <div>
                 <p className="font-semibold text-stone-800 text-sm">
@@ -274,6 +276,7 @@ export default function Home() {
                 alt="HackerRank logo"
                 width={40}
                 height={40}
+                loading="eager"
               />
               <div>
                 <p className="font-semibold text-stone-800 text-sm">ReactJS</p>
@@ -298,6 +301,7 @@ export default function Home() {
                 alt="HackerRank logo"
                 width={40}
                 height={40}
+                loading="eager"
               />
               <div>
                 <p className="font-semibold text-stone-800 text-sm">CSS</p>
@@ -322,6 +326,7 @@ export default function Home() {
                 alt="HackerRank logo"
                 width={40}
                 height={40}
+                loading="eager"
               />
               <div>
                 <p className="font-semibold text-stone-800 text-sm">SQL</p>
