@@ -20,7 +20,7 @@ const experiences = [
         description: [
           "Rebuilt core React application with TypeScript, TailwindCSS, and TanStack Query; added component and end-to-end Cypress tests to raise code quality and reduce regression issues.",
           "Led development of vehicle-market data aggregator: integrated B2B/C2B and Excel sources, implemented filtering, real-time updates, media embedding, exports, and admin tools.",
-          "Created a GIS web app for CDPG to visualize 50+ geospatial datasets, added import/export functionality, vector editing, and interactive tables; optimized performance via map tile lazy-loading and debounced search.",
+          "Created a GIS web app for CDPG to visualize 300+ geospatial datasets, added import/export functionality, vector editing, and interactive tables; optimized performance via map tile lazy-loading and debounced search.",
         ],
       },
       {
