@@ -75,7 +75,7 @@ export default function Posts() {
         ))}
       </div>
 
-      <div className="mt-12 rounded-lg bg-rose-50 p-3 text-stone-800">
+      <div className="mt-10 rounded-lg bg-rose-50 p-3 text-stone-800">
         <div className="flex items-center">
           <div className="flex-shrink-0">
             <Info className="h-5 w-5 text-rose-500" />
