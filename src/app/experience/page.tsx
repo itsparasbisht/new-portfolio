@@ -7,7 +7,7 @@ const experiences = [
     roles: [
       {
         role: "Frontend Team Lead",
-        duration: "Apr 2024 - present",
+        duration: "Apr 2024 - Present",
         description: [
           "Scaled the frontend team by interviewing, hiring, and mentoring junior developers, helping them become productive members quickly.",
           "Led product development through regular client interaction and feedback sessions, ensuring feature direction aligned with real user needs.",
@@ -16,7 +16,7 @@ const experiences = [
       },
       {
         role: "Software Engineer",
-        duration: "Mar 2022 - Mar 2024",
+        duration: "Feb 2022 - Mar 2024",
         description: [
           "Rebuilt core React application with TypeScript, TailwindCSS, and TanStack Query; added component and end-to-end Cypress tests to raise code quality and reduce regression issues.",
           "Led development of vehicle-market data aggregator: integrated B2B/C2B and Excel sources, implemented filtering, real-time updates, media embedding, exports, and admin tools.",
@@ -25,7 +25,7 @@ const experiences = [
       },
       {
         role: "Frontend Intern",
-        duration: "Oct 2021 - Feb 2022",
+        duration: "Oct 2021 - Jan 2022",
         description: [
           "Delivered bi-weekly and monthly feature enhancements and resolved client-reported bugs in ReactJS wind-analysis apps, improving stability and reliability.",
           "Built interactive maps, data visualizations, and custom UI components using Redux for global state and Tailwind CSS, boosting usability.",
@@ -126,7 +126,7 @@ export default function Experience() {
                       </span>
                     </div>
                     {role.description.length > 0 && (
-                      <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-stone-600">
+                      <ul className="mt-2 list-disc space-y-2 text-sm text-stone-600 sm:pl-5">
                         {role.description.map((item, i) => (
                           <li key={i}>{item}</li>
                         ))}
