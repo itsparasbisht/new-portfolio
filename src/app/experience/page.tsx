@@ -126,7 +126,7 @@ export default function Experience() {
                       </span>
                     </div>
                     {role.description.length > 0 && (
-                      <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-stone-600">
+                      <ul className="mt-2 list-disc space-y-2 text-sm text-stone-600 sm:pl-5">
                         {role.description.map((item, i) => (
                           <li key={i}>{item}</li>
                         ))}
