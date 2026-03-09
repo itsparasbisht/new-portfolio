@@ -2,12 +2,41 @@ import Image from "next/image";
 
 const experiences = [
   {
+    logo: "/experience/ness.jpg",
+    company: "Ness Digital Engineering",
+    roles: [
+      {
+        role: "Sr. Software Engineer",
+        duration: "Feb 2026 - Present",
+        description: [
+          "Collaborating on the modernization of a CPQ (Configure, Price, Quote) application for a major commercial operating system provider, serving global manufacturers and distributors.",
+          "Developing features for this B2B platform using React, TypeScript, Storybook, and GraphQL, with a strong focus on improving user experience, performance, and front-end scalability.",
+        ],
+      },
+    ],
+  },
+  {
+    logo: "/experience/tothenew.jpg",
+    company: "To The New",
+    roles: [
+      {
+        role: "Sr. Software Engineer",
+        duration: "Sep 2025 - Jan 2026",
+        description: [
+          "Owned frontend integration into a legacy system, consolidating Sales Partner (SP) and Relationship Advisor (RA) workflows into a unified, end-to-end insurance onboarding platform.",
+          "Executed a phased rollout across 32 policy product types, ensuring uninterrupted onboarding and zero-downtime migration for active leads.",
+          "Collaborated with Product, QA, and Sales Partner teams to align on compliance requirements, validation rules, and robust error handling for sensitive KYC workflows.",
+        ],
+      },
+    ],
+  },
+  {
     logo: "/experience/sirpi.jpg",
     company: "SirpiDataScience",
     roles: [
       {
         role: "Frontend Team Lead",
-        duration: "Apr 2024 - Present",
+        duration: "Apr 2024 - Sep 2025",
         description: [
           "Scaled the frontend team by interviewing, hiring, and mentoring junior developers, helping them become productive members quickly.",
           "Led product development through regular client interaction and feedback sessions, ensuring feature direction aligned with real user needs.",
