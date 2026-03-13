@@ -80,7 +80,7 @@ const experiences = [
     roles: [
       {
         role: "Secondary Education",
-        duration: "2016 - 2018",
+        duration: "2012 - 2018",
         description: [
           "Secured 80% in Class 12th (PCM + CS).",
           "Achieved 9.3 CGPA in Class 10th.",
@@ -94,7 +94,7 @@ const experiences = [
     roles: [
       {
         role: "Primary Education upto 5th Standard",
-        duration: "2005 - 2013",
+        duration: "2005 - 2012",
         description: [],
       },
     ],
