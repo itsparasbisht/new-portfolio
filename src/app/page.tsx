@@ -50,13 +50,13 @@ export default function Home() {
             geospatial data
           </span>
         </span>{" "}
-        entities. <br />I have been adept at{" "}
+        entities. <br />I am well-versed in
         <span className="relative inline-block group px-1 mx-0.5">
           <span className="absolute inset-0 -skew-y-3 bg-fuchsia-100/50 rounded opacity-70 group-hover:bg-fuchsia-100 transition-all duration-300"></span>
           <span className="relative text-fuchsia-900 font-medium">
             brainstorming
           </span>
-        </span>{" "}
+        </span>
         and{" "}
         <span className="relative inline-block group px-1 mx-0.5">
           <span className="absolute inset-0 -skew-y-3 bg-rose-100/50 rounded opacity-70 group-hover:bg-rose-100 transition-all duration-300"></span>
@@ -335,6 +335,31 @@ export default function Home() {
             </div>
             <a
               href="https://www.hackerrank.com/certificates/00dafe57cbb7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
+            >
+              Verify <ArrowUpRight className="ml-1 h-4 w-4" />
+            </a>
+          </div>
+        </article>
+        <article className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Image
+                src="/mongodb.jpg"
+                alt="MongoDB logo"
+                width={40}
+                height={40}
+                loading="eager"
+              />
+              <div>
+                <p className="font-semibold text-stone-800 text-sm">MongoDB</p>
+                <p className="text-sm text-stone-600">MongoDB</p>
+              </div>
+            </div>
+            <a
+              href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/da3f2dcd-2cf5-4461-84d2-04b5f8a23b1d-paras-bisht-8042d27e-cd49-40c7-85d8-7657ae062c3b-certificate.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-xs font-medium text-stone-500 hover:text-stone-700"
