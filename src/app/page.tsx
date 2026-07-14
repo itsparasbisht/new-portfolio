@@ -151,6 +151,36 @@ export default function Home() {
 
         <article className="group relative">
           <a
+            href="https://main--6a46985e273c71987463da96.chromatic.com/?path=/docs/components-fileexplorer--docs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-all duration-300 group-hover:border-blue-300 group-hover:shadow-lg group-hover:shadow-blue-100"
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0,theme(colors.blue.100/40%),transparent_40%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+            <div className="relative h-full">
+              <h3 className="text-lg font-medium text-stone-800 mb-2 flex items-center">
+                npm i @paras.in/pui
+                <ArrowUpRight className="ml-1.5 h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </h3>
+              <p className="text-sm leading-relaxed text-stone-600">
+                A React and TypeScript component library focused on complex
+                workspace UI components.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/itsparasbisht/pui"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-blue-600"
+            aria-label="View Code on GitHub"
+          >
+            <FaGithub className="h-5 w-5" />
+          </a>
+        </article>
+
+        <article className="group relative">
+          <a
             href="https://divine-explorer.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
@@ -179,7 +209,7 @@ export default function Home() {
           </a>
         </article>
 
-        <article className="group relative md:col-span-2">
+        <article className="group relative">
           <a
             href="https://md-note.netlify.app/"
             target="_blank"
@@ -193,8 +223,8 @@ export default function Home() {
                 <ArrowUpRight className="ml-1.5 h-4 w-4 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />
               </h3>
               <p className="text-sm leading-relaxed text-stone-600">
-                Minimal looking note-taking application with markdown support.
-                Includes theme toggle, edit notes, tags.
+                Minimal note-taking application with markdown support. Includes
+                theme toggle, edit notes, tags.
               </p>
             </div>
           </a>
