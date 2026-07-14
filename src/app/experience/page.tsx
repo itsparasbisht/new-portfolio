@@ -115,7 +115,7 @@ export default function Experience() {
         </p>
         <div className="mt-8 flex justify-center">
           <Image
-            src="/profile-photo.jpg"
+            src="/paras-profile-photo.jpg"
             alt="Paras Bisht"
             width={500}
             height={375}
