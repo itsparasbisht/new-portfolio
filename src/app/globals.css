@@ -13,3 +13,37 @@ h6 {
 body {
     font-family: var(--font-sans);
 }
+
+.page-shell {
+    animation: page-reveal 1100ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    transform-origin: center top;
+    will-change: opacity, filter, transform;
+}
+
+@keyframes page-reveal {
+    0% {
+        opacity: 0;
+        filter: blur(14px);
+        transform: translateY(16px) scale(0.985);
+    }
+
+    55% {
+        opacity: 1;
+        filter: blur(1.5px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-shell {
+        animation: none;
+        opacity: 1;
+        filter: none;
+        transform: none;
+    }
+}
