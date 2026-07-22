@@ -7,12 +7,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section className="text-stone-600">
-      <h1 className="text-5xl font-serif text-stone-800 tracking-tight">
+      <h1 className="text-3xl font-serif text-stone-800 tracking-tight">
         Paras Bisht
+        <span className="font-medium text-[15px] text-rose-600 ml-1 font-sans">
+          : Software Developer on Planet Earth
+        </span>
       </h1>
-      <p className="font-medium mt-3 text-rose-600">
-        Software Developer on Planet Earth
-      </p>
 
       <p className="mt-6 leading-relaxed text-[14px]">
         I am a software developer with over 5 years of experience building
