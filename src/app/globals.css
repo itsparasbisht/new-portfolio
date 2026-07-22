@@ -27,11 +27,6 @@ body {
         transform: translateY(16px) scale(0.985);
     }
 
-    55% {
-        opacity: 1;
-        filter: blur(1.5px);
-    }
-
     100% {
         opacity: 1;
         filter: blur(0);
