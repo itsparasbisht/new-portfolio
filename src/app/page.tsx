@@ -75,8 +75,8 @@ export default function Home() {
     <section className="text-stone-600">
       <h1 className="text-3xl font-serif text-stone-800 tracking-tight">
         Paras Bisht
-        <span className="font-medium text-[15px] text-rose-600 ml-1 font-sans">
-          : Software Developer on Planet Earth
+        <span className="block sm:inline font-medium text-[15px] text-rose-600 sm:ml-1 font-sans">
+          <span className="hidden sm:inline">: </span>Software Developer on Planet Earth
         </span>
       </h1>
 

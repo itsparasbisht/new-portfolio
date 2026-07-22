@@ -32,7 +32,7 @@ const experiences = [
   },
   {
     logo: "/experience/sirpi.jpg",
-    company: "SirpiDataScience",
+    company: "Sirpi Data Science",
     roles: [
       {
         role: "Frontend Team Lead",
