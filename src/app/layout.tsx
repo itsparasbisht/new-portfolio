@@ -3,6 +3,7 @@ import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Header from "./Header";
+import PageTransition from "./components/PageTransition";
 import Script from "next/script";
 
 const dmSerif = DM_Serif_Display({
@@ -21,7 +22,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Paras Bisht - Web Portfolio",
   description:
-    "Portfolio of Paras Bisht, a software developer with 4 years of experience in building data-driven solutions.",
+    "Portfolio of Paras Bisht, a software developer with 5 years of experience in building data-driven solutions.",
   referrer: "origin",
   keywords: [
     "paras bisht",
@@ -70,7 +71,7 @@ export default function RootLayout({
         className={`${dmSerif.variable} ${inter.variable} antialiased bg-stone-50 max-w-2xl mx-auto p-6 sm:p-8`}
       >
         <Header />
-        <main>{children}</main>
+        <PageTransition>{children}</PageTransition>
         <footer className="mt-12 border-t border-stone-200 py-6 text-sm text-stone-500">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
