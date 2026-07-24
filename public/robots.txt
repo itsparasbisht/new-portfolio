@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Sitemap: https://paras-bisht.netlify.app/sitemap.xml
+Host: https://paras-bisht.netlify.app

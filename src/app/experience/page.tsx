@@ -1,4 +1,36 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Experience | Paras Bisht",
+  description:
+    "Explore the career path, engineering roles, and education history of software developer Paras Bisht.",
+  alternates: {
+    canonical: "https://paras-bisht.netlify.app/experience",
+  },
+  openGraph: {
+    title: "Experience | Paras Bisht",
+    description:
+      "Explore the career path, engineering roles, and education history of software developer Paras Bisht.",
+    url: "https://paras-bisht.netlify.app/experience",
+    images: [
+      {
+        url: "https://paras-bisht.netlify.app/paras-profile-photo.jpg",
+        width: 800,
+        height: 800,
+        alt: "Profile photo of Paras Bisht",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Experience | Paras Bisht",
+    description:
+      "Explore the career path, engineering roles, and education history of software developer Paras Bisht.",
+    images: ["https://paras-bisht.netlify.app/paras-profile-photo.jpg"],
+  },
+};
 
 const experiences = [
   {
