@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Experience | Paras Bisht",
+  title: "Experience - Paras Bisht",
   description:
     "Explore the career path, engineering roles, and education history of software developer Paras Bisht.",
   alternates: {
     canonical: "https://paras-bisht.netlify.app/experience",
   },
   openGraph: {
-    title: "Experience | Paras Bisht",
+    title: "Experience - Paras Bisht",
     description:
       "Explore the career path, engineering roles, and education history of software developer Paras Bisht.",
     url: "https://paras-bisht.netlify.app/experience",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Experience | Paras Bisht",
+    title: "Experience - Paras Bisht",
     description:
       "Explore the career path, engineering roles, and education history of software developer Paras Bisht.",
     images: ["https://paras-bisht.netlify.app/paras-profile-photo.jpg"],

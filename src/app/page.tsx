@@ -6,11 +6,11 @@ import { ArrowUpRight, Info } from "lucide-react";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Paras Bisht | Web Portfolio",
+  title: "Paras Bisht - Web Portfolio",
   description:
     "Discover the portfolio of Paras Bisht, a software developer specializing in React, Next.js, TypeScript, and data-driven web applications.",
   openGraph: {
-    title: "Paras Bisht | Web Portfolio",
+    title: "Paras Bisht - Web Portfolio",
     description:
       "Discover the portfolio of Paras Bisht, a software developer specializing in React, Next.js, TypeScript, and data-driven web applications.",
     url: "https://paras-bisht.netlify.app",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paras Bisht | Web Portfolio",
+    title: "Paras Bisht - Web Portfolio",
     description:
       "Discover the portfolio of Paras Bisht, a software developer specializing in React, Next.js, TypeScript, and data-driven web applications.",
     images: ["https://paras-bisht.netlify.app/paras-profile-photo.jpg"],

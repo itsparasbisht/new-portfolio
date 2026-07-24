@@ -3,14 +3,14 @@ import Image from "next/image";
 import { Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Posts | Paras Bisht",
+  title: "Posts - Paras Bisht",
   description:
     "Browse technical posts, LinkedIn updates, and career insights shared by software developer Paras Bisht.",
   alternates: {
     canonical: "https://paras-bisht.netlify.app/posts",
   },
   openGraph: {
-    title: "Posts | Paras Bisht",
+    title: "Posts - Paras Bisht",
     description:
       "Browse technical posts, LinkedIn updates, and career insights shared by software developer Paras Bisht.",
     url: "https://paras-bisht.netlify.app/posts",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Posts | Paras Bisht",
+    title: "Posts - Paras Bisht",
     description:
       "Browse technical posts, LinkedIn updates, and career insights shared by software developer Paras Bisht.",
     images: ["https://paras-bisht.netlify.app/paras-profile-photo.jpg"],
