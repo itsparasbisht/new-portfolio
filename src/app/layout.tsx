@@ -20,32 +20,41 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Paras Bisht - Web Portfolio",
+  metadataBase: new URL("https://paras-bisht.netlify.app"),
+  alternates: {
+    canonical: "https://paras-bisht.netlify.app/",
+  },
+  title: "Paras Bisht | Web Portfolio",
   description:
-    "Portfolio of Paras Bisht, a software developer with 5 years of experience in building data-driven solutions.",
+    "Portfolio of Paras Bisht, a software developer with 5+ years of experience building data-driven web applications, open-source UI components, and technical writing.",
   referrer: "origin",
   keywords: [
     "paras bisht",
     "paras bisht portfolio",
-    "software developer portfolio",
-    "web developer",
-    "frontend developer portfolio",
-    "javascript developer",
-    "blogs by paras",
+    "software developer",
+    "react developer",
+    "typescript developer",
+    "next.js portfolio",
+    "frontend engineer",
+    "open source",
+    "technical writing",
+    "github",
+    "linkedin",
   ],
   authors: [{ name: "Paras Bisht", url: "https://paras-bisht.netlify.app" }],
+  creator: "Paras Bisht",
   openGraph: {
-    title: "Paras Bisht - Web Portfolio",
+    title: "Paras Bisht | Web Portfolio",
     description:
-      "Portfolio of Paras Bisht, a software developer with 4 years of experience in building data-driven solutions.",
+      "Portfolio of Paras Bisht, a software developer with 5+ years of experience building data-driven web applications, open-source UI components, and technical writing.",
     url: "https://paras-bisht.netlify.app",
-    siteName: "Paras Bisht's Portfolio",
+    siteName: "Paras Bisht",
     images: [
       {
-        url: "https://i.ibb.co/SwkZ2bPv/profile.jpg",
+        url: "https://paras-bisht.netlify.app/paras-profile-photo.jpg",
         width: 800,
-        height: 600,
-        alt: "Paras Bisht's Portfolio",
+        height: 800,
+        alt: "Profile photo of Paras Bisht",
       },
     ],
     locale: "en_US",
@@ -53,11 +62,68 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paras Bisht - Web Portfolio",
+    title: "Paras Bisht | Web Portfolio",
     description:
-      "Portfolio of Paras Bisht, a software developer with 4 years of experience in building data-driven solutions.",
-    images: ["https://i.ibb.co/SwkZ2bPv/profile.jpg"],
+      "Portfolio of Paras Bisht, a software developer with 5+ years of experience building data-driven web applications, open-source UI components, and technical writing.",
+    images: ["https://paras-bisht.netlify.app/paras-profile-photo.jpg"],
   },
+  icons: {
+    icon: "/profile.png",
+    shortcut: "/profile.png",
+    apple: "/profile.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Paras Bisht",
+  url: "https://paras-bisht.netlify.app",
+  image: "https://paras-bisht.netlify.app/paras-profile-photo.jpg",
+  sameAs: [
+    "https://github.com/itsparasbisht",
+    "https://www.linkedin.com/in/paras-bisht",
+    "https://www.instagram.com/itsparas.in",
+  ],
+  email: "mailto:iamparasbisht@gmail.com",
+  jobTitle: "Software Developer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Independent Developer",
+  },
+  description:
+    "Software developer with 5+ years of experience building data-driven web applications, UX-focused frontend solutions, and open-source libraries.",
+  knowsAbout: [
+    "React",
+    "TypeScript",
+    "Next.js",
+    "Tailwind CSS",
+    "JavaScript",
+    "Web Accessibility",
+    "Frontend Performance",
+    "Data Visualization",
+    "GIS applications",
+    "CPQ systems",
+  ],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "professional",
+      email: "iamparasbisht@gmail.com",
+      availableLanguage: ["English"],
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -112,6 +178,13 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'G-FXFQPMVKT0');
         `}
+      </Script>
+      <Script
+        id="structured-data"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify(structuredData)}
       </Script>
     </html>
   );

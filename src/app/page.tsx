@@ -1,31 +1,64 @@
+import type { Metadata } from "next";
 import { IoMail, IoDocument } from "react-icons/io5";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { ArrowUpRight, Info } from "lucide-react";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+  title: "Paras Bisht | Web Portfolio",
+  description:
+    "Discover the portfolio of Paras Bisht, a software developer specializing in React, Next.js, TypeScript, and data-driven web applications.",
+  openGraph: {
+    title: "Paras Bisht | Web Portfolio",
+    description:
+      "Discover the portfolio of Paras Bisht, a software developer specializing in React, Next.js, TypeScript, and data-driven web applications.",
+    url: "https://paras-bisht.netlify.app",
+    images: [
+      {
+        url: "https://paras-bisht.netlify.app/paras-profile-photo.jpg",
+        width: 800,
+        height: 800,
+        alt: "Profile photo of Paras Bisht",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Paras Bisht | Web Portfolio",
+    description:
+      "Discover the portfolio of Paras Bisht, a software developer specializing in React, Next.js, TypeScript, and data-driven web applications.",
+    images: ["https://paras-bisht.netlify.app/paras-profile-photo.jpg"],
+  },
+};
+
 const PROJECTS = [
   {
     title: "Earth Chronicle",
-    description: "An in-depth examination of global population trends, fertility patterns, and demographic shifts.",
+    description:
+      "An in-depth examination of global population trends, fertility patterns, and demographic shifts.",
     link: "https://earth-population.netlify.app/",
     github: "https://github.com/itsparasbisht/earth-population",
   },
   {
     title: "npm i @paras.in/pui",
-    description: "A React and TypeScript component library focused on complex workspace UI components.",
+    description:
+      "A React and TypeScript component library focused on complex workspace UI components.",
     link: "https://main--6a46985e273c71987463da96.chromatic.com/?path=/docs/components-fileexplorer--docs",
     github: "https://github.com/itsparasbisht/pui",
   },
   {
     title: "Divine Explorer",
-    description: "Take a look at the destinations that you may wish to visit in Uttarakhand.",
+    description:
+      "Take a look at the destinations that you may wish to visit in Uttarakhand.",
     link: "https://divine-explorer.netlify.app/",
     github: "https://github.com/itsparasbisht/leaflet-init",
   },
   {
     title: "React Markdown App",
-    description: "Minimal note-taking application with markdown support. Includes theme toggle, edit notes, tags.",
+    description:
+      "Minimal note-taking application with markdown support. Includes theme toggle, edit notes, tags.",
     link: "https://md-note.netlify.app/",
     github: "https://github.com/itsparasbisht/react-notes-app",
   },
@@ -36,7 +69,8 @@ const CERTIFICATES = [
     title: "Responsive Design",
     issuer: "freeCodeCamp",
     logo: "/fcc.svg",
-    verifyUrl: "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design",
+    verifyUrl:
+      "https://www.freecodecamp.org/certification/parasbisht/responsive-web-design",
   },
   {
     title: "JavaScript",
@@ -66,7 +100,8 @@ const CERTIFICATES = [
     title: "MongoDB",
     issuer: "MongoDB",
     logo: "/mongodb.jpg",
-    verifyUrl: "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/da3f2dcd-2cf5-4461-84d2-04b5f8a23b1d-paras-bisht-8042d27e-cd49-40c7-85d8-7657ae062c3b-certificate.pdf",
+    verifyUrl:
+      "https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/da3f2dcd-2cf5-4461-84d2-04b5f8a23b1d-paras-bisht-8042d27e-cd49-40c7-85d8-7657ae062c3b-certificate.pdf",
   },
 ];
 
@@ -76,7 +111,8 @@ export default function Home() {
       <h1 className="text-3xl font-serif text-stone-800 tracking-tight">
         Paras Bisht
         <span className="block sm:inline font-medium text-[15px] text-rose-600 sm:ml-1 font-sans">
-          <span className="hidden sm:inline">: </span>Software Developer on Planet Earth
+          <span className="hidden sm:inline">: </span>Software Developer on
+          Planet Earth
         </span>
       </h1>
 
@@ -182,7 +218,10 @@ export default function Home() {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {CERTIFICATES.map((cert) => (
-          <article key={cert.title} className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300">
+          <article
+            key={cert.title}
+            className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300"
+          >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <Image
