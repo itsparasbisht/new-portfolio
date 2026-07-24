@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://paras-bisht.netlify.app/",
   },
-  title: "Paras Bisht | Web Portfolio",
+  title: "Paras Bisht - Web Portfolio",
   description:
     "Portfolio of Paras Bisht, a software developer with 5+ years of experience building data-driven web applications, open-source UI components, and technical writing.",
   referrer: "origin",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Paras Bisht", url: "https://paras-bisht.netlify.app" }],
   creator: "Paras Bisht",
   openGraph: {
-    title: "Paras Bisht | Web Portfolio",
+    title: "Paras Bisht - Web Portfolio",
     description:
       "Portfolio of Paras Bisht, a software developer with 5+ years of experience building data-driven web applications, open-source UI components, and technical writing.",
     url: "https://paras-bisht.netlify.app",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paras Bisht | Web Portfolio",
+    title: "Paras Bisht - Web Portfolio",
     description:
       "Portfolio of Paras Bisht, a software developer with 5+ years of experience building data-driven web applications, open-source UI components, and technical writing.",
     images: ["https://paras-bisht.netlify.app/paras-profile-photo.jpg"],
