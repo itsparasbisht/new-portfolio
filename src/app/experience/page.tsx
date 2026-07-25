@@ -135,13 +135,13 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section>
+    <section className="max-w-2xl mx-auto px-6 sm:px-8">
       {/* Title, Description, and Photo */}
       <div>
-        <h1 className="text-4xl font-serif text-stone-800 tracking-tight md:text-5xl">
+        <h1 className="text-3xl font-serif text-stone-800 tracking-tight">
           My Experience
         </h1>
-        <p className="mx-auto mt-4 max-w-prose leading-relaxed text-[15px] text-stone-600">
+        <p className="mt-4 max-w-prose leading-relaxed text-[15px] text-stone-600">
           A timeline of my career and education, highlighting key roles,
           projects, and learning experiences.
         </p>

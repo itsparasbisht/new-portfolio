@@ -107,7 +107,7 @@ const CERTIFICATES = [
 
 export default function Home() {
   return (
-    <section className="text-stone-600">
+    <section className="text-stone-600 max-w-2xl mx-auto px-6 sm:px-8">
       <h1 className="text-3xl font-serif text-stone-800 tracking-tight">
         Paras Bisht
         <span className="block sm:inline font-medium text-[15px] text-rose-600 sm:ml-1 font-sans">
