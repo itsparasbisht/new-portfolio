@@ -40,9 +40,11 @@ export default function PhotosPage() {
         <h1 className="text-3xl font-serif tracking-tight text-stone-800">
           Frames in focus
         </h1>
-        <p className="mt-5 leading-relaxed text-[15px] text-stone-600">
-          A growing collection of frames from the places I wander through. I
-          keep captions rare, so the image can breathe a little more.
+        <p className="mt-5 leading-relaxed text-[15px] text-stone-700">
+          An archive of moments I decided to freeze. These are gentle little
+          pauses in time: a quiet corner, a golden afternoon glow, or a view
+          that persuaded me to stop walking. There&apos;s no grand artistic
+          thesis here, just a few frames of reality before time kept moving.
         </p>
       </div>
 

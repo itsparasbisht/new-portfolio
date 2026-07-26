@@ -27,7 +27,7 @@ export default function Header() {
       </Link>
       <nav className="">
         <ul
-          className="flex gap-6 font-medium text-stone-500"
+          className="flex gap-6 font-medium text-stone-600"
           style={{ fontFamily: "var(--font-sans)" }}
         >
           {navLinks.map((link) => {

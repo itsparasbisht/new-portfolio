@@ -138,7 +138,7 @@ export default function RootLayout({
       >
         <Header />
         <PageTransition>{children}</PageTransition>
-        <footer className="mt-12 border-t border-stone-200 py-6 text-sm text-stone-500 max-w-2xl mx-auto px-6 sm:px-8">
+        <footer className="mt-12 border-t border-stone-200 py-6 text-sm text-stone-600 max-w-2xl mx-auto px-6 sm:px-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="h-3 w-3 rounded-full bg-stone-300"></div>

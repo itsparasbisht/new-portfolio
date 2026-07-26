@@ -141,7 +141,7 @@ export default function Experience() {
         <h1 className="text-3xl font-serif text-stone-800 tracking-tight">
           My Experience
         </h1>
-        <p className="mt-4 max-w-prose leading-relaxed text-[15px] text-stone-600">
+        <p className="mt-4 max-w-prose leading-relaxed text-[15px] text-stone-700">
           A timeline of my career and education, highlighting key roles,
           projects, and learning experiences.
         </p>
@@ -187,7 +187,7 @@ export default function Experience() {
                       </span>
                     </div>
                     {role.description.length > 0 && (
-                      <ul className="mt-2 list-disc space-y-2 text-sm text-stone-600 sm:pl-5">
+                      <ul className="mt-2 list-disc space-y-2 text-sm text-stone-700 sm:pl-5">
                         {role.description.map((item, i) => (
                           <li key={i}>{item}</li>
                         ))}
