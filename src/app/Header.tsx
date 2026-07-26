@@ -7,14 +7,14 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { href: "/", label: "/index" },
   { href: "/experience", label: "experience" },
-  { href: "/posts", label: "posts" },
+  { href: "/photos", label: "photos" },
 ];
 
 export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between gap-4 mb-10">
+    <header className="flex items-center justify-between gap-4 mb-10 max-w-2xl mx-auto px-6 sm:px-8">
       <Link href="/">
         <Image
           src={"/profile.png"}
@@ -27,7 +27,7 @@ export default function Header() {
       </Link>
       <nav className="">
         <ul
-          className="flex gap-6 font-medium text-stone-500"
+          className="flex gap-6 font-medium text-stone-600"
           style={{ fontFamily: "var(--font-sans)" }}
         >
           {navLinks.map((link) => {
