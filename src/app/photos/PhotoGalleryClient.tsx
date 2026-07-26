@@ -94,9 +94,9 @@ export default function PhotoGalleryClient({
   return (
     <>
       <div className="px-4 sm:px-6 md:px-8 lg:px-10">
-        <div className="flex gap-5">
+        <div className="flex gap-4">
           {columns.map((col, colIdx) => (
-            <div key={colIdx} className="flex-1 flex flex-col gap-5">
+            <div key={colIdx} className="flex-1 flex flex-col gap-4">
               {col.map(({ photo, index }) => (
                 <PhotoCard
                   key={photo.id}
@@ -154,7 +154,7 @@ function PhotoCard({
 }) {
   return (
     <article
-      className="group overflow-hidden rounded-2xl relative cursor-pointer"
+      className="group overflow-hidden rounded-xl relative cursor-pointer"
       onClick={onClick}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
