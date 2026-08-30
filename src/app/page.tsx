@@ -40,6 +40,15 @@ const PROJECTS = [
       "An in-depth examination of global population trends, fertility patterns, and demographic shifts.",
     link: "https://earth-population.netlify.app/",
     github: "https://github.com/itsparasbisht/earth-population",
+    favicon: "/projects/earth-32.png",
+  },
+  {
+    title: "AudioCast",
+    description:
+      "Stream system audio from your Windows PC to your phone by just opening a URL in your browser.",
+    link: "https://github.com/itsparasbisht/audio-cast/blob/main/README.md",
+    github: "https://github.com/itsparasbisht/audio-cast",
+    favicon: "/projects/audio-wave-32.png",
   },
   {
     title: "npm i @paras.in/pui",
@@ -47,6 +56,7 @@ const PROJECTS = [
       "A React and TypeScript component library focused on complex workspace UI components.",
     link: "https://main--6a46985e273c71987463da96.chromatic.com/?path=/docs/components-fileexplorer--docs",
     github: "https://github.com/itsparasbisht/pui",
+    favicon: "/projects/storybook-32.png",
   },
   {
     title: "Divine Explorer",
@@ -54,13 +64,7 @@ const PROJECTS = [
       "Take a look at the destinations that you may wish to visit in Uttarakhand.",
     link: "https://divine-explorer.netlify.app/",
     github: "https://github.com/itsparasbisht/leaflet-init",
-  },
-  {
-    title: "React Markdown App",
-    description:
-      "Minimal note-taking application with markdown support. Includes theme toggle, edit notes, tags.",
-    link: "https://md-note.netlify.app/",
-    github: "https://github.com/itsparasbisht/react-notes-app",
+    favicon: "/projects/bookmark-32.png",
   },
 ];
 
@@ -183,29 +187,37 @@ export default function Home() {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {PROJECTS.map((project) => (
-          <article key={project.title} className="group relative">
+          <article
+            key={project.title}
+            className="group relative rounded-xl border border-stone-200 p-6 flex flex-col transition-all duration-300 hover:bg-stone-200/60 hover:border-stone-300"
+          >
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block overflow-hidden rounded-xl border border-stone-200 bg-stone-50 p-6 transition-colors duration-300 hover:bg-stone-100 hover:border-stone-300"
+              className="block flex-1 after:absolute after:inset-0"
             >
-              <div className="relative h-full">
-                <h3 className="text-lg font-medium text-stone-800 mb-2 flex items-center">
-                  {project.title}
-                  <ArrowUpRight className="ml-1.5 h-4 w-4 text-stone-400 group-hover:text-stone-600 transition-colors" />
-                </h3>
-                <p className="text-sm leading-relaxed text-stone-600">
-                  {project.description}
-                </p>
-              </div>
+              <h3 className="text-lg font-medium text-stone-800 mb-2 flex items-center">
+                <Image
+                  src={project.favicon}
+                  alt=""
+                  width={20}
+                  height={20}
+                  className="mr-2 rounded"
+                />
+                {project.title}
+                <ArrowUpRight className="ml-1.5 h-4 w-4 text-stone-400 group-hover:text-stone-600 transition-colors" />
+              </h3>
+              <p className="text-sm leading-relaxed text-stone-600">
+                {project.description}
+              </p>
             </a>
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute top-4 right-4 z-10 text-stone-400 transition-colors hover:text-stone-800"
-              aria-label="View Code on GitHub"
+              className="relative z-10 self-end mt-3 text-stone-400 hover:text-stone-700 transition-colors"
+              aria-label={`${project.title} on GitHub`}
             >
               <FaGithub className="h-5 w-5" />
             </a>
@@ -220,7 +232,7 @@ export default function Home() {
         {CERTIFICATES.map((cert) => (
           <article
             key={cert.title}
-            className="rounded-xl border border-stone-200 bg-stone-100 p-3 transition-all duration-300 hover:border-stone-300"
+            className="rounded-xl bg-stone-100 border border-stone-200 p-3 transition-all duration-300 hover:bg-stone-200/60 hover:border-stone-300"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
