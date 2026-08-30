@@ -42,6 +42,13 @@ const PROJECTS = [
     github: "https://github.com/itsparasbisht/earth-population",
   },
   {
+    title: "AudioCast",
+    description:
+      "Stream system audio from your Windows PC to your phone by just opening a URL in your browser.",
+    link: "https://github.com/itsparasbisht/audio-cast/blob/main/README.md",
+    github: "https://github.com/itsparasbisht/audio-cast",
+  },
+  {
     title: "npm i @paras.in/pui",
     description:
       "A React and TypeScript component library focused on complex workspace UI components.",
@@ -54,13 +61,6 @@ const PROJECTS = [
       "Take a look at the destinations that you may wish to visit in Uttarakhand.",
     link: "https://divine-explorer.netlify.app/",
     github: "https://github.com/itsparasbisht/leaflet-init",
-  },
-  {
-    title: "React Markdown App",
-    description:
-      "Minimal note-taking application with markdown support. Includes theme toggle, edit notes, tags.",
-    link: "https://md-note.netlify.app/",
-    github: "https://github.com/itsparasbisht/react-notes-app",
   },
 ];
 
