@@ -5,14 +5,14 @@ import PhotoGalleryClient from "./PhotoGalleryClient";
 export const metadata: Metadata = {
   title: "Photos - Paras Bisht",
   description:
-    "A curated collection of photography moments, shared as a visual journal with occasional captions.",
+    "A curated collection of photography moments, shared as a visual journal.",
   alternates: {
     canonical: "https://paras-bisht.netlify.app/photos",
   },
   openGraph: {
     title: "Photos - Paras Bisht",
     description:
-      "A curated collection of photography moments, shared as a visual journal with occasional captions.",
+      "A curated collection of photography moments, shared as a visual journal.",
     url: "https://paras-bisht.netlify.app/photos",
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Photos - Paras Bisht",
     description:
-      "A curated collection of photography moments, shared as a visual journal with occasional captions.",
+      "A curated collection of photography moments, shared as a visual journal.",
     images: ["https://paras-bisht.netlify.app/paras-profile-photo.jpg"],
   },
 };
