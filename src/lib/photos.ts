@@ -4,19 +4,17 @@ export type PhotoMeta = {
   id: string;
   width: number;
   height: number;
-  caption: string;
 };
 
 /** Default dimensions used as placeholder for aspect ratio reservation */
 const DEFAULT_WIDTH = 1200;
 const DEFAULT_HEIGHT = 900;
 
-export const PHOTOS: PhotoMeta[] = (photosData as { id: string; caption: string; width?: number; height?: number }[]).map(
+export const PHOTOS: PhotoMeta[] = (photosData as { id: string; width?: number; height?: number }[]).map(
   (p) => ({
     id: p.id,
     width: p.width ?? DEFAULT_WIDTH,
     height: p.height ?? DEFAULT_HEIGHT,
-    caption: p.caption,
   }),
 );
 

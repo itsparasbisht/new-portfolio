@@ -3,10 +3,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
-import Captions from "yet-another-react-lightbox/plugins/captions";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
-import "yet-another-react-lightbox/plugins/captions.css";
 
 import type { PhotoMeta } from "../../lib/photos";
 import {
@@ -77,7 +75,6 @@ export default function PhotoGalleryClient({
         src: photoFullSrc(p),
         width: p.width,
         height: p.height,
-        description: p.caption,
       })),
     [photos],
   );
@@ -127,12 +124,8 @@ export default function PhotoGalleryClient({
         index={lightboxIndex}
         slides={slides}
         close={closeLightbox}
-        plugins={[Captions, Zoom]}
+        plugins={[Zoom]}
         zoom={{ maxZoomPixelRatio: 3, scrollToZoom: true }}
-        captions={{
-          descriptionTextAlign: "center",
-          descriptionMaxLines: 3,
-        }}
         carousel={{ padding: "60px 0px 80px 0px" }}
         animation={{ fade: 300 }}
         controller={{ closeOnBackdropClick: true }}
@@ -164,12 +157,12 @@ function PhotoCard({
       }}
       role="button"
       tabIndex={0}
-      aria-label={`View photo: ${photo.caption || `Photo ${index + 1}`}`}
+      aria-label={`View photo ${index + 1}`}
     >
       <Image
         loader={cloudinaryLoader}
         src={photo.id}
-        alt={photo.caption || `Photo ${index + 1}`}
+        alt={`Photo ${index + 1}`}
         width={photo.width}
         height={photo.height}
         className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
@@ -180,15 +173,7 @@ function PhotoCard({
       />
 
       {/* Hover gradient overlay */}
-      <div className="absolute inset-0 flex items-end pointer-events-none">
-        <div className="w-full px-4 pb-4 pt-10 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          {photo.caption && (
-            <p className="text-[13px] leading-snug text-white/90 line-clamp-3">
-              {photo.caption}
-            </p>
-          )}
-        </div>
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
     </article>
   );
 }
